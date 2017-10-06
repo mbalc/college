@@ -8,6 +8,23 @@
 // our cost set) and then try to find a biggest possible odd summary cost by
 // considering some corner cases (see code)
 
+/* Example test:
+
+  IN:
+4
+1 2 3 4
+3
+2
+3
+4
+
+  OUT:
+7
+9
+-1
+
+*/
+
 #include <cstdio>
 
 static void processSuffixSums(int size, long long *table) {
