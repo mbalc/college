@@ -1,6 +1,6 @@
 // Task: For each query [k] we want to determine and return an amount of money
 // that will allow to buy any possible combination of [k] products (from a set
-// of products with given, non-descending costs) of an even summary cost, or
+// of products with given, non-descending costs) of an odd summary cost, or
 // return '-1' if there's no such set.
 
 // Approach: To solve this, for each query we're going to find the sum of [k]
