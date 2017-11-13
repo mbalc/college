@@ -1,0 +1,4 @@
+[submodule "17_18/bazy_danych"]
+	path = 17_18/bazy_danych
+	url = git@github.com:mbalc/bazydanych2017.git
+	branch = master
