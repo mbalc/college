@@ -1,10 +1,14 @@
 CXXFLAGS = -std=c++11 -static -O2 -s -lm
+CXXDEBUG = -std=c++11 -g
 
 all: $(patsubst %.cpp, %.o, $(wildcard *.cpp))
 	@echo done
 
 %.o: %.cpp
 	$(CXX) $(CXXFLAGS) -o $@ $<
+
+%.g: %.cpp
+	$(CXX) $(CXXDEBUG) -o $@ $<
 
 %: %.o;
 
