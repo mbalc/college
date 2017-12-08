@@ -1,0 +1,38 @@
+[INFO ] 06-05-2017 21:02:50 pl.edu.mimuw.xchange.AppMain start - Starting Xchange application...
+[INFO ] 06-05-2017 21:02:57 pl.edu.mimuw.xchange.AppMain start - Application's up and running!
+[INFO ] 06-05-2017 21:02:58 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=4.129272, ask=3.7465)
+[INFO ] 06-05-2017 21:02:58 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.4066076, ask=4.2247)
+[INFO ] 06-05-2017 21:02:58 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=152.99)
+[INFO ] 06-05-2017 21:02:59 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=9826.0)
+[INFO ] 06-05-2017 21:03:17 pl.edu.mimuw.xchange.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-05-2017 21:03:23 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=152.99)
+[INFO ] 06-05-2017 21:03:23 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.7564342, ask=3.7465)
+[INFO ] 06-05-2017 21:03:23 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=3.9904275, ask=4.2247)
+[INFO ] 06-05-2017 21:03:23 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=9826.0)
+[INFO ] 06-05-2017 21:03:32 pl.edu.mimuw.xchange.AppMain onClose - onClose
+[INFO ] 06-05-2017 21:03:34 pl.edu.mimuw.xchange.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-05-2017 22:17:01 pl.edu.mimuw.xchange.AppMain start - Starting Xchange application...
+[INFO ] 06-05-2017 22:17:08 pl.edu.mimuw.xchange.AppMain start - Application's up and running!
+[INFO ] 06-05-2017 22:17:10 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.306497, ask=3.7465)
+[INFO ] 06-05-2017 22:17:10 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.3951936, ask=4.2247)
+[INFO ] 06-05-2017 22:17:10 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=152.99)
+[INFO ] 06-05-2017 22:17:10 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=9924.0)
+[INFO ] 06-05-2017 22:17:14 pl.edu.mimuw.xchange.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-05-2017 22:17:34 pl.edu.mimuw.xchange.AppMain onClose - onClose
+[INFO ] 06-05-2017 22:17:37 pl.edu.mimuw.xchange.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-05-2017 22:26:08 pl.edu.mimuw.xchange.AppMain start - Starting Xchange application...
+[INFO ] 06-05-2017 22:26:10 pl.edu.mimuw.xchange.AppMain start - Application's up and running!
+[INFO ] 06-05-2017 22:26:14 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.379056, ask=4.2247)
+[INFO ] 06-05-2017 22:26:14 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.980607, ask=3.7465)
+[INFO ] 06-05-2017 22:26:14 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=152.99)
+[INFO ] 06-05-2017 22:26:15 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=9922.0)
+[INFO ] 06-05-2017 22:26:23 pl.edu.mimuw.xchange.AppMain onClose - onClose
+[INFO ] 06-05-2017 22:26:24 pl.edu.mimuw.xchange.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-05-2017 22:26:46 pl.edu.mimuw.weather.AppMain start - Starting Xchange application...
+[INFO ] 06-05-2017 22:26:48 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-05-2017 22:26:52 pl.edu.mimuw.weather.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.506818, ask=4.2247)
+[INFO ] 06-05-2017 22:26:52 pl.edu.mimuw.weather.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=152.99)
+[INFO ] 06-05-2017 22:26:52 pl.edu.mimuw.weather.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.7003245, ask=3.7465)
+[INFO ] 06-05-2017 22:26:53 pl.edu.mimuw.weather.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=9922.0)
+[INFO ] 06-05-2017 22:27:04 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-05-2017 22:27:06 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...

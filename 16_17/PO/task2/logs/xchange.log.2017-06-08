@@ -1,0 +1,287 @@
+[INFO ] 06-08-2017 00:34:24 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 00:34:46 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 00:35:12 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 00:38:01 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 00:39:48 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 00:39:50 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 00:40:16 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 00:40:21 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 00:41:04 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 00:41:06 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 00:41:11 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 00:41:13 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 00:42:43 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[ERROR] 06-08-2017 00:42:44 pl.edu.mimuw.weather.control.WeatherPane lambda$new$0 - Too many rates for WeatherPane!
+[ERROR] 06-08-2017 00:42:44 pl.edu.mimuw.weather.control.WeatherPane lambda$new$0 - Too many rates for WeatherPane!
+[INFO ] 06-08-2017 00:42:46 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 00:42:59 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 00:43:01 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 00:45:18 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 00:45:21 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 00:45:45 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 00:45:47 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 19:10:15 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 19:10:26 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 19:11:03 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 19:11:04 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 19:11:10 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 19:11:12 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 19:12:06 pl.edu.mimuw.xchange.AppMain start - Starting Xchange application...
+[INFO ] 06-08-2017 19:12:09 pl.edu.mimuw.xchange.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 19:12:09 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 19:12:11 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 19:12:12 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.7805626, ask=3.7626)
+[INFO ] 06-08-2017 19:12:12 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.59)
+[INFO ] 06-08-2017 19:12:12 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.319981, ask=4.2374)
+[INFO ] 06-08-2017 19:12:12 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10389.0)
+[INFO ] 06-08-2017 19:12:16 pl.edu.mimuw.xchange.AppMain start - Starting Xchange application...
+[INFO ] 06-08-2017 19:12:18 pl.edu.mimuw.xchange.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 19:12:20 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.59)
+[INFO ] 06-08-2017 19:12:20 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.060898, ask=4.2374)
+[INFO ] 06-08-2017 19:12:20 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.6098652, ask=3.7626)
+[INFO ] 06-08-2017 19:12:21 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10389.0)
+[INFO ] 06-08-2017 19:12:51 pl.edu.mimuw.xchange.AppMain onClose - onClose
+[INFO ] 06-08-2017 19:12:53 pl.edu.mimuw.xchange.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 19:12:54 pl.edu.mimuw.xchange.AppMain onClose - onClose
+[INFO ] 06-08-2017 19:12:55 pl.edu.mimuw.xchange.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 20:55:27 pl.edu.mimuw.xchange.AppMain start - Starting Xchange application...
+[INFO ] 06-08-2017 20:55:30 pl.edu.mimuw.xchange.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 20:55:32 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.3889678, ask=3.7626)
+[INFO ] 06-08-2017 20:55:32 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.59)
+[INFO ] 06-08-2017 20:55:32 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=3.6974614, ask=4.2374)
+[INFO ] 06-08-2017 20:55:32 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10356.0)
+[INFO ] 06-08-2017 20:55:34 pl.edu.mimuw.xchange.AppMain onClose - onClose
+[INFO ] 06-08-2017 20:55:35 pl.edu.mimuw.xchange.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 20:55:41 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 20:55:43 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 20:55:59 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 20:56:00 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 20:58:28 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 20:58:30 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 20:59:32 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 20:59:33 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 21:01:23 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 21:01:25 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 21:02:05 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 21:02:06 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 21:11:55 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 21:11:57 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 21:12:02 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 21:12:02 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 21:12:16 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 21:12:18 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 21:17:14 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 21:17:16 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 21:20:03 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 21:20:05 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 21:20:07 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=280.0, windForce=1.5, humidity=51.0, pressure=1018.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:20:24 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 21:20:26 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-08-2017 21:20:30 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 21:20:31 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 21:22:58 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 21:25:23 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 21:26:22 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 21:26:41 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 21:27:46 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 21:27:48 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 21:27:50 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:27:53 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 21:27:54 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 21:28:03 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 21:28:05 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 21:28:07 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:28:13 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 21:28:14 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 21:28:32 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 21:28:43 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 21:28:55 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 21:28:57 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 21:28:59 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:29:01 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 21:29:03 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 21:30:22 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 21:30:24 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 21:30:26 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:31:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:32:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:33:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:34:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:35:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:36:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:37:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:38:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:39:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:40:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:41:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:42:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:43:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:44:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:45:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:46:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:47:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:48:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=250.0, windForce=0.5, humidity=59.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:49:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:50:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:51:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:52:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:53:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:54:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:55:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:56:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:57:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:58:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 21:59:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 22:00:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 22:01:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 22:02:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 22:03:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 22:04:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 22:05:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 22:06:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 22:07:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 22:08:26 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 22:09:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 22:10:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 22:11:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 22:12:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 22:13:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 22:14:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 22:15:25 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.0, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[ERROR] 06-08-2017 22:16:45 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.util.concurrent.TimeoutException
+[ERROR] 06-08-2017 22:17:45 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.util.concurrent.TimeoutException
+[INFO ] 06-08-2017 22:18:34 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-08-2017 22:18:41 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 22:18:43 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[ERROR] 06-08-2017 22:18:44 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.util.concurrent.TimeoutException
+[ERROR] 06-08-2017 22:18:45 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.util.concurrent.TimeoutException
+[INFO ] 06-08-2017 23:13:56 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 23:14:03 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.5, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:14:04 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 23:14:34 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-08-2017 23:14:37 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-08-2017 23:14:40 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 23:14:41 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 23:15:01 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 23:15:59 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 23:17:40 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 23:17:42 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[ERROR] 06-08-2017 23:17:44 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.lang.IllegalStateException: This is not a JSON Array.
+[INFO ] 06-08-2017 23:17:44 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.5, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:18:08 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.5, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[ERROR] 06-08-2017 23:18:08 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.lang.IllegalStateException: This is not a JSON Array.
+[INFO ] 06-08-2017 23:18:43 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.5, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[ERROR] 06-08-2017 23:18:43 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.lang.IllegalStateException: This is not a JSON Array.
+[INFO ] 06-08-2017 23:19:43 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.5, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[ERROR] 06-08-2017 23:19:43 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.lang.IllegalStateException: This is not a JSON Array.
+[ERROR] 06-08-2017 23:21:03 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.util.concurrent.TimeoutException
+[ERROR] 06-08-2017 23:21:03 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.util.concurrent.TimeoutException
+[INFO ] 06-08-2017 23:21:17 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 23:21:43 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.5, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[ERROR] 06-08-2017 23:21:43 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.lang.IllegalStateException: This is not a JSON Array.
+[INFO ] 06-08-2017 23:22:43 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.5, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[ERROR] 06-08-2017 23:22:43 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.lang.IllegalStateException: This is not a JSON Array.
+[ERROR] 06-08-2017 23:23:43 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.lang.IllegalStateException: This is not a JSON Array.
+[INFO ] 06-08-2017 23:23:43 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=180.0, windForce=1.5, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[ERROR] 06-08-2017 23:24:43 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.lang.IllegalStateException: This is not a JSON Array.
+[INFO ] 06-08-2017 23:24:43 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:24:49 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 23:24:50 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 23:29:31 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 23:29:33 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 23:29:35 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:29:38 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:30:34 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 23:30:34 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:30:35 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 23:33:51 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 23:33:53 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 23:33:55 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:33:58 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:34:32 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 23:34:33 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 23:35:41 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 23:35:43 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 23:35:45 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:35:48 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:36:14 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 23:36:15 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 23:36:31 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 23:36:33 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 23:36:35 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:36:38 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:36:41 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 23:36:42 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 23:39:34 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 23:39:36 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 23:39:38 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:39:42 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:39:51 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 23:39:52 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 23:40:44 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 23:40:46 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 23:40:48 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:40:51 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:41:26 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 23:41:28 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 23:41:30 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:41:32 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:41:41 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 23:41:42 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 23:41:47 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:41:51 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:42:41 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 23:42:44 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 23:42:45 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:42:47 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:42:48 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:42:50 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:43:28 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 23:43:29 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 23:43:47 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:43:50 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:44:47 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:44:50 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:45:09 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 23:45:11 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 23:45:13 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:45:20 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:45:47 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:45:50 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:46:08 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 23:46:09 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 23:46:47 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:46:50 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:47:47 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:47:50 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:48:00 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 23:48:03 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 23:48:04 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:48:07 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:48:47 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:48:50 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:48:55 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 23:48:56 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 23:49:47 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:49:50 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:50:47 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=14.0, windDirection=190.0, windForce=2.1, humidity=67.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:50:50 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:51:47 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=12.0, windDirection=200.0, windForce=1.5, humidity=76.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:51:51 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:52:12 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 23:52:13 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 23:52:16 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 23:52:18 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 23:52:20 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=12.0, windDirection=200.0, windForce=1.5, humidity=76.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:52:23 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:52:27 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-08-2017 23:52:27 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-08-2017 23:52:43 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 23:57:25 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 23:57:45 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 23:58:11 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-08-2017 23:58:13 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-08-2017 23:58:15 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=12.0, windDirection=200.0, windForce=1.5, humidity=76.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:58:18 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}
+[INFO ] 06-08-2017 23:59:15 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=12.0, windDirection=200.0, windForce=1.5, humidity=76.0, pressure=1019.0, cloudiness=0.0}
+[INFO ] 06-08-2017 23:59:17 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=24.22664, pm100=50.08652}

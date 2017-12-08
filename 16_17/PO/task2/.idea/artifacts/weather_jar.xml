@@ -1,0 +1,33 @@
+<component name="ArtifactManager">
+  <artifact name="weather:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/weather_jar</output-path>
+    <root id="root">
+      <element id="archive" name="weather.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="weather" />
+      </element>
+      <element id="library" level="project" name="Maven: org.kordamp.ikonli:ikonli-fontawesome-pack:1.9.0" />
+      <element id="library" level="project" name="Maven: io.netty:netty-buffer:4.1.5.Final" />
+      <element id="library" level="project" name="Maven: org.ocpsoft.prettytime:prettytime:4.0.0.Final" />
+      <element id="library" level="project" name="Maven: io.netty:netty-transport-native-epoll:4.1.5.Final" />
+      <element id="library" level="project" name="Maven: org.kordamp.ikonli:ikonli-weathericons-pack:1.9.0" />
+      <element id="library" level="project" name="Maven: io.netty:netty-handler:4.1.5.Final" />
+      <element id="library" level="project" name="Maven: org.kordamp.ikonli:ikonli-core:1.9.0" />
+      <element id="library" level="project" name="Maven: org.kordamp.ikonli:ikonli-javafx:1.9.0" />
+      <element id="library" level="project" name="Maven: io.netty:netty-resolver:4.1.5.Final" />
+      <element id="library" level="project" name="Maven: io.reactivex:rxjava:1.2.4" />
+      <element id="library" level="project" name="Maven: io.netty:netty-transport:4.1.5.Final" />
+      <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+      <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.0" />
+      <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.6" />
+      <element id="library" level="project" name="Maven: io.netty:netty-common:4.1.5.Final" />
+      <element id="library" level="project" name="Maven: io.netty:netty-codec:4.1.5.Final" />
+      <element id="library" level="project" name="Maven: io.reactivex:rxjavafx:1.0.0" />
+      <element id="library" level="project" name="Maven: com.jfoenix:jfoenix:1.4.0" />
+      <element id="library" level="project" name="Maven: io.reactivex:rxnetty:0.4.20" />
+      <element id="library" level="project" name="Maven: io.netty:netty-codec-http:4.1.5.Final" />
+    </root>
+  </artifact>
+</component>

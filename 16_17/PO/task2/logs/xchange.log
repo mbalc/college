@@ -1,0 +1,1720 @@
+[INFO ] 06-10-2017 14:03:34 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 14:03:38 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 14:03:39 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 14:03:39 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=NaN, windDirection=NaN, windForce=NaN, humidity=NaN, pressure=NaN, cloudiness=0.0}
+[INFO ] 06-10-2017 14:03:42 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=11.4794, pm100=29.8538}
+[INFO ] 06-10-2017 14:04:02 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 14:04:03 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 14:04:35 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 14:04:37 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 14:04:39 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[ERROR] 06-10-2017 14:04:40 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.lang.NumberFormatException: empty String
+[INFO ] 06-10-2017 14:04:43 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=11.4794, pm100=29.8538}
+[INFO ] 06-10-2017 14:04:50 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 14:04:51 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 14:05:00 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 14:05:02 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 14:05:04 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[ERROR] 06-10-2017 14:05:04 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.lang.NumberFormatException: empty String
+[INFO ] 06-10-2017 14:05:07 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=11.4794, pm100=29.8538}
+[INFO ] 06-10-2017 14:06:18 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 14:06:20 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[ERROR] 06-10-2017 14:06:41 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.util.concurrent.TimeoutException
+[ERROR] 06-10-2017 14:06:41 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.util.concurrent.TimeoutException
+[ERROR] 06-10-2017 14:06:41 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.util.concurrent.TimeoutException
+[INFO ] 06-10-2017 14:07:09 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[ERROR] 06-10-2017 14:07:09 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.lang.NumberFormatException: empty String
+[INFO ] 06-10-2017 14:07:13 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=11.4794, pm100=29.8538}
+[INFO ] 06-10-2017 14:08:51 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[ERROR] 06-10-2017 14:08:51 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.lang.NumberFormatException: empty String
+[INFO ] 06-10-2017 14:08:54 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=11.4794, pm100=29.8538}
+[INFO ] 06-10-2017 14:11:21 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[ERROR] 06-10-2017 14:11:21 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.lang.NumberFormatException: empty String
+[INFO ] 06-10-2017 14:11:24 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=11.4794, pm100=29.8538}
+[INFO ] 06-10-2017 14:11:32 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 14:11:34 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 14:11:36 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[ERROR] 06-10-2017 14:11:37 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.lang.NumberFormatException: empty String
+[INFO ] 06-10-2017 14:11:40 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=11.4794, pm100=29.8538}
+[INFO ] 06-10-2017 14:12:22 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 14:12:24 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 14:12:27 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[ERROR] 06-10-2017 14:12:27 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.lang.NumberFormatException: empty String
+[INFO ] 06-10-2017 14:12:30 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=11.4794, pm100=29.8538}
+[INFO ] 06-10-2017 14:12:31 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 14:12:32 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 14:16:01 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 14:16:03 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 14:16:05 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=NaN, windDirection=NaN, windForce=NaN, humidity=NaN, pressure=NaN, cloudiness=NaN}
+[INFO ] 06-10-2017 14:16:05 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 14:16:08 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=11.4794, pm100=29.8538}
+[INFO ] 06-10-2017 14:16:48 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 14:16:50 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 14:16:52 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 14:16:53 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=NaN, windDirection=NaN, windForce=NaN, humidity=NaN, pressure=NaN, cloudiness=NaN}
+[INFO ] 06-10-2017 14:16:57 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 14:16:58 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 14:18:34 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 14:18:34 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=NaN, windDirection=NaN, windForce=NaN, humidity=NaN, pressure=NaN, cloudiness=NaN}
+[INFO ] 06-10-2017 14:18:38 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=11.4794, pm100=29.8538}
+[INFO ] 06-10-2017 14:21:04 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 14:21:04 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=NaN, windDirection=NaN, windForce=NaN, humidity=NaN, pressure=NaN, cloudiness=NaN}
+[INFO ] 06-10-2017 14:21:07 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=10.96784, pm100=25.56296}
+[INFO ] 06-10-2017 18:21:24 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 18:21:25 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 20:40:52 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 20:40:55 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 20:40:57 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 20:40:57 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=NaN, windDirection=NaN, windForce=NaN, humidity=NaN, pressure=NaN, cloudiness=NaN}
+[INFO ] 06-10-2017 20:40:59 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 20:41:04 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 20:41:06 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 20:41:06 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=NaN, windDirection=NaN, windForce=NaN, humidity=NaN, pressure=NaN, cloudiness=NaN}
+[INFO ] 06-10-2017 20:41:09 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 20:41:09 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 20:41:10 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 20:41:23 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 20:41:25 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 20:41:27 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 20:41:27 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=NaN, windDirection=NaN, windForce=NaN, humidity=NaN, pressure=NaN, cloudiness=NaN}
+[INFO ] 06-10-2017 20:41:30 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 20:42:47 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 20:42:47 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 20:42:48 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 20:42:50 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 20:42:52 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 20:42:52 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=NaN, windDirection=NaN, windForce=NaN, humidity=NaN, pressure=NaN, cloudiness=NaN}
+[INFO ] 06-10-2017 20:42:54 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 20:43:02 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 20:43:03 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 20:44:06 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 20:44:07 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 20:44:10 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 20:44:10 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=NaN, windDirection=NaN, windForce=NaN, humidity=NaN, pressure=NaN, cloudiness=NaN}
+[INFO ] 06-10-2017 20:44:13 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 20:44:24 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 20:44:25 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 20:44:37 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 20:44:39 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 20:44:41 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 20:44:41 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=NaN, windDirection=NaN, windForce=NaN, humidity=NaN, pressure=NaN, cloudiness=NaN}
+[INFO ] 06-10-2017 20:44:44 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 20:46:02 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 20:46:04 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 20:46:06 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 20:46:06 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=NaN, windDirection=NaN, windForce=NaN, humidity=NaN, pressure=NaN, cloudiness=NaN}
+[INFO ] 06-10-2017 20:46:09 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 20:46:14 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 20:46:16 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 20:54:37 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 20:54:39 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 20:54:41 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 20:54:41 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=NaN, windDirection=NaN, windForce=NaN, humidity=NaN, pressure=NaN, cloudiness=NaN}
+[INFO ] 06-10-2017 20:54:43 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 20:54:50 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 20:54:51 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 20:55:14 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 20:55:16 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 20:55:18 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[ERROR] 06-10-2017 20:55:18 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.lang.NumberFormatException: For input string: "17,2"
+[INFO ] 06-10-2017 20:55:21 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 20:57:48 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[ERROR] 06-10-2017 20:57:48 pl.edu.mimuw.weather.network.WeatherDataSource onError - java.lang.NumberFormatException: For input string: "17,2"
+[INFO ] 06-10-2017 20:57:50 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 20:58:20 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 20:58:22 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 20:58:24 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 20:58:24 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.2, windDirection=315.0, windForce=4.8, humidity=84.5, pressure=1005.1, cloudiness=NaN}
+[INFO ] 06-10-2017 20:58:27 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 20:58:55 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 20:58:55 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.2, windDirection=270.0, windForce=5.7, humidity=84.4, pressure=1005.1, cloudiness=NaN}
+[INFO ] 06-10-2017 20:58:57 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 20:58:57 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 20:58:57 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.2, windDirection=270.0, windForce=5.7, humidity=84.4, pressure=1005.1, cloudiness=NaN}
+[INFO ] 06-10-2017 20:58:58 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 20:58:58 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.2, windDirection=270.0, windForce=5.7, humidity=84.4, pressure=1005.1, cloudiness=NaN}
+[INFO ] 06-10-2017 20:59:00 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 20:59:01 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 20:59:04 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 20:59:04 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.2, windDirection=270.0, windForce=6.4, humidity=84.4, pressure=1005.1, cloudiness=NaN}
+[INFO ] 06-10-2017 20:59:06 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 20:59:06 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.2, windDirection=270.0, windForce=6.4, humidity=84.4, pressure=1005.1, cloudiness=NaN}
+[INFO ] 06-10-2017 20:59:06 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 20:59:09 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:00:53 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:00:53 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.2, windDirection=270.0, windForce=4.8, humidity=84.2, pressure=1005.2, cloudiness=NaN}
+[INFO ] 06-10-2017 21:00:56 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:03:23 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:03:23 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.2, windDirection=315.0, windForce=4.1, humidity=84.4, pressure=1005.2, cloudiness=NaN}
+[INFO ] 06-10-2017 21:03:27 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:03:54 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:03:55 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:03:59 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:04:02 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:04:03 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:04:04 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.2, windDirection=315.0, windForce=3.0, humidity=84.4, pressure=1005.2, cloudiness=NaN}
+[INFO ] 06-10-2017 21:04:07 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:04:09 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:04:09 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.1, windDirection=315.0, windForce=3.3, humidity=84.4, pressure=1005.2, cloudiness=NaN}
+[INFO ] 06-10-2017 21:04:10 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:04:10 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.1, windDirection=315.0, windForce=3.3, humidity=84.4, pressure=1005.2, cloudiness=NaN}
+[INFO ] 06-10-2017 21:04:12 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:04:12 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:04:12 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.1, windDirection=315.0, windForce=3.3, humidity=84.4, pressure=1005.2, cloudiness=NaN}
+[INFO ] 06-10-2017 21:04:13 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:04:15 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:04:18 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:04:18 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.1, windDirection=315.0, windForce=3.6, humidity=84.4, pressure=1005.2, cloudiness=NaN}
+[INFO ] 06-10-2017 21:04:20 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:04:22 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:04:22 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.1, windDirection=315.0, windForce=3.7, humidity=84.4, pressure=1005.2, cloudiness=NaN}
+[INFO ] 06-10-2017 21:04:24 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:04:24 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.1, windDirection=315.0, windForce=3.6, humidity=84.4, pressure=1005.2, cloudiness=NaN}
+[INFO ] 06-10-2017 21:04:25 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:04:27 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:04:27 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:04:28 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:04:34 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:04:36 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:04:38 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:04:38 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.1, windDirection=315.0, windForce=3.1, humidity=84.5, pressure=1005.2, cloudiness=NaN}
+[INFO ] 06-10-2017 21:04:39 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:04:40 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.1, windDirection=315.0, windForce=3.2, humidity=84.5, pressure=1005.2, cloudiness=NaN}
+[INFO ] 06-10-2017 21:04:40 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:04:42 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:04:43 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:04:43 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.1, windDirection=315.0, windForce=3.2, humidity=84.5, pressure=1005.2, cloudiness=NaN}
+[INFO ] 06-10-2017 21:04:45 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:04:46 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:04:46 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.1, windDirection=315.0, windForce=3.5, humidity=84.5, pressure=1005.2, cloudiness=NaN}
+[INFO ] 06-10-2017 21:04:48 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:04:48 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.1, windDirection=315.0, windForce=3.5, humidity=84.5, pressure=1005.2, cloudiness=NaN}
+[INFO ] 06-10-2017 21:04:48 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:04:49 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:04:49 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.1, windDirection=315.0, windForce=3.3, humidity=84.5, pressure=1005.2, cloudiness=NaN}
+[INFO ] 06-10-2017 21:04:50 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:04:51 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:04:51 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.1, windDirection=315.0, windForce=3.3, humidity=84.5, pressure=1005.2, cloudiness=NaN}
+[INFO ] 06-10-2017 21:04:52 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:04:52 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:04:52 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.1, windDirection=315.0, windForce=3.3, humidity=84.5, pressure=1005.2, cloudiness=NaN}
+[INFO ] 06-10-2017 21:04:53 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:04:55 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:05:12 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:05:14 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:05:16 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:05:16 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.1, windDirection=315.0, windForce=2.8, humidity=84.6, pressure=1005.2, cloudiness=NaN}
+[INFO ] 06-10-2017 21:05:19 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:05:32 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:05:32 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.1, windDirection=315.0, windForce=2.8, humidity=84.6, pressure=1005.2, cloudiness=NaN}
+[INFO ] 06-10-2017 21:05:35 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:05:36 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:05:36 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.1, windDirection=315.0, windForce=3.1, humidity=84.6, pressure=1005.3, cloudiness=NaN}
+[INFO ] 06-10-2017 21:05:38 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:05:39 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:11:52 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:11:54 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:11:56 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:11:56 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=18.0, windDirection=NaN, windForce=3.6, humidity=NaN, pressure=1017.0, cloudiness=NaN}
+[INFO ] 06-10-2017 21:11:59 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:12:12 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:12:12 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=18.0, windDirection=NaN, windForce=3.6, humidity=NaN, pressure=NaN, cloudiness=0.0}
+[INFO ] 06-10-2017 21:12:14 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=18.0, windDirection=290.0, windForce=3.6, humidity=77.0, pressure=NaN, cloudiness=NaN}
+[INFO ] 06-10-2017 21:12:14 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/01d.png'}
+[INFO ] 06-10-2017 21:12:15 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:12:18 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:12:19 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:16:18 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:16:20 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:16:22 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/02n.png'}
+[INFO ] 06-10-2017 21:16:22 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=3.6, humidity=82.0, pressure=1018.0, cloudiness=20.0}
+[INFO ] 06-10-2017 21:16:25 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:16:51 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:16:52 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:18:03 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:18:05 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:18:07 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=NaN, humidity=NaN, pressure=NaN, cloudiness=20.0}
+[INFO ] 06-10-2017 21:18:07 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/02n.png'}
+[INFO ] 06-10-2017 21:18:10 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:18:14 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:18:15 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:18:38 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:18:40 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:18:42 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/02n.png'}
+[INFO ] 06-10-2017 21:18:42 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=3.6, humidity=82.0, pressure=1018.0, cloudiness=20.0}
+[INFO ] 06-10-2017 21:18:45 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:21:08 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:21:10 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:21:12 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/02n.png'}
+[INFO ] 06-10-2017 21:21:12 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=3.6, humidity=82.0, pressure=1018.0, cloudiness=20.0}
+[INFO ] 06-10-2017 21:21:14 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:21:27 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:21:28 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:21:40 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:21:42 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:21:44 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/02n.png'}
+[INFO ] 06-10-2017 21:21:44 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=3.6, humidity=82.0, pressure=1018.0, cloudiness=20.0}
+[INFO ] 06-10-2017 21:21:47 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:21:53 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:21:55 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:23:39 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:23:41 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:23:44 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/02n.png'}
+[INFO ] 06-10-2017 21:23:44 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=3.6, humidity=82.0, pressure=1018.0, cloudiness=20.0}
+[INFO ] 06-10-2017 21:23:47 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:23:57 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:23:58 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:24:36 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:24:38 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:24:40 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/02n.png'}
+[INFO ] 06-10-2017 21:24:40 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=3.6, humidity=82.0, pressure=1018.0, cloudiness=20.0}
+[INFO ] 06-10-2017 21:24:41 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:24:41 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:24:54 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:24:56 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:24:58 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/02n.png'}
+[INFO ] 06-10-2017 21:24:58 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=3.6, humidity=82.0, pressure=1018.0, cloudiness=20.0}
+[INFO ] 06-10-2017 21:25:01 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:27:27 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=3.6, humidity=82.0, pressure=1018.0, cloudiness=20.0}
+[INFO ] 06-10-2017 21:27:27 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/02n.png'}
+[INFO ] 06-10-2017 21:27:30 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:29:57 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=3.6, humidity=82.0, pressure=1018.0, cloudiness=20.0}
+[INFO ] 06-10-2017 21:29:57 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/02n.png'}
+[INFO ] 06-10-2017 21:30:00 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:31:35 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:31:37 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:31:39 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=3.6, humidity=82.0, pressure=1018.0, cloudiness=20.0}
+[INFO ] 06-10-2017 21:31:39 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/02n.png'}
+[INFO ] 06-10-2017 21:31:42 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:31:49 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:31:50 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:32:02 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:32:04 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:32:06 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=3.6, humidity=82.0, pressure=1018.0, cloudiness=20.0}
+[INFO ] 06-10-2017 21:32:06 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/02n.png'}
+[INFO ] 06-10-2017 21:32:09 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:32:17 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:32:18 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:32:43 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:32:45 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:32:47 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=3.6, humidity=82.0, pressure=1018.0, cloudiness=20.0}
+[INFO ] 06-10-2017 21:32:47 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/02n.png'}
+[INFO ] 06-10-2017 21:32:49 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:33:00 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:33:02 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:38:26 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:38:28 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:38:30 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=3.6, humidity=82.0, pressure=1018.0, cloudiness=20.0}
+[INFO ] 06-10-2017 21:38:30 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/02n.png'}
+[INFO ] 06-10-2017 21:38:32 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:38:38 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/02n.png'}
+[INFO ] 06-10-2017 21:38:38 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=3.6, humidity=82.0, pressure=1018.0, cloudiness=20.0}
+[INFO ] 06-10-2017 21:38:40 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:38:44 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[ERROR] 06-10-2017 21:38:46 pl.edu.mimuw.weather.AppMain lambda$setupExceptionHandler$1 - Uncaught exception in thread 'JavaFX Application Thread'
+rx.exceptions.OnErrorNotImplementedException: For input string: ""
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:386)
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:383)
+	at rx.internal.util.ActionSubscriber.onError(ActionSubscriber.java:44)
+	at rx.observers.SafeSubscriber._onError(SafeSubscriber.java:153)
+	at rx.observers.SafeSubscriber.onError(SafeSubscriber.java:115)
+	at rx.exceptions.Exceptions.throwOrReport(Exceptions.java:216)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:139)
+	at rx.internal.operators.OperatorSubscribeOn$1$1.onNext(OperatorSubscribeOn.java:53)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8413)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at pl.edu.mimuw.weather.AppMain$SettingsDialogController.lambda$initialize$1(AppMain.java:109)
+	at rx.internal.util.ActionSubscriber.onNext(ActionSubscriber.java:39)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:134)
+	... 61 more
+[INFO ] 06-10-2017 21:39:48 pl.edu.mimuw.xchange.AppMain start - Starting Xchange application...
+[INFO ] 06-10-2017 21:39:50 pl.edu.mimuw.xchange.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:39:51 pl.edu.mimuw.xchange.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 21:39:52 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.3832865, ask=4.2419)
+[INFO ] 06-10-2017 21:39:52 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.29632, ask=3.7808)
+[INFO ] 06-10-2017 21:39:52 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=153.08)
+[INFO ] 06-10-2017 21:39:52 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10901.0)
+[ERROR] 06-10-2017 21:39:54 pl.edu.mimuw.xchange.AppMain lambda$setupExceptionHandler$1 - Uncaught exception in thread 'JavaFX Application Thread'
+rx.exceptions.OnErrorNotImplementedException: For input string: ""
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:386)
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:383)
+	at rx.internal.util.ActionSubscriber.onError(ActionSubscriber.java:44)
+	at rx.observers.SafeSubscriber._onError(SafeSubscriber.java:153)
+	at rx.observers.SafeSubscriber.onError(SafeSubscriber.java:115)
+	at rx.exceptions.Exceptions.throwOrReport(Exceptions.java:216)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:139)
+	at rx.internal.operators.OperatorSubscribeOn$1$1.onNext(OperatorSubscribeOn.java:53)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8413)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at pl.edu.mimuw.xchange.AppMain$SettingsDialogController.lambda$initialize$1(AppMain.java:108)
+	at rx.internal.util.ActionSubscriber.onNext(ActionSubscriber.java:39)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:134)
+	... 65 more
+[INFO ] 06-10-2017 21:39:56 pl.edu.mimuw.xchange.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:39:57 pl.edu.mimuw.xchange.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:40:10 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:40:13 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:40:15 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=3.6, humidity=82.0, pressure=1018.0, cloudiness=20.0}
+[INFO ] 06-10-2017 21:40:15 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/02n.png'}
+[INFO ] 06-10-2017 21:40:17 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:40:21 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:40:22 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:40:27 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:40:29 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:40:31 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/02n.png'}
+[INFO ] 06-10-2017 21:40:31 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=3.6, humidity=82.0, pressure=1018.0, cloudiness=20.0}
+[INFO ] 06-10-2017 21:40:31 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[ERROR] 06-10-2017 21:40:32 pl.edu.mimuw.weather.AppMain lambda$setupExceptionHandler$1 - Uncaught exception in thread 'JavaFX Application Thread'
+rx.exceptions.OnErrorNotImplementedException: For input string: ""
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:386)
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:383)
+	at rx.internal.util.ActionSubscriber.onError(ActionSubscriber.java:44)
+	at rx.observers.SafeSubscriber._onError(SafeSubscriber.java:153)
+	at rx.observers.SafeSubscriber.onError(SafeSubscriber.java:115)
+	at rx.exceptions.Exceptions.throwOrReport(Exceptions.java:216)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:139)
+	at rx.internal.operators.OperatorSubscribeOn$1$1.onNext(OperatorSubscribeOn.java:53)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8413)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at pl.edu.mimuw.weather.AppMain$SettingsDialogController.lambda$initialize$1(AppMain.java:109)
+	at rx.internal.util.ActionSubscriber.onNext(ActionSubscriber.java:39)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:134)
+	... 61 more
+[INFO ] 06-10-2017 21:40:33 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:40:35 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 21:40:45 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 21:40:53 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:40:54 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:40:57 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:40:59 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:41:01 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 21:41:01 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/02n.png'}
+[INFO ] 06-10-2017 21:41:01 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=3.6, humidity=82.0, pressure=1018.0, cloudiness=20.0}
+[INFO ] 06-10-2017 21:41:05 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:41:08 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/02n.png'}
+[INFO ] 06-10-2017 21:41:09 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.8, windDirection=315.0, windForce=4.3, humidity=85.0, pressure=1005.8, cloudiness=NaN}
+[INFO ] 06-10-2017 21:41:11 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:41:17 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:41:18 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:41:29 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:41:31 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:41:33 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/02n.png'}
+[INFO ] 06-10-2017 21:41:33 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=3.6, humidity=82.0, pressure=1018.0, cloudiness=20.0}
+[INFO ] 06-10-2017 21:41:35 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 21:41:36 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:41:42 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 21:41:42 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.8, windDirection=270.0, windForce=5.0, humidity=84.9, pressure=1005.8, cloudiness=NaN}
+[INFO ] 06-10-2017 21:41:45 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:41:54 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 21:41:54 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.8, windDirection=315.0, windForce=4.4, humidity=84.9, pressure=1005.8, cloudiness=NaN}
+[INFO ] 06-10-2017 21:41:57 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:42:06 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 21:42:06 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.8, windDirection=315.0, windForce=4.5, humidity=84.9, pressure=1005.8, cloudiness=NaN}
+[INFO ] 06-10-2017 21:42:09 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:42:18 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 21:42:18 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.8, windDirection=315.0, windForce=4.4, humidity=84.9, pressure=1005.8, cloudiness=NaN}
+[INFO ] 06-10-2017 21:42:21 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:42:30 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 21:42:30 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.8, windDirection=315.0, windForce=4.9, humidity=85.0, pressure=1005.8, cloudiness=NaN}
+[INFO ] 06-10-2017 21:42:33 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:42:42 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 21:42:42 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.8, windDirection=315.0, windForce=4.2, humidity=85.0, pressure=1005.8, cloudiness=NaN}
+[INFO ] 06-10-2017 21:42:43 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:42:44 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:44:36 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:44:38 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:44:40 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 21:44:40 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 21:44:41 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[ERROR] 06-10-2017 21:44:41 pl.edu.mimuw.weather.AppMain createDialog - javafx.fxml.LoadException: 
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml:21
+
+[ERROR] 06-10-2017 21:44:41 pl.edu.mimuw.weather.AppMain lambda$setupExceptionHandler$1 - Uncaught exception in thread 'JavaFX Application Thread'
+rx.exceptions.OnErrorNotImplementedException: javafx.fxml.LoadException: 
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml:21
+
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:386)
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:383)
+	at rx.internal.util.ActionSubscriber.onError(ActionSubscriber.java:44)
+	at rx.observers.SafeSubscriber._onError(SafeSubscriber.java:153)
+	at rx.observers.SafeSubscriber.onError(SafeSubscriber.java:115)
+	at rx.exceptions.Exceptions.throwOrReport(Exceptions.java:216)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:139)
+	at rx.internal.operators.OperatorCast$CastSubscriber.onNext(OperatorCast.java:69)
+	at rx.internal.operators.OnSubscribeFilter$FilterSubscriber.onNext(OnSubscribeFilter.java:76)
+	at rx.subjects.PublishSubject$PublishSubjectProducer.onNext(PublishSubject.java:304)
+	at rx.subjects.PublishSubject$PublishSubjectState.onNext(PublishSubject.java:219)
+	at rx.subjects.PublishSubject.onNext(PublishSubject.java:72)
+	at rx.observers.SerializedObserver.onNext(SerializedObserver.java:91)
+	at rx.subjects.SerializedSubject.onNext(SerializedSubject.java:67)
+	at rx.internal.util.ObserverSubscriber.onNext(ObserverSubscriber.java:34)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:134)
+	at rx.internal.operators.OnSubscribeMap$MapSubscriber.onNext(OnSubscribeMap.java:77)
+	at rx.internal.operators.OperatorSubscribeOn$1$1.onNext(OperatorSubscribeOn.java:53)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8413)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: javafx.fxml.LoadException: 
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml:21
+
+	at pl.edu.mimuw.weather.AppMain.createDialog(AppMain.java:223)
+	at pl.edu.mimuw.weather.AppMain.onSettingsRequested(AppMain.java:206)
+	at pl.edu.mimuw.weather.AppMain.lambda$setupEventHandler$0(AppMain.java:242)
+	at rx.internal.util.ActionSubscriber.onNext(ActionSubscriber.java:39)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:134)
+	... 63 more
+Caused by: javafx.fxml.LoadException: 
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml:21
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2579)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+	at pl.edu.mimuw.weather.AppMain.createDialog(AppMain.java:220)
+	... 67 more
+Caused by: java.lang.IllegalArgumentException: Can not set com.jfoenix.controls.JFXTextField field pl.edu.mimuw.weather.AppMain$SettingsDialogController.intervalField to javafx.scene.control.TextField
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:167)
+	at sun.reflect.UnsafeFieldAccessorImpl.throwSetIllegalArgumentException(UnsafeFieldAccessorImpl.java:171)
+	at sun.reflect.UnsafeObjectFieldAccessorImpl.set(UnsafeObjectFieldAccessorImpl.java:81)
+	at java.lang.reflect.Field.set(Field.java:764)
+	at javafx.fxml.FXMLLoader.injectFields(FXMLLoader.java:1163)
+	at javafx.fxml.FXMLLoader.access$1600(FXMLLoader.java:103)
+	at javafx.fxml.FXMLLoader$ValueElement.processValue(FXMLLoader.java:857)
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:751)
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2707)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2527)
+	... 70 more
+[INFO ] 06-10-2017 21:44:50 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:44:51 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:45:23 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:45:25 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:45:27 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 21:45:28 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 21:45:28 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 21:45:31 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:45:34 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:45:35 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:47:43 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:47:45 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:47:47 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 21:47:47 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 21:47:49 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:47:52 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:47:53 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:50:25 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:50:27 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:50:29 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 21:50:29 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 21:50:32 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:50:33 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[ERROR] 06-10-2017 21:50:33 pl.edu.mimuw.weather.AppMain createDialog - javafx.fxml.LoadException: Controller value already specified.
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml:10
+
+[ERROR] 06-10-2017 21:50:33 pl.edu.mimuw.weather.AppMain lambda$setupExceptionHandler$1 - Uncaught exception in thread 'JavaFX Application Thread'
+rx.exceptions.OnErrorNotImplementedException: javafx.fxml.LoadException: Controller value already specified.
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml:10
+
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:386)
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:383)
+	at rx.internal.util.ActionSubscriber.onError(ActionSubscriber.java:44)
+	at rx.observers.SafeSubscriber._onError(SafeSubscriber.java:153)
+	at rx.observers.SafeSubscriber.onError(SafeSubscriber.java:115)
+	at rx.exceptions.Exceptions.throwOrReport(Exceptions.java:216)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:139)
+	at rx.internal.operators.OperatorCast$CastSubscriber.onNext(OperatorCast.java:69)
+	at rx.internal.operators.OnSubscribeFilter$FilterSubscriber.onNext(OnSubscribeFilter.java:76)
+	at rx.subjects.PublishSubject$PublishSubjectProducer.onNext(PublishSubject.java:304)
+	at rx.subjects.PublishSubject$PublishSubjectState.onNext(PublishSubject.java:219)
+	at rx.subjects.PublishSubject.onNext(PublishSubject.java:72)
+	at rx.observers.SerializedObserver.onNext(SerializedObserver.java:91)
+	at rx.subjects.SerializedSubject.onNext(SerializedSubject.java:67)
+	at rx.internal.util.ObserverSubscriber.onNext(ObserverSubscriber.java:34)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:134)
+	at rx.internal.operators.OnSubscribeMap$MapSubscriber.onNext(OnSubscribeMap.java:77)
+	at rx.internal.operators.OperatorSubscribeOn$1$1.onNext(OperatorSubscribeOn.java:53)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8413)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: javafx.fxml.LoadException: Controller value already specified.
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml:10
+
+	at pl.edu.mimuw.weather.AppMain.createDialog(AppMain.java:223)
+	at pl.edu.mimuw.weather.AppMain.onSettingsRequested(AppMain.java:206)
+	at pl.edu.mimuw.weather.AppMain.lambda$setupEventHandler$0(AppMain.java:242)
+	at rx.internal.util.ActionSubscriber.onNext(ActionSubscriber.java:39)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:134)
+	... 63 more
+Caused by: javafx.fxml.LoadException: Controller value already specified.
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml:10
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2597)
+	at javafx.fxml.FXMLLoader.access$100(FXMLLoader.java:103)
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:914)
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:971)
+	at javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:220)
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:744)
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2707)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2527)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+	at pl.edu.mimuw.weather.AppMain.createDialog(AppMain.java:220)
+	... 67 more
+[INFO ] 06-10-2017 21:50:36 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:50:37 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 21:54:31 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:54:33 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:54:34 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 21:54:35 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 21:54:35 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[ERROR] 06-10-2017 21:54:35 pl.edu.mimuw.weather.AppMain lambda$setupExceptionHandler$1 - Uncaught exception in thread 'JavaFX Application Thread'
+rx.exceptions.OnErrorNotImplementedException: For input string: ""
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:386)
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:383)
+	at rx.internal.util.ActionSubscriber.onError(ActionSubscriber.java:44)
+	at rx.observers.SafeSubscriber._onError(SafeSubscriber.java:153)
+	at rx.observers.SafeSubscriber.onError(SafeSubscriber.java:115)
+	at rx.exceptions.Exceptions.throwOrReport(Exceptions.java:216)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:139)
+	at rx.internal.operators.OperatorSubscribeOn$1$1.onNext(OperatorSubscribeOn.java:53)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8413)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at pl.edu.mimuw.weather.AppMain$SettingsDialogController.lambda$initialize$1(AppMain.java:109)
+	at rx.internal.util.ActionSubscriber.onNext(ActionSubscriber.java:39)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:134)
+	... 61 more
+[INFO ] 06-10-2017 21:54:38 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:57:04 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 21:57:04 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 21:57:07 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:58:18 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 21:58:20 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 21:58:22 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 21:58:22 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 21:58:24 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 21:58:25 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:58:27 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 21:58:29 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 21:58:29 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.8, windDirection=315.0, windForce=3.4, humidity=85.1, pressure=1005.8, cloudiness=NaN}
+[INFO ] 06-10-2017 21:58:32 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 21:58:36 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 21:58:36 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.8, windDirection=315.0, windForce=3.5, humidity=85.1, pressure=1005.8, cloudiness=NaN}
+[INFO ] 06-10-2017 21:58:37 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 21:58:38 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:00:39 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:00:41 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:00:43 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:00:43 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:00:43 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:00:46 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 22:01:03 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:01:04 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:01:18 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:01:20 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:01:22 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:01:22 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:01:22 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:01:25 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 22:01:27 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:01:27 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:01:50 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:01:51 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:01:54 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:01:54 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:01:54 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:01:57 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:01:58 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:02:39 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:02:41 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:02:43 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:02:43 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:02:45 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:02:46 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 22:02:54 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:02:54 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.7, windDirection=315.0, windForce=2.2, humidity=85.1, pressure=1005.9, cloudiness=NaN}
+[INFO ] 06-10-2017 22:02:56 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 22:03:19 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:03:20 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[ERROR] 06-10-2017 22:03:20 pl.edu.mimuw.weather.AppMain lambda$setupExceptionHandler$1 - Uncaught exception in thread 'Thread-2'
+java.lang.IncompatibleClassChangeError
+[INFO ] 06-10-2017 22:05:41 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:05:43 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:05:44 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[ERROR] 06-10-2017 22:05:44 pl.edu.mimuw.weather.AppMain createDialog - javafx.fxml.LoadException: 
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml:29
+
+[ERROR] 06-10-2017 22:05:44 pl.edu.mimuw.weather.AppMain lambda$setupExceptionHandler$1 - Uncaught exception in thread 'JavaFX Application Thread'
+rx.exceptions.OnErrorNotImplementedException: javafx.fxml.LoadException: 
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml:29
+
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:386)
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:383)
+	at rx.internal.util.ActionSubscriber.onError(ActionSubscriber.java:44)
+	at rx.observers.SafeSubscriber._onError(SafeSubscriber.java:153)
+	at rx.observers.SafeSubscriber.onError(SafeSubscriber.java:115)
+	at rx.exceptions.Exceptions.throwOrReport(Exceptions.java:216)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:139)
+	at rx.internal.operators.OperatorCast$CastSubscriber.onNext(OperatorCast.java:69)
+	at rx.internal.operators.OnSubscribeFilter$FilterSubscriber.onNext(OnSubscribeFilter.java:76)
+	at rx.subjects.PublishSubject$PublishSubjectProducer.onNext(PublishSubject.java:304)
+	at rx.subjects.PublishSubject$PublishSubjectState.onNext(PublishSubject.java:219)
+	at rx.subjects.PublishSubject.onNext(PublishSubject.java:72)
+	at rx.observers.SerializedObserver.onNext(SerializedObserver.java:91)
+	at rx.subjects.SerializedSubject.onNext(SerializedSubject.java:67)
+	at rx.internal.util.ObserverSubscriber.onNext(ObserverSubscriber.java:34)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:134)
+	at rx.internal.operators.OnSubscribeMap$MapSubscriber.onNext(OnSubscribeMap.java:77)
+	at rx.internal.operators.OperatorSubscribeOn$1$1.onNext(OperatorSubscribeOn.java:53)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8413)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: javafx.fxml.LoadException: 
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml:29
+
+	at pl.edu.mimuw.weather.AppMain.createDialog(AppMain.java:221)
+	at pl.edu.mimuw.weather.AppMain.onSettingsRequested(AppMain.java:204)
+	at pl.edu.mimuw.weather.AppMain.lambda$setupEventHandler$0(AppMain.java:240)
+	at rx.internal.util.ActionSubscriber.onNext(ActionSubscriber.java:39)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:134)
+	... 63 more
+Caused by: javafx.fxml.LoadException: 
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml:29
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2543)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+	at pl.edu.mimuw.weather.AppMain.createDialog(AppMain.java:218)
+	... 67 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[29,17]
+Message: The value of attribute "groupName" associated with an element type "JFXRadioButton" must not contain the '<' character.
+	at com.sun.org.apache.xerces.internal.impl.XMLStreamReaderImpl.next(XMLStreamReaderImpl.java:596)
+	at javax.xml.stream.util.StreamReaderDelegate.next(StreamReaderDelegate.java:88)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2513)
+	... 70 more
+[INFO ] 06-10-2017 22:05:47 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:05:49 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:05:56 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:05:59 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:06:01 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:06:02 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:06:02 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:06:04 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:06:04 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:06:05 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 22:06:06 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:06:06 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:06:09 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 22:06:09 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:06:10 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:06:15 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:06:16 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:06:28 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:06:30 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:06:32 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:06:32 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:06:34 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 22:06:35 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:06:40 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:06:41 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:06:50 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:06:52 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:06:54 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:06:54 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:06:57 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:06:58 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 22:09:24 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:09:24 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:09:26 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 22:10:03 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:10:05 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:10:07 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:10:08 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:10:09 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:10:10 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 22:10:19 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:10:20 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:10:37 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:10:39 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:10:40 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:10:42 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:10:42 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:10:44 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 22:10:48 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:10:48 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:11:24 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:11:26 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:11:28 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:11:29 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:11:29 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:11:32 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 22:11:37 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:11:38 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:11:51 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:11:53 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:11:55 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:11:55 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:11:56 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:11:57 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 22:11:58 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:11:59 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:12:25 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:12:28 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:12:29 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:12:30 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:12:30 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=290.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:12:33 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=15.551, pm100=24.91568}
+[INFO ] 06-10-2017 22:12:34 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:12:35 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:28:04 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:28:06 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:28:08 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:28:09 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:28:09 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:28:11 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:28:14 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:28:15 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:28:29 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:28:31 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:28:33 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:28:33 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:28:35 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:28:36 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:28:43 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:28:44 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:29:27 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:29:29 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:29:31 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[ERROR] 06-10-2017 22:29:31 pl.edu.mimuw.weather.AppMain createDialog - javafx.fxml.LoadException: 
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml
+
+[ERROR] 06-10-2017 22:29:31 pl.edu.mimuw.weather.AppMain lambda$setupExceptionHandler$1 - Uncaught exception in thread 'JavaFX Application Thread'
+rx.exceptions.OnErrorNotImplementedException: javafx.fxml.LoadException: 
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml
+
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:386)
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:383)
+	at rx.internal.util.ActionSubscriber.onError(ActionSubscriber.java:44)
+	at rx.observers.SafeSubscriber._onError(SafeSubscriber.java:153)
+	at rx.observers.SafeSubscriber.onError(SafeSubscriber.java:115)
+	at rx.exceptions.Exceptions.throwOrReport(Exceptions.java:216)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:139)
+	at rx.internal.operators.OperatorCast$CastSubscriber.onNext(OperatorCast.java:69)
+	at rx.internal.operators.OnSubscribeFilter$FilterSubscriber.onNext(OnSubscribeFilter.java:76)
+	at rx.subjects.PublishSubject$PublishSubjectProducer.onNext(PublishSubject.java:304)
+	at rx.subjects.PublishSubject$PublishSubjectState.onNext(PublishSubject.java:219)
+	at rx.subjects.PublishSubject.onNext(PublishSubject.java:72)
+	at rx.observers.SerializedObserver.onNext(SerializedObserver.java:91)
+	at rx.subjects.SerializedSubject.onNext(SerializedSubject.java:67)
+	at rx.internal.util.ObserverSubscriber.onNext(ObserverSubscriber.java:34)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:134)
+	at rx.internal.operators.OnSubscribeMap$MapSubscriber.onNext(OnSubscribeMap.java:77)
+	at rx.internal.operators.OperatorSubscribeOn$1$1.onNext(OperatorSubscribeOn.java:53)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8413)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: javafx.fxml.LoadException: 
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml
+
+	at pl.edu.mimuw.weather.AppMain.createDialog(AppMain.java:239)
+	at pl.edu.mimuw.weather.AppMain.onSettingsRequested(AppMain.java:222)
+	at pl.edu.mimuw.weather.AppMain.lambda$setupEventHandler$0(AppMain.java:258)
+	at rx.internal.util.ActionSubscriber.onNext(ActionSubscriber.java:39)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:134)
+	... 63 more
+Caused by: javafx.fxml.LoadException: 
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2571)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+	at pl.edu.mimuw.weather.AppMain.createDialog(AppMain.java:236)
+	... 67 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2566)
+	... 70 more
+Caused by: java.lang.NullPointerException
+	at pl.edu.mimuw.weather.AppMain$SettingsDialogController.initialize(AppMain.java:119)
+	... 80 more
+[INFO ] 06-10-2017 22:29:52 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:29:53 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:30:13 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:30:15 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:30:16 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:30:17 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:30:17 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:30:18 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:30:20 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:30:21 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:30:23 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:30:23 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:31:09 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:31:11 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:31:12 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[ERROR] 06-10-2017 22:31:12 pl.edu.mimuw.weather.AppMain createDialog - javafx.fxml.LoadException: 
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml
+
+[ERROR] 06-10-2017 22:31:12 pl.edu.mimuw.weather.AppMain lambda$setupExceptionHandler$1 - Uncaught exception in thread 'JavaFX Application Thread'
+rx.exceptions.OnErrorNotImplementedException: javafx.fxml.LoadException: 
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml
+
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:386)
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:383)
+	at rx.internal.util.ActionSubscriber.onError(ActionSubscriber.java:44)
+	at rx.observers.SafeSubscriber._onError(SafeSubscriber.java:153)
+	at rx.observers.SafeSubscriber.onError(SafeSubscriber.java:115)
+	at rx.exceptions.Exceptions.throwOrReport(Exceptions.java:216)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:139)
+	at rx.internal.operators.OperatorCast$CastSubscriber.onNext(OperatorCast.java:69)
+	at rx.internal.operators.OnSubscribeFilter$FilterSubscriber.onNext(OnSubscribeFilter.java:76)
+	at rx.subjects.PublishSubject$PublishSubjectProducer.onNext(PublishSubject.java:304)
+	at rx.subjects.PublishSubject$PublishSubjectState.onNext(PublishSubject.java:219)
+	at rx.subjects.PublishSubject.onNext(PublishSubject.java:72)
+	at rx.observers.SerializedObserver.onNext(SerializedObserver.java:91)
+	at rx.subjects.SerializedSubject.onNext(SerializedSubject.java:67)
+	at rx.internal.util.ObserverSubscriber.onNext(ObserverSubscriber.java:34)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:134)
+	at rx.internal.operators.OnSubscribeMap$MapSubscriber.onNext(OnSubscribeMap.java:77)
+	at rx.internal.operators.OperatorSubscribeOn$1$1.onNext(OperatorSubscribeOn.java:53)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8413)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: javafx.fxml.LoadException: 
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml
+
+	at pl.edu.mimuw.weather.AppMain.createDialog(AppMain.java:239)
+	at pl.edu.mimuw.weather.AppMain.onSettingsRequested(AppMain.java:222)
+	at pl.edu.mimuw.weather.AppMain.lambda$setupEventHandler$0(AppMain.java:258)
+	at rx.internal.util.ActionSubscriber.onNext(ActionSubscriber.java:39)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:134)
+	... 63 more
+Caused by: javafx.fxml.LoadException: 
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2571)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+	at pl.edu.mimuw.weather.AppMain.createDialog(AppMain.java:236)
+	... 67 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2566)
+	... 70 more
+Caused by: java.lang.NullPointerException
+	at pl.edu.mimuw.weather.AppMain$SettingsDialogController.initialize(AppMain.java:119)
+	... 80 more
+[INFO ] 06-10-2017 22:31:14 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:31:14 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:31:21 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:31:22 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:31:23 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[ERROR] 06-10-2017 22:31:23 pl.edu.mimuw.weather.AppMain createDialog - javafx.fxml.LoadException: 
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml
+
+[ERROR] 06-10-2017 22:31:23 pl.edu.mimuw.weather.AppMain lambda$setupExceptionHandler$1 - Uncaught exception in thread 'JavaFX Application Thread'
+rx.exceptions.OnErrorNotImplementedException: javafx.fxml.LoadException: 
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml
+
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:386)
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:383)
+	at rx.internal.util.ActionSubscriber.onError(ActionSubscriber.java:44)
+	at rx.observers.SafeSubscriber._onError(SafeSubscriber.java:153)
+	at rx.observers.SafeSubscriber.onError(SafeSubscriber.java:115)
+	at rx.exceptions.Exceptions.throwOrReport(Exceptions.java:216)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:139)
+	at rx.internal.operators.OperatorCast$CastSubscriber.onNext(OperatorCast.java:69)
+	at rx.internal.operators.OnSubscribeFilter$FilterSubscriber.onNext(OnSubscribeFilter.java:76)
+	at rx.subjects.PublishSubject$PublishSubjectProducer.onNext(PublishSubject.java:304)
+	at rx.subjects.PublishSubject$PublishSubjectState.onNext(PublishSubject.java:219)
+	at rx.subjects.PublishSubject.onNext(PublishSubject.java:72)
+	at rx.observers.SerializedObserver.onNext(SerializedObserver.java:91)
+	at rx.subjects.SerializedSubject.onNext(SerializedSubject.java:67)
+	at rx.internal.util.ObserverSubscriber.onNext(ObserverSubscriber.java:34)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:134)
+	at rx.internal.operators.OnSubscribeMap$MapSubscriber.onNext(OnSubscribeMap.java:77)
+	at rx.internal.operators.OperatorSubscribeOn$1$1.onNext(OperatorSubscribeOn.java:53)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8413)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: javafx.fxml.LoadException: 
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml
+
+	at pl.edu.mimuw.weather.AppMain.createDialog(AppMain.java:237)
+	at pl.edu.mimuw.weather.AppMain.onSettingsRequested(AppMain.java:220)
+	at pl.edu.mimuw.weather.AppMain.lambda$setupEventHandler$0(AppMain.java:256)
+	at rx.internal.util.ActionSubscriber.onNext(ActionSubscriber.java:39)
+	at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:134)
+	... 63 more
+Caused by: javafx.fxml.LoadException: 
+/C:/Users/Micha%c5%82/Google%20Drive/VirtualBoxShared/PO/XchangeApp/target/classes/fxml/settings-dialog.fxml
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2571)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+	at pl.edu.mimuw.weather.AppMain.createDialog(AppMain.java:234)
+	... 67 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2566)
+	... 70 more
+Caused by: java.lang.NullPointerException
+	at pl.edu.mimuw.weather.AppMain$SettingsDialogController.initialize(AppMain.java:118)
+	... 80 more
+[INFO ] 06-10-2017 22:32:03 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:32:05 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:32:06 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:32:07 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:32:07 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:32:10 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:32:10 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:32:11 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:32:39 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:32:41 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:32:43 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:32:44 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:32:44 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:32:46 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:32:53 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:32:54 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:32:54 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.3, windDirection=315.0, windForce=1.9, humidity=86.5, pressure=1006.1, cloudiness=NaN}
+[INFO ] 06-10-2017 22:32:55 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:33:05 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:33:07 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:33:09 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:33:10 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:33:10 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:33:12 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:33:16 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:33:17 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:33:24 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:33:27 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:33:28 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:33:29 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:33:29 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:33:31 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:33:31 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:33:32 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:33:39 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:33:41 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:33:43 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:33:43 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:33:43 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:33:46 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:34:00 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:34:00 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:34:09 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:34:11 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:34:13 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:34:13 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:34:16 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:34:16 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:34:24 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:34:25 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:36:54 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:37:02 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:37:04 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:37:06 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1018.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:37:06 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:37:07 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:37:09 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:37:19 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:37:19 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.3, windDirection=315.0, windForce=3.7, humidity=86.6, pressure=1006.1, cloudiness=NaN}
+[INFO ] 06-10-2017 22:37:20 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:37:22 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:37:33 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:42:24 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:42:26 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:42:28 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:42:29 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1019.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:42:29 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:42:31 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:42:36 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:42:36 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1019.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:42:39 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:42:48 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:42:53 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:42:53 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.2, windDirection=315.0, windForce=3.9, humidity=86.7, pressure=1006.1, cloudiness=NaN}
+[INFO ] 06-10-2017 22:42:56 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:43:00 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:43:01 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:43:20 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:43:22 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:43:24 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:43:24 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1019.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:43:27 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:43:29 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:43:38 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:43:38 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.2, windDirection=315.0, windForce=4.2, humidity=86.7, pressure=1006.2, cloudiness=NaN}
+[INFO ] 06-10-2017 22:43:41 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:43:42 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:43:42 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.2, windDirection=315.0, windForce=4.8, humidity=86.7, pressure=1006.2, cloudiness=NaN}
+[INFO ] 06-10-2017 22:43:45 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:43:46 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:43:46 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.2, windDirection=315.0, windForce=5.1, humidity=86.7, pressure=1006.2, cloudiness=NaN}
+[INFO ] 06-10-2017 22:43:49 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:43:50 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:43:50 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.2, windDirection=315.0, windForce=4.8, humidity=86.7, pressure=1006.2, cloudiness=NaN}
+[INFO ] 06-10-2017 22:43:51 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:43:53 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:43:54 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:43:54 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:43:54 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.2, windDirection=315.0, windForce=4.7, humidity=86.7, pressure=1006.2, cloudiness=NaN}
+[INFO ] 06-10-2017 22:43:55 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:44:07 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:44:09 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:44:11 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:44:12 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1019.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:44:12 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:44:14 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:44:16 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:44:18 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1019.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:44:18 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:44:20 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:44:21 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:44:21 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:48:00 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:48:02 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:48:04 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1019.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:48:04 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:48:06 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:48:29 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:48:35 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:48:35 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.2, windDirection=315.0, windForce=3.4, humidity=86.9, pressure=1006.2, cloudiness=NaN}
+[INFO ] 06-10-2017 22:48:37 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:48:40 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:48:41 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:48:57 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:48:59 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:49:01 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:49:01 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1019.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:49:04 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:49:09 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:49:10 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:49:25 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:49:27 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:49:29 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:49:29 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1019.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:49:32 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:49:39 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:49:43 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:49:44 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:53:05 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:53:07 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:53:09 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1019.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:53:09 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:53:10 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 22:53:12 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:53:12 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:53:13 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 22:58:03 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 22:58:05 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 22:58:07 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1019.0, cloudiness=75.0}
+[INFO ] 06-10-2017 22:58:07 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 22:58:09 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 22:58:09 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 22:58:10 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 23:01:44 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 23:01:46 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 23:01:48 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1019.0, cloudiness=75.0}
+[INFO ] 06-10-2017 23:01:48 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 23:01:51 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 23:01:52 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 23:01:57 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 23:01:57 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.2, windDirection=315.0, windForce=4.1, humidity=86.8, pressure=1006.2, cloudiness=NaN}
+[INFO ] 06-10-2017 23:02:00 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 23:02:00 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 23:02:01 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 23:05:33 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 23:05:35 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 23:05:37 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 23:05:37 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1019.0, cloudiness=75.0}
+[INFO ] 06-10-2017 23:05:39 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.4026, pm100=21.4496}
+[INFO ] 06-10-2017 23:05:40 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 23:05:40 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 23:10:51 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 23:10:53 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 23:10:55 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=17.0, windDirection=300.0, windForce=4.1, humidity=77.0, pressure=1019.0, cloudiness=75.0}
+[INFO ] 06-10-2017 23:10:55 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/04n.png'}
+[INFO ] 06-10-2017 23:10:55 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 23:10:56 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-10-2017 23:26:05 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-10-2017 23:26:13 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-10-2017 23:26:14 pl.edu.mimuw.weather.AppMain onNext - WeatherIconUpdateEvent{iconUrl='http://openweathermap.org/img/w/03n.png'}
+[INFO ] 06-10-2017 23:26:14 pl.edu.mimuw.weather.AppMain onNext - WeatherPropertiesUpdateEvent{temperature=16.0, windDirection=300.0, windForce=3.6, humidity=82.0, pressure=1019.0, cloudiness=40.0}
+[INFO ] 06-10-2017 23:26:17 pl.edu.mimuw.weather.AppMain onNext - WeatherAirQualityUpdateEvent{pm025=14.51744, pm100=21.57488}
+[INFO ] 06-10-2017 23:26:19 pl.edu.mimuw.weather.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-10-2017 23:26:21 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-10-2017 23:26:22 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...

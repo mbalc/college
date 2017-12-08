@@ -1,0 +1,134 @@
+[INFO ] 06-07-2017 21:59:55 pl.edu.mimuw.xchange.AppMain start - Starting Xchange application...
+[INFO ] 06-07-2017 22:00:04 pl.edu.mimuw.xchange.AppMain start - Application's up and running!
+[INFO ] 06-07-2017 22:00:06 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.9143097, ask=3.759)
+[INFO ] 06-07-2017 22:00:06 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=3.960526, ask=4.2356)
+[INFO ] 06-07-2017 22:00:06 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 22:00:06 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10514.0)
+[INFO ] 06-07-2017 22:00:15 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=4.1311636, ask=3.759)
+[INFO ] 06-07-2017 22:00:15 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 22:00:15 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.0766954, ask=4.2356)
+[INFO ] 06-07-2017 22:00:15 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10514.0)
+[INFO ] 06-07-2017 22:00:21 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=3.805962, ask=4.2356)
+[INFO ] 06-07-2017 22:00:21 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=4.143227, ask=3.759)
+[INFO ] 06-07-2017 22:00:21 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 22:00:22 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10514.0)
+[INFO ] 06-07-2017 22:00:25 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.4498234, ask=3.759)
+[INFO ] 06-07-2017 22:00:25 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=3.8520274, ask=4.2356)
+[INFO ] 06-07-2017 22:00:25 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 22:00:26 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10514.0)
+[INFO ] 06-07-2017 22:00:26 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.457114, ask=4.2356)
+[INFO ] 06-07-2017 22:00:26 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 22:00:26 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.4938312, ask=3.759)
+[INFO ] 06-07-2017 22:00:26 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10514.0)
+[INFO ] 06-07-2017 22:00:26 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.2306726, ask=3.759)
+[INFO ] 06-07-2017 22:00:26 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=3.8533044, ask=4.2356)
+[INFO ] 06-07-2017 22:00:26 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 22:00:27 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10514.0)
+[INFO ] 06-07-2017 22:00:27 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.9358747, ask=3.759)
+[INFO ] 06-07-2017 22:00:27 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.4834385, ask=4.2356)
+[INFO ] 06-07-2017 22:00:27 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 22:00:27 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10514.0)
+[INFO ] 06-07-2017 22:00:30 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.355747, ask=3.759)
+[INFO ] 06-07-2017 22:00:30 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.4367523, ask=4.2356)
+[INFO ] 06-07-2017 22:00:30 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 22:00:30 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10514.0)
+[INFO ] 06-07-2017 22:00:33 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.3732343, ask=3.759)
+[INFO ] 06-07-2017 22:00:33 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 22:00:33 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.126196, ask=4.2356)
+[INFO ] 06-07-2017 22:00:33 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10514.0)
+[INFO ] 06-07-2017 22:00:35 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.041464, ask=4.2356)
+[INFO ] 06-07-2017 22:00:35 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=4.1433167, ask=3.759)
+[INFO ] 06-07-2017 22:00:35 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 22:00:35 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10514.0)
+[INFO ] 06-07-2017 22:00:36 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.47701, ask=3.759)
+[INFO ] 06-07-2017 22:00:36 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.2287817, ask=4.2356)
+[INFO ] 06-07-2017 22:00:36 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 22:00:36 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10514.0)
+[INFO ] 06-07-2017 22:00:36 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.963092, ask=3.759)
+[INFO ] 06-07-2017 22:00:36 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=3.7255404, ask=4.2356)
+[INFO ] 06-07-2017 22:00:36 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 22:00:37 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10514.0)
+[INFO ] 06-07-2017 22:00:37 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.155266, ask=4.2356)
+[INFO ] 06-07-2017 22:00:37 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 22:00:37 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.8418531, ask=3.759)
+[INFO ] 06-07-2017 22:00:37 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10514.0)
+[INFO ] 06-07-2017 22:00:38 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.2347908, ask=3.759)
+[INFO ] 06-07-2017 22:00:38 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.6127405, ask=4.2356)
+[INFO ] 06-07-2017 22:00:38 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 22:00:39 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10514.0)
+[INFO ] 06-07-2017 22:00:39 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.121486, ask=4.2356)
+[INFO ] 06-07-2017 22:00:39 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 22:00:39 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.6385312, ask=3.759)
+[INFO ] 06-07-2017 22:00:39 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10514.0)
+[INFO ] 06-07-2017 22:00:39 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.8864307, ask=3.759)
+[INFO ] 06-07-2017 22:00:39 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 22:00:39 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.175942, ask=4.2356)
+[INFO ] 06-07-2017 22:00:40 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10514.0)
+[INFO ] 06-07-2017 22:00:40 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=3.812695, ask=4.2356)
+[INFO ] 06-07-2017 22:00:40 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=4.179435, ask=3.759)
+[INFO ] 06-07-2017 22:00:40 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[ERROR] 06-07-2017 22:00:40 pl.edu.mimuw.xchange.network.RateDataSource onError - java.lang.RuntimeException: pl.edu.mimuw.xchange.network.BitcoinRateDataSource$BitcoinRateNotFoundException
+[INFO ] 06-07-2017 22:00:40 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 22:00:40 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.602079, ask=4.2356)
+[INFO ] 06-07-2017 22:00:40 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.311691, ask=3.759)
+[INFO ] 06-07-2017 22:00:41 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10514.0)
+[INFO ] 06-07-2017 22:00:41 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 22:00:41 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=4.1345654, ask=3.759)
+[INFO ] 06-07-2017 22:00:41 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.2217975, ask=4.2356)
+[INFO ] 06-07-2017 22:00:42 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10514.0)
+[INFO ] 06-07-2017 22:00:42 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.6136823, ask=4.2356)
+[INFO ] 06-07-2017 22:00:42 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 22:00:42 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.4743924, ask=3.759)
+[INFO ] 06-07-2017 22:00:43 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10514.0)
+[INFO ] 06-07-2017 22:00:50 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.3455853, ask=4.2356)
+[INFO ] 06-07-2017 22:00:50 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.5005236, ask=3.759)
+[INFO ] 06-07-2017 22:00:50 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 22:00:50 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10514.0)
+[INFO ] 06-07-2017 22:00:52 pl.edu.mimuw.xchange.AppMain onSettingsRequested - onSettingsRequested
+[INFO ] 06-07-2017 22:00:57 pl.edu.mimuw.xchange.AppMain onClose - onClose
+[INFO ] 06-07-2017 22:00:58 pl.edu.mimuw.xchange.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-07-2017 22:02:19 pl.edu.mimuw.weather.AppMain start - Starting Xchange application...
+[INFO ] 06-07-2017 22:02:21 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-07-2017 22:02:36 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-07-2017 22:02:38 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-07-2017 22:03:34 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-07-2017 22:03:36 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-07-2017 22:03:49 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-07-2017 22:03:51 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-07-2017 22:04:35 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-07-2017 22:04:37 pl.edu.mimuw.weather.AppMain start - Application's up and running!
+[INFO ] 06-07-2017 22:04:41 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-07-2017 22:04:45 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-07-2017 22:04:47 pl.edu.mimuw.weather.AppMain onClose - onClose
+[INFO ] 06-07-2017 22:04:49 pl.edu.mimuw.weather.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-07-2017 22:11:08 pl.edu.mimuw.xchange.AppMain start - Starting Xchange application...
+[INFO ] 06-07-2017 22:11:11 pl.edu.mimuw.xchange.AppMain start - Application's up and running!
+[INFO ] 06-07-2017 22:11:13 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 22:11:13 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.1271763, ask=4.2356)
+[INFO ] 06-07-2017 22:11:13 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.4215608, ask=3.759)
+[INFO ] 06-07-2017 22:11:13 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10468.0)
+[INFO ] 06-07-2017 22:11:36 pl.edu.mimuw.xchange.AppMain onClose - onClose
+[INFO ] 06-07-2017 22:11:38 pl.edu.mimuw.xchange.AppMain lambda$initialize$0 - Exiting...
+[INFO ] 06-07-2017 22:24:56 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-07-2017 23:07:01 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-07-2017 23:16:54 pl.edu.mimuw.weather.AppMain start - Starting Weather application...
+[INFO ] 06-07-2017 23:19:07 pl.edu.mimuw.xchange.AppMain start - Starting Xchange application...
+[INFO ] 06-07-2017 23:19:09 pl.edu.mimuw.xchange.AppMain start - Application's up and running!
+[INFO ] 06-07-2017 23:19:14 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 23:19:14 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.2191257, ask=4.2356)
+[INFO ] 06-07-2017 23:19:14 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.2684336, ask=3.759)
+[INFO ] 06-07-2017 23:19:14 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10450.0)
+[INFO ] 06-07-2017 23:19:18 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=4.1394496, ask=3.759)
+[INFO ] 06-07-2017 23:19:18 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=3.9895868, ask=4.2356)
+[INFO ] 06-07-2017 23:19:18 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 23:19:19 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10450.0)
+[INFO ] 06-07-2017 23:19:21 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=3.8474288, ask=4.2356)
+[INFO ] 06-07-2017 23:19:21 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.9116187, ask=3.759)
+[INFO ] 06-07-2017 23:19:21 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 23:19:22 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10450.0)
+[INFO ] 06-07-2017 23:19:23 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=USD, bid=3.4679546, ask=3.759)
+[INFO ] 06-07-2017 23:19:23 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=GOLD, rate=154.92)
+[INFO ] 06-07-2017 23:19:23 pl.edu.mimuw.xchange.AppMain onNext - CurrencyRateEvent(currency=EUR, bid=4.271434, ask=4.2356)
+[INFO ] 06-07-2017 23:19:23 pl.edu.mimuw.xchange.AppMain onNext - TradeableGoodRateEvent(good=BITCOIN, rate=10450.0)
+[INFO ] 06-07-2017 23:19:25 pl.edu.mimuw.xchange.AppMain onClose - onClose
+[INFO ] 06-07-2017 23:19:26 pl.edu.mimuw.xchange.AppMain lambda$initialize$0 - Exiting...
