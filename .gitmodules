@@ -14,3 +14,6 @@
 [submodule "17_18/JNP1/zadanie4"]
 	path = 17_18/JNP1/zadanie4
 	url = git@gitlab.com:mbalc/jnp-task-4.git
+[submodule "16_17/IPP/task2"]
+	path = 16_17/IPP/task2
+	url = https://github.com/mbalc/ipp-poly.git
