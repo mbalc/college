@@ -1,0 +1,96 @@
+#ifndef NDEBUG
+#define DEBUG(string s) cerr << s
+#else
+#define DEBUG(string s) (void)
+#endif
+DEBUG(string s)
+
+
+
+make -NDEBUG asserty i związane z tym warningi o niewykorzystane zmienne do nich
+
+wszędzie dajemy
+#include <cstdlib>
+#include <iostream>
+np. w dict.h, cdict
+
+W cdict include<dict.h>
+
+Czy dict_copy powinien nadpisywać?
+
+
+
+
+Adrian plx wpierw zweryfikuj rzeczy oznaczone jako DONE i albo udziel uwag albo oznacz jako verified
+
+
+~~~~~~~~~~~~~
+
+
+[done MB] do makra dac do{if () }while(0) - trochę nie wiem jak to przełożyć na define'y takie jak mamy teraz - żeby taki strumień mieć
+  [Uwaga AK]: Porponuję: (ale nie sprawdzałem czy nie wyrzuca warningów przy kompilacji linuxowej)
+/** #ifndef NDEBUG #define DEBUG(...) print2(__VA_ARGS__) #else #define DEBUG(...) ((void)0) #endif // NDEBUG void print2(){ cerr << endl; } template<typename T, typename... R> void print2(T first, R... args){ cerr << first << " "; print2(args...); } **/
+  [uwaga MB]: kk zaraz to sprawdzę
+  [uwaga MB]: trochę rozbudowałem, działa, jest super, trochę mniej miejsca zajmuje toto
+  [nowe buummpp MB]: plx veryfi
+
+
+[VERIFIED] dict_new() ochorna long inta przed przepelnieniem zamiast
+  [Uwaga AK]: nie wiem czy to jest gdzieś w specyfikacji, że zmienne statyczne domyślnie są wartości zrzutowanego NULL'a ale można by je inicjować ręcznie
+  [Uwaga AK]: nie wiem jaką wartość powinna zwracać ta funkcja gdy przekroczyliśmy zakres long inta
+  [Uwaga AK]: tak jak jest teraz to tworzymy ULONG_MAX słowników, ale największy indeks, który przyporządkowaliśmy słownikowi
+          to ULONG_MAX-1 więc można tam teoretycznie dodać bool'a na którym zaznaczymy że nie chcemy już tworzyc więcej słowników.
+  [uwaga MB]: nom, myślę że najlepiej byłoby tam dać boola overflow, który damy na true jeśli właśnie licznik nam przeskoczył
+  [uwaga MB]: alternatywnie, nie jestem pewien ale chyba pozwalają w końcu na forum robić tak żeby używać starych id jeśli się poprzepełniało, można ewentualnie zostawić jak było, zdecyduj
+  [nowe bump MB]: vyriefi, zrobiłem wersję 'dla chętnych'
+
+[DONE MB PATCHED (we called dictionaries.count(NULL) and that threw some kind of error)]
+        - zdebugować program - test ./nulls w styczynowej sprawdzarce wywala
+                 terminate called after throwing an instance of 'std::logic_error'
+                   what():  basic_string::_M_construct null not valid
+
+[DONE MB] zapobiec warningom przy kompilacji -DNDEBUG (unused functions declared)
+  [uwaga MB]: nie za bardzo mam na to jakiś sensowny pomysł, jedynie wrzucenie tego pod ifdefa, ale tak chyba nie chcemy
+  [nowa uwaga MB]: udało się, działa gdy dałem w tych debugowych funkcjach "inline"; virefiey pxl
+
+[done mb] - sprawdzić konwencję - brak nested ifs, wszelkie domyślne 'rozwiązania' funkcji na końcu, a 'wyjątki' na początku
+
+[DONE MB] - poczyścić komentarze, ujednolicić puste linie
+
+[done MB - najwyraźniej działa] nie jestem pewien, skoro cdict robi #include "dict.h", to czy potrzeba tam zostawiać #include<iostream>
+  - do sprawdzenia, czy działa bez tych include'ów
+
+[± done ale nie wiem mb] przejrzeć kod i dodać wszelkie potrzebne komentarze
+
+czyli rozumiem że teraz nie śledzisz moich zmian
+piszę piszęeęeeęeeeeee lallalogogawl
+> hej
+> sokoły
+> i wgl
+
+
+
+[done] wrzuta na SVN
+
+
+~~~~~~~~~~~
+
+[VERIFIED] - inkludowac w naszych plikach tak żeby były namespace zasze do używania beż różnicy czy ktoś zainkludował dict.h czy cdict
+
+[VERIFIED] - zastosować wszędzie gdzie trzeba nasz typ identifier_t (ujednolicenie)
+
+[VERIFIED] pozbyc sie tych łatwych assertów
+  [Uwaga AK]: proponuję się ich serio pozbyć, bez używania tej mojej kupa funkcji którą starałem się napisać
+  [bump mb]: zrobione
+
+[VERIFIED] dict_collection_t dac anonimowy namespace
+    [Uwaga AK]: Ja bym wrzucił do namespaca też te typy identifier_t, dictionary_t, dict_collection_t
+    [nowa uwaga MB]: racja, poprawione, proszę o approve
+
+[VERIFIED] - pozwolić na dict_insert na pełnym słowniku globalnym, jeśli insertujemy już istniejący klucz
+
+[VERIFIED] zaimplementować dict_copy dla globalnego
+[Uwaga AK]: zrobiłem tą wersję dla leniwych w której wpycha do globalnego tyle ile może, ale jest tam porównanie size_t < unsigned long int. Czy wystarczy tego longa zrzutować na size_t?
+[uwaga MB]: a może zróbmy jednak to sprawdzanie? zaraz zapewnię funkcję get_common_size(), która zwróci liczbę wspólnych elementów
+[nowa uwaga MB]: napisałem powyższą funkcję
+[nowe bump MB]: przerobiłem na zachłanne sprawdzanie, plx veryfei

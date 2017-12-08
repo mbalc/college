@@ -2,3 +2,9 @@
 	path = 17_18/bazy_danych
 	url = git@github.com:mbalc/bazydanych2017.git
 	branch = master
+[submodule "17_18/JNP1/17_18/JNP1/zadanie3"]
+	path = 17_18/JNP1/17_18/JNP1/zadanie3
+	url = git@github.com:michal-olt/jnp-zadanie3.git
+[submodule "17_18/JNP1/17_18/JNP1/zadanie4"]
+	path = 17_18/JNP1/17_18/JNP1/zadanie4
+	url = git@gitlab.com:mbalc/jnp-task-4.git

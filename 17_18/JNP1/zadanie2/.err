@@ -1,0 +1,11 @@
+DEBUG:  | Called dict_new()
+DEBUG:  | =      New dictionary set up with id=0!
+DEBUG:  | Called dict_insert(0, ("k0"), ("a"))
+DEBUG:  | Called dict_new()
+DEBUG:  | =      New dictionary set up with id=1!
+DEBUG:  | I      Initiating The Global Dictionary with id=1!
+DEBUG:  | .      Checking DICT_0 capacity limits...
+DEBUG:  | +      DICT_0["k0"] <- "a"
+DEBUG:  | Called dict_find(0, k0)
+DEBUG:  | Called dict_delete(0)
+DEBUG:  | =      Deleting BLANKin all its glory...

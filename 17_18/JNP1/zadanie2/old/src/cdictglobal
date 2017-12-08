@@ -1,0 +1,18 @@
+#ifndef JNP1_DICTGLOBAL_HPP
+#define JNP1_DICTGLOBAL_HPP
+
+
+namespace jnp1 {
+
+extern "C" {
+
+
+unsigned long dict_global();
+
+
+} /* extern "C" */
+
+} /* namespace jnp1 */
+
+
+#endif /*JNP1_DICTGLOBAL_HPP */

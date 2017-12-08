@@ -1,0 +1,174 @@
+= Zadanie punkty =
+
+W tym roku wprowadziliśmy na tym przedmiocie punkty ujemne za wielokrotną
+współpracę z tą samą osobą. Aby lepiej zrozumieć zasady odejmowania tych punktów
+i pomóc nam je policzyć, prosimy o napisanie stosownego programu.
+
+== Wymagania funkcjonalne ==
+
+Program wywoływany jest z jednym argumentem, który jest nazwą pliku
+zawierającego identyfikatory studentów uczestniczących w zajęciach. Każdy
+identyfikator jest w osobnej linii. Poprawny identyfikator studenta składa się
+z dwóch małych liter alfabetu angielskiego i sześciu cyfr albo z dwóch małych
+liter alfabetu angielskiego litery m, łącznika i czterech cyfr.
+
+Po wczytaniu z pliku listy identyfikatorów studentów program czyta za
+standardowego wejścia opisy zespołów, które rozwiązywały poszczególne zadania.
+Każdy opis znajduje się w osobnej linii. Poprawny opis zespołu składa się ze
+słowa grupa, numeru grupy, będącego liczbą od 1 do 8, ukośnika, słowa zadanie,
+numeru zadania, będącego liczbą od 1 do 6, ukośnika, identyfikatorów studentów
+oddzielonych znakiem plus.
+
+Po przetworzeniu wszystkich opisów zespołów program wypisuje na standardowe
+wyjście listę studentów, którym należy odjąć punkty, a następnie kończy się
+z kodem 0. Każda wypisywana linia składa się z numeru indeksu studenta (sześć
+ostatnich znaków jego identyfikatora), średnika, liczby punktów do odjęcia
+i średnika. Wypisywane dane są posortowane według numerów indeksów.
+
+== Obsługa błędów ==
+
+Program musi być odporny na niezgodności danych wejściowych ze specyfikacją.
+Opisane poniżej komunikaty o błędach powinny być wypisywane na standardowe
+wyjście błędów.
+
+Jeśli program został wywołany ze złą liczbą parametrów, powinien wypisać
+komunikat
+
+Usage: PROGRAM file
+
+gdzie PROGRAM jest nazwą programu, jaką podano w linii poleceń (zerowy argument
+przekazany do funkcji main), a następnie zakończyć się z kodem 1.
+
+Jeśli program nie może otworzyć pliku o nazwie podanej jako argument lub
+wystąpił jakiś inny błąd związany z obsługą pliku, powinien wypisać komunikat
+
+Error: problem with file PLIK
+
+gdzie PLIK jest nazwą pliku (pierwszy argument przekazany do funkcji main),
+a następnie zakończyć się z kodem 1.
+
+Dla każdej czytanej z pliku linii, która nie zawiera poprawnego identyfikatora
+studenta, program powinien wypisać komunikat
+
+Error in PLIK, line N: TEKST
+
+gdzie PLIK jest nazwą pliku, N jest numerem wiersza, a TEKST to oryginalna
+postać wczytanej linii.
+
+Dla każdej czytanej z pliku linii, która zawiera poprawny składniowo
+identyfikator studenta, ale taki identyfikator już wcześniej wystąpił, program
+powinien wypisać komunikat
+
+Error in PLIK, line N: IDENTYFIKATOR
+
+gdzie PLIK jest nazwą pliku, N jest numerem wiersza, a IDENTYFIKATOR to
+powtórzony identyfikator studenta.
+
+Program wypisuje komunikaty o błędnych liniach w pliku w kolejności numerów
+linii.
+
+Dla każdej czytanej ze standardowego wejścia linii, która nie zawiera poprawnego
+opisu zespołu, program powinien wypisać komunikat
+
+Error in cin, line N: TEKST
+
+gdzie N jest numerem wiersza, a TEKST to oryginalna postać wczytanej linii.
+
+Jeśli opis zespołu jest poprawny, to mogą wystąpić dwa powody zakwestionowania
+w nim identyfikatora studenta:
+- nie pojawił się w pliku, którego nazwę podano jako argument programu,
+- występuje jego powtórzenie w tym samym zespole.
+W przypadku zakwestionowania identyfikatora studenta program powinien wypisać
+komunikat
+
+Error in cin, line 4: IDENTYFIKATOR
+
+gdzie N jest numerem wiersza, a IDENTYFIKATOR to zakwestionowany identyfikator
+studenta.
+
+Program wypisuje komunikaty o błędnych liniach ze standardowego wejścia
+w kolejności numerów linii, a komunikaty o zakwestionowanych identyfikatorach
+w kolejności ich występowania w opisie zespołu. Dla zakwestionowanych
+identyfikatorów punkty nie są liczone.
+
+Linie numeruje się od jedynki. Puste linie należy ignorować, ale uwzględniać je
+w numeracji. Wszelkie białe znaki w niepustych liniach należy traktować jako
+błąd i uwzględniać je w wypisywanych komunikatach.
+
+== Przykład użycia ==
+
+Lista identyfikatorów studentów w pliku _test_1.file:
+
+ab111111
+cd222222
+ef333333
+gh444444
+ij555555
+ab111111
+ab01234
+cab12345
+zzm-1000
+
+Lista opisów zespołów:
+
+grupa1/zadanie1/ab111111+cd222222
+grupa2/zadanie1/gh444444+ij555555
+grupa1/zadanie2/ab111111+cd222222+ef333333
+grupa2/zadanie2/gh444444 + ij555555
+grupa1/zadanie3/ab111111+cd222222+pr999999
+grupa1/zadanie4/cd222222+cd222222
+grupa1/zadanie5/cd222222+cd222222+cd222222
+grupa1/zadanie5/cd222222+cd222222+ab111111
+grupa1/zadanie5/cd222222+cd222222+pr999999
+grupa1/zadanie5/pr999999+pr999999+pr999999
+grupa1/zadanie2/ab111111+ef333333
+
+Program wypisuje na standardowe wyjście:
+
+111111;7;
+222222;6;
+333333;1;
+
+Program wypisuje na standardowe wyjście błędów:
+
+Error in _test_1.file, line 6: ab111111
+Error in _test_1.file, line 7: ab01234
+Error in _test_1.file, line 8: cab12345
+Error in cin, line 4: grupa2/zadanie2/gh444444 + ij555555
+Error in cin, line 5: pr999999
+Error in cin, line 6: cd222222
+Error in cin, line 7: cd222222
+Error in cin, line 7: cd222222
+Error in cin, line 8: cd222222
+Error in cin, line 9: cd222222
+Error in cin, line 9: pr999999
+Error in cin, line 10: pr999999
+Error in cin, line 10: pr999999
+Error in cin, line 10: pr999999
+
+== Wymagania formalne ==
+
+Program będzie kompilowany na maszynie students poleceniem
+
+g++ -Wall -Wextra -O2 -std=c++17 punkty.cc -o punkty
+
+Oczekiwane rozwiązanie nie powinno zawierać definicji własnych struktur i klas.
+Zamiast tego należy intensywnie korzystać z kontenerów i algorytmów
+dostarczanych przez standardową bibliotekę języka C++. Obsługę wejścia i wyjścia
+oraz pliku należy zrealizować za pomocą strumieni.
+
+Rozwiązanie należy umieścić w pliku punkty.cc, który należy umieścić
+w repozytorium SVN w katalogu
+
+grupaN/zadanie1/ab123456+cd123456
+
+lub
+
+grupaN/zadanie1/ab123456+cd123456+ef123456
+
+gdzie N jest numerem grupy, a ab123456, cd123456, ef123456 są identyfikatorami
+członków zespołu umieszczającego to rozwiązanie. Katalog z rozwiązaniem nie
+powinien zawierać innych plików, ale może zawierać podkatalog private, gdzie
+można umieszczać różne pliki, np. swoje testy. Pliki umieszczone w tym
+podkatalogu nie będą oceniane. Nie wolno umieszczać w repozytorium plików
+dużych, binarnych, tymczasowych ani innych zbędnych.

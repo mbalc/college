@@ -1,0 +1,15 @@
+#*
+*.o
+*.pyc
+*~
+extern/
+heroku.yml
+node_modules/
+tmp
+vendor/
+*.o
+out/*
+compile/*
+prog/*
+src/bin/*
+src/test_out_temp/*
