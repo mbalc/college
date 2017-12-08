@@ -1,0 +1,69 @@
+
+Explicite wyłączanie domyślnych operatorów przypisania/konstruktorów
+
+6 pkt - testy, 4 pkt - styl
+
+ostrzeżenia kompilatora - (-1)pkt
+
+	gdzie consty? gdzie referencje?
+metoda (A const *a) {}
+metoda (A *a) const {} //wtedy można wywołać tylko tak: A const a; a.metoda();
+
+	attention:
+int x, y, z;
+(x += y) += z;
+
+	attention:
+int x, y, z;
+x + y = z; //na intach: źle; zależnie od deklaracji typu - to może działać (gdy zwracamy referencję)
+	&A operator+=(A const &)
+	const A operator+(A const &, B const &);
+
+	operator+ - bez referencji:
+const A operator+(A const &left, A const &right) {
+	A t(left);
+	t += right;
+	return t;
+}
+alternatywnie, lepiej: // czasami możemy chcieć przekazywać kopie
+const A operator+(A left, A const &right) {
+	return left+=right;
+}
+
++=, *=, -= - powinny zachowywać się podobnie jak te standardowe, c++-owe, powinny cośtam zwracać
+
+ukrywamy rzeczy
+
+
+klasy friend (gettery, settery - niekoniecznie)
+ewentualnie zagnieżdżenie klas - trzeba wybrać
+
+jedyny sposób na stworzenie kontrolera - wywołanie metody na obiekcie Sejf
+
+
+konstruktory - używac list inicjalizujących - np..
+class A {
+public:
+	A() : x=0, b(x) {}
+}
+private: {
+	int x;
+	B b;
+}
+
+ALARM: WŁAMANIE - ma pierwszeństwo przed ALARM: ZMANIPULOWANY
+
+komparator - najprawdopodobniej będzie potrzebny (kompilator prawdopodobnie wypisze błąd przy implementacji swapa - a jeśli nie wypisze - czegoś najprawdopodobniej nie zablokowaliśmy) (test: kombinacja swap oraz copy)
+
+co się dzieje w c++ - arytmetyce w operacjach:
+unsigned x;
+x = -1;
+x -= -1;
+x += -1;
+x *= 4000000000;
+
+typ explicit
+
+safebool idiom = dobra lektura!
+
+poczytać o r-referencjach

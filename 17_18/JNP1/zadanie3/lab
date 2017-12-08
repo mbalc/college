@@ -1,0 +1,8 @@
+
+Wylistowane wszystkie implicit class methods
+(ew. z = delete, =default)
+
+sprawdź, czy friend musi być wzajemny?
+
+
+Przenieść stałą do klasy, musi być static const
