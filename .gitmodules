@@ -17,3 +17,6 @@
 [submodule "16_17/IPP/task2"]
 	path = 16_17/IPP/task2
 	url = https://github.com/mbalc/ipp-poly.git
+[submodule "17_18/JNP1/zadanie5"]
+	path = 17_18/JNP1/zadanie5
+	url = https://gitlab.com/mbalc/jnp-task-5
