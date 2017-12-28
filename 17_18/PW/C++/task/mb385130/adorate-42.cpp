@@ -48,7 +48,7 @@ int findX(int u) {
             maxWeight = W(u, v);
         }
     }
-    std::cout << maxx << "ismax\n";
+    std::cerr << maxx << "ismax\n";
 
     return maxx;
 }
@@ -56,7 +56,7 @@ int findX(int u) {
 void compute (int u) {
     int x, y;
     uint limit = bvalue(b_method, u);
-    std::cout << "    computing " << u << " for limit" << limit << "\n";
+    std::cerr << "    computing " << u << " for limit" << limit << "\n";
     while (T[u].size() < limit) {
         x = findX(u);
 
@@ -71,17 +71,17 @@ void compute (int u) {
             if (S[x].size() == xLimit) {
                 Slast[x] = *S[x].rbegin();
             }
-            std::cout << "inserting" << x << " to " << u << "\n";
+            std::cerr << "inserting" << x << " to " << u << "\n";
             T[u].insert(x);
             if (y != NUL) { // see also the FAQ
-                std::cout << "erasing " << x << " from " << y << "\n";
+                std::cerr << "erasing " << x << " from " << y << "\n";
                 T[y].erase(x);
                 R.push(y);
             }
         }
-        std::cout << T[u].size() << "Tsize\n";
+        std::cerr << T[u].size() << "Tsize\n";
     }
-    std::cout << T[u].size() << " is sizeof "  << " \n";
+    std::cerr << T[u].size() << " is sizeof "  << " \n";
 }
 
 int reduce(ador_t &A, int n) {
@@ -91,7 +91,6 @@ int reduce(ador_t &A, int n) {
         std::cout << "reducing " << d << "\n";
     }
     return out;
-
 }
 
 int main(int argc, char* argv[]) {
@@ -128,13 +127,17 @@ int main(int argc, char* argv[]) {
                 compute(Q.front());
                 Q.pop();
             }
+            std::cerr << "finish one run\n";
             std::swap(Q, R); // Q is empty now
         }
-        std::cout << S.size() << "pushed overall \n";
+        std::cerr << S.size() << "pushed overall \n";
         for (auto p : S) {
             sum += reduce(p.second, p.first);
         }
-        std::cout << "THE OUTPUT IS: " << sum / 2 << "\n\n";
+        std::cerr << "\nAND THE OUTPUT IIIS!:\n";
+        std::cout << sum / 2 << "\n";
+        std::cerr << "\n";
+        
         sum = 0;
         S.clear();
         T.clear();
