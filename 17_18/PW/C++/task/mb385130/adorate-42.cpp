@@ -127,7 +127,7 @@ int reduce(std::set<std::pair<int, int> >& A, int n) {
 void analyzeInput(std::stringstream& filtered) {
   int from, to, weight;
 
-  std::map<int, std::vector<rel_t> >   multiN;
+  std::map<int, std::vector<rel_t> > multiN;
   std::map<int, int> convert;
 
   while (filtered >> from >> to >> weight) {
@@ -140,31 +140,28 @@ void analyzeInput(std::stringstream& filtered) {
 
   std::cerr << "nodes: ";
 
-  for (auto el : multiN) {
+  for (auto &el : multiN) {
     // std::cerr << el.first << ", ";
+    N.push_back(std::vector<std::pair<int, int> >());
+    T.push_back(std::set<int>());
+    S.push_back(ador_t());
     convert[el.first] = count;
     ++count;
   }
   std::cerr << "\n";
 
-  for (size_t i = 0; i < count; i++) {
-    N.push_back(std::vector<std::pair<int, int> >());
-    T.push_back(std::set<int>());
-    S.push_back(ador_t());
-  }
-
   // reindex N and Wdata
-  for (auto el : multiN) {
+  for (auto &el : multiN) {
     int at = convert[el.first];
 
-    for (auto node : el.second) {
+    for (auto &node : el.second) {
       N[at].push_back(std::make_pair(node.first, convert[node.second]));
     }
+    // el.second.clear();
   }
 
-
-  for (size_t i = 0; i < count; i++) {
-    std::sort(N[i].rbegin(), N[i].rend());
+  for (size_t i = 0; i < count; ++i) {
+    std::sort(N[i].rbegin(), N[i].rend()); // ascending order
   }
 }
 
@@ -202,7 +199,7 @@ int main(int argc, char *argv[]) {
       compute(Q.front());
       Q.pop();
     }
-    std::cerr << S.size() << "pushed overall \n";
+    // std::cerr << S.size() << "pushed overall \n";
 
     for (size_t i = 0; i < count; i++) {
       // std::cerr << "among " << p.first << "\n";
