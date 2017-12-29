@@ -15,10 +15,11 @@
 const int NUL = -42;
 
 static long long Wusage = 0, Xusage = 0, Susage = 0, Nusage = 0, Rusage = 0;
-using ador_t = std::set<std::pair<int, int> >;
 
-std::map<std::pair<int, int>, int> Wdata;
-std::vector<std::vector<std::pair<int, int> > > N;
+using rel_t = std::pair<int, int>;
+using ador_t = std::set<rel_t>;
+
+std::vector<std::vector<rel_t> > N;
 
 // std::map<std::pair<int, int>, int> Wdata;
 // std::map<int, std::vector<int>> N; // TODO :>: order on vector elements (max
@@ -31,46 +32,32 @@ std::vector<std::set<int> > T;
 int  b_method;
 uint count;
 
-int W(int a, int b) {
-  if (a > b) std::swap(a, b);
-
-  if (a == NUL) return 0;
-
-  ++Wusage;
-
-  std::map<std::pair<int, int>,
-           int>::iterator out = Wdata.find(std::make_pair(a, b));
-
-  if (out == Wdata.end()) return 0;  // TODO NUL?
-
-  return out->second;
-}
-
-int last(int at) {
+std::pair<int, int> last(int at) {
   uint lim = bvalue(b_method, at);
 
-  if (lim == 0) return INT_MAX;
+  if (S[at].size() == lim) return (*S[at].begin());
 
-  if (S[at].size() == lim) return (S[at].begin())->second;
-
-  return NUL;
+  return std::make_pair(NUL, NUL);
 }
 
-int findX(int u) {
+rel_t findX(int &i, int u) {
   int maxx = NUL, maxWeight = NUL;
   const auto& vec = N[u];
+  int siz = vec.size();
 
-  for (std::pair<int, int>el : vec) {
+  for (; i < siz; ++i) {
+    const std::pair<int, int> &el = vec[i];
     int v = el.second;
 
     if (bvalue(b_method, v) > 0) {
       ++++ Xusage;
-      int dist = el.first, wNode = last(v), wDist = W(v, wNode);
+      rel_t wRel = last(v);
+      int dist = el.first, wNode = wRel.second, wDist = wRel.first;
 
       if ((T[u].find(v) == T[u].end()) && ( // W(v, u) :>: W(v, wNode)
             (dist > wDist) || ((dist == wDist) && (u > wNode))
             )) {                            // found better substitute
-        return v;
+        return std::make_pair(dist, v);
 
         // maxx      = v;
         // maxWeight = W(u, v);
@@ -80,35 +67,44 @@ int findX(int u) {
 
   // std::cerr << maxx << "ismax\n";
 
-  return maxx;
+  return std::make_pair(NUL, NUL);
 }
 
 void compute(int u) {
-  int  x, y;
+  int x, xPath, y;
+  rel_t z, maxX;
+
   uint limit = bvalue(b_method, u);
 
   // std::cerr << "    computing " << u << " for limit " << limit << "\n";
   auto& ad = T[u];
 
+  int lastFoundX = 0;
+
   while (ad.size() < limit) {
-    x = findX(u);
+    maxX = findX(lastFoundX, u);
+    x = maxX.second;
+    xPath = maxX.first;
 
     if (x == NUL) break;
     else {
-      y = last(x);
+      z = last(x);
+      y = z.second;
 
       // std::cerr << "inserting" << x << " to " << u << "\n";
       auto& rel = S[x];
-      rel.insert(std::make_pair(W(x, u), u)); // TODO update Slast
+      rel.insert(std::make_pair(xPath, u)); // TODO update Slast
       ad.insert(x);
 
       if (y != NUL) {                         // see also the FAQ
         // std::cerr << "erasing " << x << " from " << y << "\n";
-        rel.erase(std::make_pair(W(x, y), y));
+        rel.erase(z);
         T[y].erase(x);
         Q.push(y);
       }
     }
+
+    ++lastFoundX;
 
     // std::cerr << T[u].size() << "Tsize\n";
   }
@@ -131,17 +127,14 @@ int reduce(std::set<std::pair<int, int> >& A, int n) {
 void analyzeInput(std::stringstream& filtered) {
   int from, to, weight;
 
-  std::map<std::pair<int, int>, int> multiW;
-  std::map<int, std::vector<int> >   multiN;
+  std::map<int, std::vector<rel_t> >   multiN;
   std::map<int, int> convert;
 
   while (filtered >> from >> to >> weight) {
     if (from > to) std::swap(from, to);
-    multiW.insert(std::make_pair(std::make_pair(from, to), weight));
-    multiN[from].push_back(to);
-    multiN[to].push_back(from);
+    multiN[from].push_back(std::make_pair(weight, to));
+    multiN[to].push_back(std::make_pair(weight, from));
   }
-
 
   count = 0;
 
@@ -161,18 +154,11 @@ void analyzeInput(std::stringstream& filtered) {
   }
 
   // reindex N and Wdata
-  for (auto el : multiW) {
-    std::pair<int, int> oldK = el.first;
-    std::pair<int, int> newK =
-      std::make_pair(convert[oldK.first], convert[oldK.second]);
-    Wdata.insert(std::make_pair(newK, el.second));
-  }
-
   for (auto el : multiN) {
     int at = convert[el.first];
 
     for (auto node : el.second) {
-      N[at].push_back(std::make_pair(W(at, convert[node]), convert[node]));
+      N[at].push_back(std::make_pair(node.first, convert[node.second]));
     }
   }
 
@@ -192,7 +178,7 @@ int main(int argc, char *argv[]) {
   }
 
   int thread_count = std::stoi(argv[1]);
-  std::string input_filename{ argv[2] };
+  std::string input_filename{argv[2]};
   int b_limit = std::stoi(argv[3]);
 
   std::ifstream infile(input_filename);
