@@ -1,5 +1,7 @@
-Optymalizacje:
-  - uwspółbieżnienie rozpatrywania poszczególnych wierzchołków z kolejki Q
-  - spamiętywanie wartości S[v].last (unikamy przeszukiwania liniowego zbioru S)
+Optymalizacje ogólne:
+  - normalizacja numerów wierzchołków
+  
   (? - trzymamy posortowany zbiór N[v] - T[v] - {wszystkie mniejsze od S[v].last})
-  - TODO?? - refactor map na tablice (reindex, variable length array)
+
+Optymalizacje - współbieżność
+  - uwspółbieżnienie rozpatrywania poszczególnych wierzchołków z kolejki Q
