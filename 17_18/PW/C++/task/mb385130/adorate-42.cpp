@@ -1,7 +1,8 @@
 #include "blimit.hpp"
 
-#include <iostream>
+#include <algorithm>
 #include <climits>
+#include <iostream>
 #include <fstream>
 #include <functional>
 #include <sstream>
@@ -13,7 +14,7 @@
 
 const int NUL = -42;
 
-static long long Wusage = 0;
+static long long Wusage = 0, Xusage = 0, Susage = 0, Nusage = 0, Rusage = 0;
 using ador_t = std::set<int, std::function<bool(int, int)> >;
 
 std::map<std::pair<int, int>, int> Wdata;
@@ -61,15 +62,16 @@ int findX(int u) {
 
   for (int v : vec) {
     if (bvalue(b_method, v) > 0) {
+      ++++ Xusage;
       int dist = W(v, u), wNode = last(v), wDist = W(v, wNode);
 
-      if ((T[u].find(v) == T[u].end()) && ( // is better than max found so far
-            (dist > maxWeight) || ((dist == maxWeight) && (v > maxx))
-            ) && (                          // W(v, u) :>: W(v, wNode)
+      if ((T[u].find(v) == T[u].end()) && ( // W(v, u) :>: W(v, wNode)
             (dist > wDist) || ((dist == wDist) && (u > wNode))
             )) {                            // found better substitute
-        maxx      = v;
-        maxWeight = W(u, v);
+        return v;
+
+        // maxx      = v;
+        // maxWeight = W(u, v);
       }
     }
   }
@@ -116,6 +118,7 @@ int reduce(std::set<int>& A, int n) {
   int out = 0;
 
   for (auto d : A) {
+    ++Rusage;
     out += W(d, n);
 
     // std::cerr << "reducing " << d << "\n";
@@ -153,9 +156,13 @@ void analyzeInput(std::stringstream& filtered) {
     N.push_back(std::vector<int>());
     T.push_back(std::set<int>());
     S.push_back(ador_t([i](int a, int b) {
-      if (W(i, a) == W(i, b)) return a > b;
+      ++++ Susage;
 
-      return W(i, a) > W(i, b);
+      int Wa = W(i, a), Wb = W(i, b);
+
+      if (Wa == Wb) return a > b;
+
+      return Wa > Wb;
     }));
   }
 
@@ -173,6 +180,19 @@ void analyzeInput(std::stringstream& filtered) {
     std::pair<int, int> newK =
       std::make_pair(convert[oldK.first], convert[oldK.second]);
     Wdata.insert(std::make_pair(newK, el.second));
+  }
+
+
+  for (size_t i = 0; i < count; i++) {
+    std::sort(N[i].begin(), N[i].end(), [i](int a, int b) {
+      ++++ Nusage;
+
+      int Wa = W(i, a), Wb = W(i, b);
+
+      if (Wa == Wb) return a > b;
+
+      return Wa > Wb;
+    });
   }
 }
 
@@ -229,6 +249,10 @@ int main(int argc, char *argv[]) {
   }
 
   std::cerr << "Total W usage: " << Wusage << "\n";
+  std::cerr << "By findX: " << Xusage << "\n";
+  std::cerr << "By S comparator: " << Susage << "\n";
+  std::cerr << "During N sorting: " << Nusage << "\n";
+  std::cerr << "During reductions: " << Rusage << "\n";
 
   return 0;
 }
