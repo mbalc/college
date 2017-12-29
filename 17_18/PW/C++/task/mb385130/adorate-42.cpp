@@ -16,24 +16,25 @@ const int NUL = -42;
 
 static long long Wusage = 0, Xusage = 0, Susage = 0, Nusage = 0, Rusage = 0;
 
-using rel_t = std::pair<int, int>;
+using rel_t = std::pair<int, int>; // first - weight of an edge, second - destination node
 using ador_t = std::set<rel_t>;
 
 std::vector<std::vector<rel_t> > N;
-
-// std::map<std::pair<int, int>, int> Wdata;
-// std::map<int, std::vector<int>> N; // TODO :>: order on vector elements (max
-// begin())
-
 std::queue<int> Q;
 std::vector<ador_t> S;
 std::vector<std::set<int> > T;
 
+std::vector<int> oldIndex;
+
 int  b_method;
 uint count;
 
+uint getLim (int node) {
+    return bvalue(b_method, oldIndex[node]);
+}
+
 std::pair<int, int> last(int at) {
-  uint lim = bvalue(b_method, at);
+  uint lim = getLim(at);
 
   if (S[at].size() == lim) return (*S[at].begin());
 
@@ -49,7 +50,7 @@ rel_t findX(int &i, int u) {
     const std::pair<int, int> &el = vec[i];
     int v = el.second;
 
-    if (bvalue(b_method, v) > 0) {
+    if (getLim(v) > 0) {
       ++++ Xusage;
       rel_t wRel = last(v);
       int dist = el.first, wNode = wRel.second, wDist = wRel.first;
@@ -74,7 +75,7 @@ void compute(int u) {
   int x, xPath, y;
   rel_t z, maxX;
 
-  uint limit = bvalue(b_method, u);
+  uint limit = getLim(u);
 
   // std::cerr << "    computing " << u << " for limit " << limit << "\n";
   auto& ad = T[u];
@@ -146,6 +147,7 @@ void analyzeInput(std::stringstream& filtered) {
     T.push_back(std::set<int>());
     S.push_back(ador_t());
     convert[el.first] = count;
+    oldIndex.push_back(0);
     ++count;
   }
   std::cerr << "\n";
@@ -153,6 +155,7 @@ void analyzeInput(std::stringstream& filtered) {
   // reindex N and Wdata
   for (auto &el : multiN) {
     int at = convert[el.first];
+    oldIndex[at] = el.first;
 
     for (auto &node : el.second) {
       N[at].push_back(std::make_pair(node.first, convert[node.second]));
