@@ -18,7 +18,7 @@ static long long Wusage = 0, Xusage = 0, Susage = 0, Nusage = 0, Rusage = 0;
 using ador_t = std::set<std::pair<int, int> >;
 
 std::map<std::pair<int, int>, int> Wdata;
-std::vector<std::vector<int> > N;
+std::vector<std::vector<std::pair<int, int> > > N;
 
 // std::map<std::pair<int, int>, int> Wdata;
 // std::map<int, std::vector<int>> N; // TODO :>: order on vector elements (max
@@ -60,10 +60,12 @@ int findX(int u) {
   int maxx = NUL, maxWeight = NUL;
   const auto& vec = N[u];
 
-  for (int v : vec) {
+  for (std::pair<int, int>el : vec) {
+    int v = el.second;
+
     if (bvalue(b_method, v) > 0) {
       ++++ Xusage;
-      int dist = W(v, u), wNode = last(v), wDist = W(v, wNode);
+      int dist = el.first, wNode = last(v), wDist = W(v, wNode);
 
       if ((T[u].find(v) == T[u].end()) && ( // W(v, u) :>: W(v, wNode)
             (dist > wDist) || ((dist == wDist) && (u > wNode))
@@ -114,12 +116,12 @@ void compute(int u) {
   // std::cerr << T[u].size() << " is sizeof "  << " \n";
 }
 
-int reduce(std::set<int>& A, int n) {
+int reduce(std::set<std::pair<int, int> >& A, int n) {
   int out = 0;
 
   for (auto d : A) {
     ++Rusage;
-    out += W(d, n);
+    out += d.first;
 
     // std::cerr << "reducing " << d << "\n";
   }
@@ -153,7 +155,7 @@ void analyzeInput(std::stringstream& filtered) {
   std::cerr << "\n";
 
   for (size_t i = 0; i < count; i++) {
-    N.push_back(std::vector<int>());
+    N.push_back(std::vector<std::pair<int, int> >());
     T.push_back(std::set<int>());
     S.push_back(ador_t());
   }
@@ -170,21 +172,13 @@ void analyzeInput(std::stringstream& filtered) {
     int at = convert[el.first];
 
     for (auto node : el.second) {
-      N[at].push_back(convert[node]);
+      N[at].push_back(std::make_pair(W(at, convert[node]), convert[node]));
     }
   }
 
 
   for (size_t i = 0; i < count; i++) {
-    std::sort(N[i].begin(), N[i].end(), [i](int a, int b) {
-      ++++ Nusage;
-
-      int Wa = W(i, a), Wb = W(i, b);
-
-      if (Wa == Wb) return a > b;
-
-      return Wa > Wb;
-    });
+    std::sort(N[i].rbegin(), N[i].rend());
   }
 }
 
@@ -226,7 +220,7 @@ int main(int argc, char *argv[]) {
 
     for (size_t i = 0; i < count; i++) {
       // std::cerr << "among " << p.first << "\n";
-      sum += reduce(T[i], i);
+      sum += reduce(S[i], i);
     }
     std::cerr << "\nAND THE OUTPUT IIIS!:\n";
     std::cout << sum / 2 << "\n";
