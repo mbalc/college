@@ -1,7 +1,9 @@
 #include "blimit.hpp"
 
 #include <iostream>
+#include <climits>
 #include <fstream>
+#include <functional>
 #include <sstream>
 #include <string>
 #include <map>
@@ -10,45 +12,59 @@
 #include <vector>
 
 const int NUL = -42;
-using ador_t = std::set<int>;
+using ador_t = std::set<int, std::function<bool(int, int)>>;
 
-class myInt {
-private:
-    int val;
-public:
-    myInt (int a) : val(a) {}
-    myInt () : myInt(NUL) {}
-    operator int& () { return val; }
-};
 
 std::map<std::pair<int, int>, int> Wdata;
 std::map<int, std::vector<int>> N; // :>: order on vector elements (max begin())
 
-std::queue<int> Q, R;
-std::map<int, ador_t> T, S;
-std::map<int, myInt> Slast;
-
+std::queue<int> Q;
+std::map<int, ador_t> S;
+std::map<int, std::set<int>> T;
 
 int b_method;
 
 int W(int a, int b) {
     if (a > b) std::swap(a, b);
-    return Wdata[std::make_pair(a, b)];
+    if (a == NUL) return 0;
+    std::map<std::pair<int, int>, int>::iterator out = Wdata.find(std::make_pair(a, b));
+    if (out == Wdata.end()) return 0; // TODO NUL?
+    return out->second;
+}
+
+void init(int dx) {
+    S.emplace(dx, ador_t([dx](int a, int b) {
+      if (W(dx, a) == W(dx, b)) return a > b;
+      return W(dx, a) > W(dx, b);
+    }));
+}
+
+int last(int at) {
+  init(at);
+  uint lim = bvalue(b_method, at);
+  if (lim == 0) return INT_MAX;
+  if (S[at].size() == lim) return *--S[at].end();
+  return NUL;
 }
 
 int findX(int u) {
     int maxx = NUL, maxWeight = NUL;
-    for (int v : N[u]) {
-        // std::cout << v << N[u].size() << " le\n";
-        int dist = W(v, u), wNode = Slast[v], wDist = W(v, wNode);
-        if (T[u].find(v) == T[u].end() && dist > maxWeight && (
-            dist > wDist || (dist == wDist && v > wNode)
-        )) { // found better substitute
-            maxx = v;
-            maxWeight = W(u, v);
+    const auto &vec = N[u];
+    for (int v : vec) {
+        if (bvalue(b_method, v) > 0) {
+            init(v);
+            int dist = W(v, u), wNode = last(v), wDist = W(v, wNode);
+            if (T[u].find(v) == T[u].end() && ( // is better than max found so far
+                dist > maxWeight || (dist == maxWeight && v > maxx)
+            ) && ( // W(v, u) :>: W(v, wNode)
+                dist > wDist || (dist == wDist && u > wNode)
+            )) { // found better substitute
+                maxx = v;
+                maxWeight = W(u, v);
+            }
         }
     }
-    std::cerr << maxx << "ismax\n";
+    // std::cerr << maxx << "ismax\n";
 
     return maxx;
 }
@@ -56,39 +72,36 @@ int findX(int u) {
 void compute (int u) {
     int x, y;
     uint limit = bvalue(b_method, u);
-    std::cerr << "    computing " << u << " for limit" << limit << "\n";
-    while (T[u].size() < limit) {
+    // std::cerr << "    computing " << u << " for limit " << limit << "\n";
+    auto &ad = T[u];
+    while (ad.size() < limit) {
         x = findX(u);
 
         if (x == NUL) break;
         else {
-            y = Slast[x];
-            S[x].insert(u); // TODO update Slast
-            uint xLimit = bvalue(b_method, x);
-            if (S[x].size() > xLimit) {
-                S[x].erase(--S[x].end());
-            }
-            if (S[x].size() == xLimit) {
-                Slast[x] = *S[x].rbegin();
-            }
-            std::cerr << "inserting" << x << " to " << u << "\n";
-            T[u].insert(x);
+            init(x);
+            y = last(x);
+            // std::cerr << "inserting" << x << " to " << u << "\n";
+            auto &rel = S[x];
+            rel.insert(u); // TODO update Slast
+            ad.insert(x);
             if (y != NUL) { // see also the FAQ
-                std::cerr << "erasing " << x << " from " << y << "\n";
+                // std::cerr << "erasing " << x << " from " << y << "\n";
+                rel.erase(y);
                 T[y].erase(x);
-                R.push(y);
+                Q.push(y);
             }
         }
-        std::cerr << T[u].size() << "Tsize\n";
+        // std::cerr << T[u].size() << "Tsize\n";
     }
-    std::cerr << T[u].size() << " is sizeof "  << " \n";
+    // std::cerr << T[u].size() << " is sizeof "  << " \n";
 }
 
-int reduce(ador_t &A, int n) {
+int reduce(std::set<int> &A, int n) {
     int out = 0;
     for (auto d : A) {
         out += W(d, n);
-        std::cout << "reducing " << d << "\n";
+        // std::cerr << "reducing " << d << "\n";
     }
     return out;
 }
@@ -123,25 +136,21 @@ int main(int argc, char* argv[]) {
     for (b_method = 0; b_method <= b_limit; b_method++) {
         for (auto p : N) Q.push(p.first);
         while (!Q.empty()) {
-            while (!Q.empty()) {
-                compute(Q.front());
-                Q.pop();
-            }
-            std::cerr << "finish one run\n";
-            std::swap(Q, R); // Q is empty now
+            compute(Q.front());
+            Q.pop();
         }
         std::cerr << S.size() << "pushed overall \n";
-        for (auto p : S) {
+        for (auto p : T) {
+            // std::cerr << "among " << p.first << "\n";
             sum += reduce(p.second, p.first);
         }
         std::cerr << "\nAND THE OUTPUT IIIS!:\n";
         std::cout << sum / 2 << "\n";
         std::cerr << "\n";
-        
+
         sum = 0;
         S.clear();
         T.clear();
-        Slast.clear();
     }
     return 0;
 }
