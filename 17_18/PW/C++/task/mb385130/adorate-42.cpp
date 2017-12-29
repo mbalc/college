@@ -15,7 +15,7 @@
 const int NUL = -42;
 
 static long long Wusage = 0, Xusage = 0, Susage = 0, Nusage = 0, Rusage = 0;
-using ador_t = std::set<int, std::function<bool(int, int)> >;
+using ador_t = std::set<std::pair<int, int> >;
 
 std::map<std::pair<int, int>, int> Wdata;
 std::vector<std::vector<int> > N;
@@ -51,7 +51,7 @@ int last(int at) {
 
   if (lim == 0) return INT_MAX;
 
-  if (S[at].size() == lim) return *--S[at].end();
+  if (S[at].size() == lim) return (S[at].begin())->second;
 
   return NUL;
 }
@@ -97,12 +97,12 @@ void compute(int u) {
 
       // std::cerr << "inserting" << x << " to " << u << "\n";
       auto& rel = S[x];
-      rel.insert(u);  // TODO update Slast
+      rel.insert(std::make_pair(W(x, u), u)); // TODO update Slast
       ad.insert(x);
 
-      if (y != NUL) { // see also the FAQ
+      if (y != NUL) {                         // see also the FAQ
         // std::cerr << "erasing " << x << " from " << y << "\n";
-        rel.erase(y);
+        rel.erase(std::make_pair(W(x, y), y));
         T[y].erase(x);
         Q.push(y);
       }
@@ -155,31 +155,23 @@ void analyzeInput(std::stringstream& filtered) {
   for (size_t i = 0; i < count; i++) {
     N.push_back(std::vector<int>());
     T.push_back(std::set<int>());
-    S.push_back(ador_t([i](int a, int b) {
-      ++++ Susage;
-
-      int Wa = W(i, a), Wb = W(i, b);
-
-      if (Wa == Wb) return a > b;
-
-      return Wa > Wb;
-    }));
+    S.push_back(ador_t());
   }
 
   // reindex N and Wdata
+  for (auto el : multiW) {
+    std::pair<int, int> oldK = el.first;
+    std::pair<int, int> newK =
+      std::make_pair(convert[oldK.first], convert[oldK.second]);
+    Wdata.insert(std::make_pair(newK, el.second));
+  }
+
   for (auto el : multiN) {
     int at = convert[el.first];
 
     for (auto node : el.second) {
       N[at].push_back(convert[node]);
     }
-  }
-
-  for (auto el : multiW) {
-    std::pair<int, int> oldK = el.first;
-    std::pair<int, int> newK =
-      std::make_pair(convert[oldK.first], convert[oldK.second]);
-    Wdata.insert(std::make_pair(newK, el.second));
   }
 
 
