@@ -24,6 +24,7 @@ std::queue<int> Q;
 std::vector<ador_t> S;
 std::vector<std::set<int> > T;
 
+std::vector<int> explore;
 std::vector<int> oldIndex;
 
 int  b_method;
@@ -41,13 +42,13 @@ std::pair<int, int> last(int at) {
   return std::make_pair(NUL, NUL);
 }
 
-rel_t findX(int &i, int u) {
+rel_t findX(int u) {
   int maxx = NUL, maxWeight = NUL;
   const auto& vec = N[u];
   int siz = vec.size();
 
-  for (; i < siz; ++i) {
-    const std::pair<int, int> &el = vec[i];
+  for (; explore[u] < siz; ++explore[u]) {
+    const std::pair<int, int> &el = vec[explore[u]];
     int v = el.second;
 
     if (getLim(v) > 0) {
@@ -80,10 +81,8 @@ void compute(int u) {
   // std::cerr << "    computing " << u << " for limit " << limit << "\n";
   auto& ad = T[u];
 
-  int lastFoundX = 0;
-
   while (ad.size() < limit) {
-    maxX = findX(lastFoundX, u);
+    maxX = findX(u);
     x = maxX.second;
     xPath = maxX.first;
 
@@ -105,7 +104,7 @@ void compute(int u) {
       }
     }
 
-    ++lastFoundX;
+    ++explore[u];
 
     // std::cerr << T[u].size() << "Tsize\n";
   }
@@ -148,6 +147,7 @@ void analyzeInput(std::stringstream& filtered) {
     S.push_back(ador_t());
     convert[el.first] = count;
     oldIndex.push_back(0);
+    explore.push_back(0);
     ++count;
   }
   std::cerr << "\n";
@@ -217,6 +217,7 @@ int main(int argc, char *argv[]) {
     for (size_t i = 0; i < count; i++) {
       S[i].clear();
       T[i].clear();
+      explore[i] = 0;
     }
   }
 
