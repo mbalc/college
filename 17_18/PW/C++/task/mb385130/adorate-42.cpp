@@ -31,10 +31,10 @@ int  b_method;
 uint count;
 
 uint getLim (int node) {
-    return bvalue(b_method, oldIndex[node]);
+  return bvalue(b_method, oldIndex[node]);
 }
 
-std::pair<int, int> last(int at) {
+rel_t last(int at) {
   uint lim = getLim(at);
 
   if (S[at].size() == lim) return (*S[at].begin());
@@ -42,8 +42,7 @@ std::pair<int, int> last(int at) {
   return std::make_pair(NUL, NUL);
 }
 
-rel_t findX(int u) {
-  int maxx = NUL, maxWeight = NUL;
+std::pair<rel_t, rel_t> findX(int u) {
   const auto& vec = N[u];
   int siz = vec.size();
 
@@ -59,7 +58,7 @@ rel_t findX(int u) {
       if ((T[u].find(v) == T[u].end()) && ( // W(v, u) :>: W(v, wNode)
             (dist > wDist) || ((dist == wDist) && (u > wNode))
             )) {                            // found better substitute
-        return std::make_pair(dist, v);
+        return std::make_pair(wRel, std::make_pair(dist, v));
 
         // maxx      = v;
         // maxWeight = W(u, v);
@@ -69,12 +68,13 @@ rel_t findX(int u) {
 
   // std::cerr << maxx << "ismax\n";
 
-  return std::make_pair(NUL, NUL);
+  return std::make_pair(std::make_pair(NUL, NUL), std::make_pair(NUL, NUL));
 }
 
 void compute(int u) {
   int x, xPath, y;
   rel_t z, maxX;
+  std::pair<rel_t, rel_t> res;
 
   uint limit = getLim(u);
 
@@ -82,13 +82,14 @@ void compute(int u) {
   auto& ad = T[u];
 
   while (ad.size() < limit) {
-    maxX = findX(u);
+    res = findX(u);
+    maxX = res.second;
     x = maxX.second;
     xPath = maxX.first;
 
     if (x == NUL) break;
     else {
-      z = last(x);
+      z = res.first;
       y = z.second;
 
       // std::cerr << "inserting" << x << " to " << u << "\n";
