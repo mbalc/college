@@ -12,14 +12,16 @@
 #include <set>
 #include <vector>
 
-const int NUL = -42;
+const int NUL = -42, procLimit = 4, buffLimit = 16;
 
 static long long Wusage = 0, Xusage = 0, Susage = 0, Nusage = 0, Rusage = 0;
 
-using rel_t = std::pair<int, int>; // first - weight of an edge, second - destination node
-// The order is important for default sorting algrorithms to behave just the way we want them to
-using ador_t = std::set<rel_t>; // the worst adorator in terms of :<: order will be
-                                // on the beginning of the set
+using rel_t = std::pair<int, int>; // first - weight of an edge,
+                                   // second - destination node
+// The order is important for default sorting algrorithms to behave just the way
+// we want them to
+using ador_t = std::set<rel_t>;    // the worst adorator in terms of :<: order
+                                   // will be on the beginning of the set
 
 std::vector<std::vector<rel_t> > N;
 std::queue<int> Q;
@@ -29,41 +31,38 @@ std::vector<size_t> T; // we only hold the size of the original T structure
 std::vector<int> explore;
 std::vector<int> oldIndex;
 
-int  b_method;
+int b_method;
 size_t count;
 
-size_t getLim (int node) {
+size_t getLim(int node) {
   return bvalue(b_method, oldIndex[node]);
 }
 
 rel_t last(int at) {
   size_t lim = getLim(at);
 
-  if (S[at].size() == lim) return (*S[at].begin());
+  if (S[at].size() == lim) return *S[at].begin();
 
   return std::make_pair(NUL, NUL);
 }
 
-std::pair<rel_t, rel_t> findX(int u) {
+std::pair<rel_t, rel_t>findX(int u) {
   const auto& vec = N[u];
-  int siz = vec.size();
+  int siz         = vec.size();
 
   for (; explore[u] < siz; ++explore[u]) {
-    const std::pair<int, int> &el = vec[explore[u]];
-    int v = el.second;
+    const std::pair<int, int>& el = vec[explore[u]];
+    int v                         = el.second;
 
     if (getLim(v) > 0) {
       ++++ Xusage;
       rel_t wRel = last(v);
-      int dist = el.first, wNode = wRel.second, wDist = wRel.first;
+      int   dist = el.first, wNode = wRel.second, wDist = wRel.first;
 
-      if ((S[v].find(std::make_pair(el.first, u)) == S[v].end()) && ( // W(v, u) :>: W(v, wNode)
-            (dist > wDist) || ((dist == wDist) && (u > wNode))
-            )) {                            // found better substitute
+      if ((S[v].find(std::make_pair(el.first, u)) == S[v].end()) && ( // v is not matched yet with u
+            (dist > wDist) || ((dist == wDist) && (u > wNode))        // W(v, u) :>: W(v, wNode)
+            )) {                                                      // we found better substitute
         return std::make_pair(wRel, el);
-
-        // maxx      = v;
-        // maxWeight = W(u, v);
       }
     }
   }
@@ -74,18 +73,20 @@ std::pair<rel_t, rel_t> findX(int u) {
 }
 
 void compute(int u) {
-  int x, xPath, y;
+  int   x, xPath, y;
   rel_t z, maxX;
+
   std::pair<rel_t, rel_t> res;
 
   size_t limit = getLim(u);
 
   // std::cerr << "    computing " << u << " for limit " << limit << "\n";
 
-  while (T[u] < limit) { // T[u] is declared as the size of the original T[u] structure
-    res = findX(u);
-    maxX = res.second;
-    x = maxX.second;
+  while (T[u] < limit) { // T[u] is declared as the size of the original T[u]
+                         // structure
+    res   = findX(u);
+    maxX  = res.second;
+    x     = maxX.second;
     xPath = maxX.first;
 
     if (x == NUL) break;
@@ -95,10 +96,10 @@ void compute(int u) {
 
       // std::cerr << "inserting" << x << " to " << u << "\n";
       auto& rel = S[x];
-      rel.insert(std::make_pair(xPath, u)); // TODO update Slast
+      rel.insert(std::make_pair(xPath, u));
       ++T[u];
 
-      if (y != NUL) {                         // see also the FAQ
+      if (y != NUL) {
         // std::cerr << "erasing " << x << " from " << y << "\n";
         rel.erase(z);
         --T[y];
@@ -144,7 +145,7 @@ void analyzeInput(std::stringstream& filtered) {
 
   std::cerr << "nodes: ";
 
-  for (auto &el : multiN) {
+  for (auto& el : multiN) {
     // std::cerr << el.first << ", ";
     N.push_back(std::vector<std::pair<int, int> >());
     S.push_back(ador_t());
@@ -157,13 +158,14 @@ void analyzeInput(std::stringstream& filtered) {
   std::cerr << "\n";
 
   // reindex N and Wdata
-  for (auto &el : multiN) {
+  for (auto& el : multiN) {
     int at = convert[el.first];
     oldIndex[at] = el.first;
 
-    for (auto &node : el.second) {
+    for (auto& node : el.second) {
       N[at].push_back(std::make_pair(node.first, convert[node.second]));
     }
+
     // el.second.clear();
   }
 
@@ -180,7 +182,7 @@ int main(int argc, char *argv[]) {
   }
 
   int thread_count = std::stoi(argv[1]);
-  std::string input_filename{argv[2]};
+  std::string input_filename{ argv[2] };
   int b_limit = std::stoi(argv[3]);
 
   std::ifstream infile(input_filename);
@@ -204,15 +206,17 @@ int main(int argc, char *argv[]) {
       compute(Q.front());
       Q.pop();
     }
+
     // std::cerr << S.size() << "pushed overall \n";
 
     std::cerr << "\nAND THE OUTPUT IIIS!:\n";
     std::cout << reduce() / 2 << "\n";
-    std::cerr << "\n";
+
+    // std::cerr << "\n";
 
     for (size_t i = 0; i < count; i++) {
       S[i].clear();
-      T[i] = 0;
+      T[i]       = 0;
       explore[i] = 0;
     }
   }
