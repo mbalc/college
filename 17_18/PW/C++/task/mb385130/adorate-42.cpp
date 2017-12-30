@@ -1,13 +1,15 @@
 #include "blimit.hpp"
 
 #include <algorithm>
-#include <atomic>
+#include <cassert>
+#include <atomic> // TODO cleanup includes
 #include <climits>
 #include <deque>
 #include <iostream>
 #include <fstream>
 #include <functional>
 #include <sstream>
+#include <mutex>
 #include <string>
 #include <map>
 #include <queue>
@@ -21,22 +23,34 @@ private:
 
   std::atomic_flag locked = ATOMIC_FLAG_INIT;
 
+  // std::mutex locked;
+  int testchck = 0;
+
 public:
 
   void lock() {
     while (locked.test_and_set(std::memory_order_acquire));
+
+    // locked.lock();
+
+    assert(testchck++ == 0);
   }
 
   void unlock() {
+    assert(--testchck == 0);
+
+    // if (testchck == -1) {
+    //   std::cerr << "O zgrozo!\n";
+    // }
     locked.clear(std::memory_order_release);
+
+    // locked.unlock();
   }
 };
 
 int threadCount;
 
 const int NUL = -42, procLimit = 4, buffLimit = 16;
-
-static long long Wusage = 0, Xusage = 0, Susage = 0, Nusage = 0, Rusage = 0;
 
 using rel_t = std::pair<int, int>; // first - weight of an edge,
                                    // second - destination node
@@ -46,14 +60,15 @@ using ador_t = std::set<rel_t>;    // the worst adorator in terms of :<: order
                                    // will be on the beginning of the set
 
 std::vector<std::vector<rel_t> > N;
-std::queue<int> Q, R;
+std::queue<int> Q;
+std::set<int>   R;
 std::vector<ador_t> S;
 
 std::vector<size_t> T; // we only hold the size of the original T structure
 std::vector<int>    explore;
 std::vector<int>    oldIndex;
 
-std::deque<SpinLock> L;
+std::deque<SpinLock> L, U;
 SpinLock Qtex, Rtex;
 
 int b_method;
@@ -83,17 +98,19 @@ std::pair<rel_t, rel_t>findX(int u) {
   const auto& vec = N[u];
   int siz         = vec.size();
 
-  for (; explore[u] < siz; ++explore[u]) {
-    const std::pair<int, int>& el = vec[explore[u]];
+  for (int i = 0; i < siz; ++i) { // TODO revert to using explore
+    const std::pair<int, int>& el = vec[i];
     int v                         = el.second;
 
     if (getLim(v) > 0) {
-      ++++ Xusage;
+      L[v].lock();
       rel_t wRel = last(v); // 'w' stands for 'worst'
 
       if (isEligible(u, el, wRel)) {
+        L[v].unlock();
         return std::make_pair(wRel, el);
       }
+      L[v].unlock();
     }
   }
 
@@ -117,51 +134,69 @@ void worker() { // TODO buffer multiple nodes
     Q.pop();
     Qtex.unlock();
 
+
     limit = getLim(u);
 
     // std::cerr << "    computing " << u << " for limit " << limit << "\n";
 
+    U[u].lock();
+
     while (T[u] < limit) { // T[u] is declared as the size of the original T[u]
                            // structure
+      U[u].unlock();
       res   = findX(u);
       maxX  = res.second;
       x     = maxX.second;
       xPath = maxX.first;
 
-      if (x == NUL) break;
+      if (x == NUL) {
+        U[u].lock();
+        break;
+      }
       else {
         L[x].lock();
+        {
+          if (isEligible(u, maxX, last(x))) {
+            z = res.first;
+            y = z.second;
 
-        if (isEligible(u, maxX, last(x))) {
-          z = res.first;
-          y = z.second;
+            // std::cerr << "inserting" << x << " to " << u << "\n";
+            auto& rel = S[x];
+            rel.insert(std::make_pair(xPath, u));
+            U[u].lock();
+            {
+              ++T[u];
+            }
+            U[u].unlock();
 
-          // std::cerr << "inserting" << x << " to " << u << "\n";
-          auto& rel = S[x];
-          rel.insert(std::make_pair(xPath, u));
-          ++T[u];
-
-          if (y != NUL) {
-            // std::cerr << "erasing " << x << " from " << y << "\n";
-            rel.erase(z);
-            --T[y];
-            localR.push(y);
+            if (y != NUL) {
+              // std::cerr << "erasing " << x << " from " << y << "\n";
+              rel.erase(z);
+              U[y].lock();
+              {
+                --T[y];
+              }
+              U[y].unlock();
+              localR.push(y);
+            }
           }
         }
         L[x].unlock();
       }
 
       ++explore[u];
+      U[u].lock();
 
       // std::cerr << T[u].size() << "Tsize\n";
     }
+    U[u].unlock();
     Qtex.lock();
   }
   Qtex.unlock();
   Rtex.lock();
 
   while (!localR.empty()) {
-    R.push(localR.front());
+    R.insert(localR.front());
     localR.pop();
   }
   Rtex.unlock();
@@ -172,18 +207,28 @@ void worker() { // TODO buffer multiple nodes
 void synchronizedMakeSuitors() {
   std::vector<std::thread> threads;
 
+  Qtex.lock();
+
   while (!Q.empty()) { // non-concurrent access
     for (int i = 1; i < threadCount; ++i) {
       threads.emplace_back(worker);
     }
+    Qtex.unlock();
     worker();
 
     while (!threads.empty()) {
       threads.back().join();
       threads.pop_back();
     }
-    std::swap(Q, R);
+    Qtex.lock();
+
+    for (int node : R) {
+      Q.push(node);
+    }
+    R.clear();
   }
+
+  Qtex.unlock();
 }
 
 int reduce() {
@@ -191,7 +236,6 @@ int reduce() {
 
   for (size_t i = 0; i < count; i++) {
     for (auto d : S[i]) {
-      ++Rusage;
       out += d.first;
 
       // std::cerr << "reducing " << d << "\n";
@@ -224,6 +268,7 @@ void analyzeInput(std::stringstream& filtered) {
     N.emplace_back();
     S.emplace_back();
     L.emplace_back();
+    U.emplace_back();
 
     T.push_back(0);
     oldIndex.push_back(0);
@@ -291,12 +336,6 @@ int main(int argc, char *argv[]) {
       explore[i] = 0;
     }
   }
-
-  std::cerr << "Total W usage: " << Wusage << "\n";
-  std::cerr << "By findX: " << Xusage << "\n";
-  std::cerr << "By S comparator: " << Susage << "\n";
-  std::cerr << "During N sorting: " << Nusage << "\n";
-  std::cerr << "During reductions: " << Rusage << "\n";
 
   return 0;
 }
