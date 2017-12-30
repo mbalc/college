@@ -24,7 +24,8 @@ private:
   std::atomic_flag locked = ATOMIC_FLAG_INIT;
 
   // std::mutex locked;
-  int testchck = 0;
+
+  // int testchck = 0;
 
 public:
 
@@ -33,11 +34,11 @@ public:
 
     // locked.lock();
 
-    assert(testchck++ == 0);
+    // critical section entered, nobody else is here - assert(testchck++ == 0);
   }
 
   void unlock() {
-    assert(--testchck == 0);
+    // leaving critical section, still nobody there - assert(--testchck == 0);
 
     // if (testchck == -1) {
     //   std::cerr << "O zgrozo!\n";
@@ -64,11 +65,11 @@ std::queue<int> Q;
 std::set<int>   R;
 std::vector<ador_t> S;
 
-std::vector<size_t> T; // we only hold the size of the original T structure
-std::vector<int>    explore;
-std::vector<int>    oldIndex;
+std::vector<int> explore;
+std::vector<int> oldIndex;
 
-std::deque<SpinLock> L, U;
+std::deque<std::atomic<size_t> > T; // we only hold the size of the original T structure
+std::deque<SpinLock> L;
 SpinLock Qtex, Rtex;
 
 int b_method;
@@ -78,7 +79,7 @@ size_t getLim(int node) {
   return bvalue(b_method, oldIndex[node]);
 }
 
-rel_t last(int at) {
+rel_t last(int at) { // requires a lock to be held on L[at]
   size_t lim = getLim(at);
 
   if (S[at].size() == lim) return *S[at].begin();
@@ -86,7 +87,7 @@ rel_t last(int at) {
   return std::make_pair(NUL, NUL);
 }
 
-bool isEligible(int u, rel_t el, rel_t wRel) {
+bool isEligible(int u, rel_t el, rel_t wRel) { // requires a lock to be held on L[el.second]
   int v = el.second;
   int dist = el.first, wNode = wRel.second, wDist = wRel.first;
 
@@ -94,12 +95,15 @@ bool isEligible(int u, rel_t el, rel_t wRel) {
     (dist > wDist) || ((dist == wDist) && (u > wNode)));         // W(v, u) :>: W(v, wNode)
 }
 
-std::pair<rel_t, rel_t>findX(int u) {
+std::pair<rel_t, rel_t>findX(int u) {                            // hands over a lock held on S
+                                                                 // member that is relevant to the
+                                                                 // relation returned, it must be
+                                                                 // explicitly unlocked
   const auto& vec = N[u];
   int siz         = vec.size();
 
-  for (int i = 0; i < siz; ++i) { // TODO revert to using explore
-    const std::pair<int, int>& el = vec[i];
+  for (; explore[u] < siz; ++explore[u]) {
+    const std::pair<int, int>& el = vec[explore[u]];
     int v                         = el.second;
 
     if (getLim(v) > 0) {
@@ -107,14 +111,11 @@ std::pair<rel_t, rel_t>findX(int u) {
       rel_t wRel = last(v); // 'w' stands for 'worst'
 
       if (isEligible(u, el, wRel)) {
-        L[v].unlock();
         return std::make_pair(wRel, el);
       }
       L[v].unlock();
     }
   }
-
-  // std::cerr << maxx << "ismax\n";
 
   return std::make_pair(std::make_pair(NUL, NUL), std::make_pair(NUL, NUL));
 }
@@ -137,59 +138,38 @@ void worker() { // TODO buffer multiple nodes
 
     limit = getLim(u);
 
-    // std::cerr << "    computing " << u << " for limit " << limit << "\n";
 
-    U[u].lock();
-
-    while (T[u] < limit) { // T[u] is declared as the size of the original T[u]
-                           // structure
-      U[u].unlock();
+    while (T[u] < limit) { // T[u] is declared as the size of the original T[u] structure
       res   = findX(u);
       maxX  = res.second;
       x     = maxX.second;
       xPath = maxX.first;
 
       if (x == NUL) {
-        U[u].lock();
         break;
       }
-      else {
-        L[x].lock();
-        {
-          if (isEligible(u, maxX, last(x))) {
-            z = res.first;
-            y = z.second;
 
-            // std::cerr << "inserting" << x << " to " << u << "\n";
-            auto& rel = S[x];
-            rel.insert(std::make_pair(xPath, u));
-            U[u].lock();
-            {
-              ++T[u];
-            }
-            U[u].unlock();
+      // Utex.unlock();
 
-            if (y != NUL) {
-              // std::cerr << "erasing " << x << " from " << y << "\n";
-              rel.erase(z);
-              U[y].lock();
-              {
-                --T[y];
-              }
-              U[y].unlock();
-              localR.push(y);
-            }
-          }
+      if (isEligible(u, maxX, last(x))) {
+        z = res.first; // worst relation of x
+        y = z.second;
+
+        auto& rel = S[x];
+        rel.insert(std::make_pair(xPath, u));
+        ++T[u];
+
+
+        if (y != NUL) {
+          rel.erase(z);
+          --T[y];
+          localR.push(y);
         }
-        L[x].unlock();
       }
 
+      L[x].unlock();
       ++explore[u];
-      U[u].lock();
-
-      // std::cerr << T[u].size() << "Tsize\n";
     }
-    U[u].unlock();
     Qtex.lock();
   }
   Qtex.unlock();
@@ -268,9 +248,8 @@ void analyzeInput(std::stringstream& filtered) {
     N.emplace_back();
     S.emplace_back();
     L.emplace_back();
-    U.emplace_back();
 
-    T.push_back(0);
+    T.emplace_back(0);
     oldIndex.push_back(0);
     explore.push_back(0);
   }
