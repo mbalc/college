@@ -17,12 +17,14 @@ const int NUL = -42;
 static long long Wusage = 0, Xusage = 0, Susage = 0, Nusage = 0, Rusage = 0;
 
 using rel_t = std::pair<int, int>; // first - weight of an edge, second - destination node
-using ador_t = std::set<rel_t>;
+// The order is important for default sorting algrorithms to behave just the way we want them to
+using ador_t = std::set<rel_t>; // the worst adorator in terms of :<: order will be
+                                // on the beginning of the set
 
 std::vector<std::vector<rel_t> > N;
 std::queue<int> Q;
 std::vector<ador_t> S;
-std::vector<std::set<int> > T;
+std::vector<int> T; // we only hold the size of the original T structure
 
 std::vector<int> explore;
 std::vector<int> oldIndex;
@@ -55,10 +57,10 @@ std::pair<rel_t, rel_t> findX(int u) {
       rel_t wRel = last(v);
       int dist = el.first, wNode = wRel.second, wDist = wRel.first;
 
-      if ((T[u].find(v) == T[u].end()) && ( // W(v, u) :>: W(v, wNode)
+      if ((S[v].find(std::make_pair(el.first, u)) == S[v].end()) && ( // W(v, u) :>: W(v, wNode)
             (dist > wDist) || ((dist == wDist) && (u > wNode))
             )) {                            // found better substitute
-        return std::make_pair(wRel, std::make_pair(dist, v));
+        return std::make_pair(wRel, el);
 
         // maxx      = v;
         // maxWeight = W(u, v);
@@ -79,9 +81,8 @@ void compute(int u) {
   uint limit = getLim(u);
 
   // std::cerr << "    computing " << u << " for limit " << limit << "\n";
-  auto& ad = T[u];
 
-  while (ad.size() < limit) {
+  while (T[u] < limit) { // T[u] is declared as the size of the original T[u] structure
     res = findX(u);
     maxX = res.second;
     x = maxX.second;
@@ -95,12 +96,12 @@ void compute(int u) {
       // std::cerr << "inserting" << x << " to " << u << "\n";
       auto& rel = S[x];
       rel.insert(std::make_pair(xPath, u)); // TODO update Slast
-      ad.insert(x);
+      ++T[u];
 
       if (y != NUL) {                         // see also the FAQ
         // std::cerr << "erasing " << x << " from " << y << "\n";
         rel.erase(z);
-        T[y].erase(x);
+        --T[y];
         Q.push(y);
       }
     }
@@ -144,8 +145,8 @@ void analyzeInput(std::stringstream& filtered) {
   for (auto &el : multiN) {
     // std::cerr << el.first << ", ";
     N.push_back(std::vector<std::pair<int, int> >());
-    T.push_back(std::set<int>());
     S.push_back(ador_t());
+    T.push_back(0);
     convert[el.first] = count;
     oldIndex.push_back(0);
     explore.push_back(0);
@@ -217,7 +218,7 @@ int main(int argc, char *argv[]) {
 
     for (size_t i = 0; i < count; i++) {
       S[i].clear();
-      T[i].clear();
+      T[i] = 0;
       explore[i] = 0;
     }
   }
