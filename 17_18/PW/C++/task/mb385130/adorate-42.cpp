@@ -24,20 +24,20 @@ using ador_t = std::set<rel_t>; // the worst adorator in terms of :<: order will
 std::vector<std::vector<rel_t> > N;
 std::queue<int> Q;
 std::vector<ador_t> S;
-std::vector<int> T; // we only hold the size of the original T structure
+std::vector<size_t> T; // we only hold the size of the original T structure
 
 std::vector<int> explore;
 std::vector<int> oldIndex;
 
 int  b_method;
-uint count;
+size_t count;
 
-uint getLim (int node) {
+size_t getLim (int node) {
   return bvalue(b_method, oldIndex[node]);
 }
 
 rel_t last(int at) {
-  uint lim = getLim(at);
+  size_t lim = getLim(at);
 
   if (S[at].size() == lim) return (*S[at].begin());
 
@@ -78,7 +78,7 @@ void compute(int u) {
   rel_t z, maxX;
   std::pair<rel_t, rel_t> res;
 
-  uint limit = getLim(u);
+  size_t limit = getLim(u);
 
   // std::cerr << "    computing " << u << " for limit " << limit << "\n";
 
@@ -114,14 +114,16 @@ void compute(int u) {
   // std::cerr << T[u].size() << " is sizeof "  << " \n";
 }
 
-int reduce(std::set<std::pair<int, int> >& A, int n) {
+int reduce() {
   int out = 0;
 
-  for (auto d : A) {
-    ++Rusage;
-    out += d.first;
+  for (size_t i = 0; i < count; i++) {
+    for (auto d : S[i]) {
+      ++Rusage;
+      out += d.first;
 
-    // std::cerr << "reducing " << d << "\n";
+      // std::cerr << "reducing " << d << "\n";
+    }
   }
   return out;
 }
@@ -171,8 +173,6 @@ void analyzeInput(std::stringstream& filtered) {
 }
 
 int main(int argc, char *argv[]) {
-  int sum = 0;
-
   if (argc != 4) {
     std::cerr << "usage: " << argv[0] << " thread-count inputfile b-limit" <<
       std::endl;
@@ -206,15 +206,9 @@ int main(int argc, char *argv[]) {
     }
     // std::cerr << S.size() << "pushed overall \n";
 
-    for (size_t i = 0; i < count; i++) {
-      // std::cerr << "among " << p.first << "\n";
-      sum += reduce(S[i], i);
-    }
     std::cerr << "\nAND THE OUTPUT IIIS!:\n";
-    std::cout << sum / 2 << "\n";
+    std::cout << reduce() / 2 << "\n";
     std::cerr << "\n";
-
-    sum = 0;
 
     for (size_t i = 0; i < count; i++) {
       S[i].clear();
