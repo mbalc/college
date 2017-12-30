@@ -1,7 +1,9 @@
 #include "blimit.hpp"
 
 #include <algorithm>
+#include <atomic>
 #include <climits>
+#include <deque>
 #include <iostream>
 #include <fstream>
 #include <functional>
@@ -10,7 +12,27 @@
 #include <map>
 #include <queue>
 #include <set>
+#include <thread>
+#include <utility>
 #include <vector>
+
+class SpinLock {
+private:
+
+  std::atomic_flag locked = ATOMIC_FLAG_INIT;
+
+public:
+
+  void lock() {
+    while (locked.test_and_set(std::memory_order_acquire));
+  }
+
+  void unlock() {
+    locked.clear(std::memory_order_release);
+  }
+};
+
+int threadCount;
 
 const int NUL = -42, procLimit = 4, buffLimit = 16;
 
@@ -24,12 +46,15 @@ using ador_t = std::set<rel_t>;    // the worst adorator in terms of :<: order
                                    // will be on the beginning of the set
 
 std::vector<std::vector<rel_t> > N;
-std::queue<int> Q;
+std::queue<int> Q, R;
 std::vector<ador_t> S;
-std::vector<size_t> T; // we only hold the size of the original T structure
 
-std::vector<int> explore;
-std::vector<int> oldIndex;
+std::vector<size_t> T; // we only hold the size of the original T structure
+std::vector<int>    explore;
+std::vector<int>    oldIndex;
+
+std::deque<SpinLock> L;
+SpinLock Qtex, Rtex;
 
 int b_method;
 size_t count;
@@ -46,6 +71,14 @@ rel_t last(int at) {
   return std::make_pair(NUL, NUL);
 }
 
+bool isEligible(int u, rel_t el, rel_t wRel) {
+  int v = el.second;
+  int dist = el.first, wNode = wRel.second, wDist = wRel.first;
+
+  return (S[v].find(std::make_pair(dist, u)) == S[v].end()) && ( // v is not matched yet with u
+    (dist > wDist) || ((dist == wDist) && (u > wNode)));         // W(v, u) :>: W(v, wNode)
+}
+
 std::pair<rel_t, rel_t>findX(int u) {
   const auto& vec = N[u];
   int siz         = vec.size();
@@ -56,12 +89,9 @@ std::pair<rel_t, rel_t>findX(int u) {
 
     if (getLim(v) > 0) {
       ++++ Xusage;
-      rel_t wRel = last(v);
-      int   dist = el.first, wNode = wRel.second, wDist = wRel.first;
+      rel_t wRel = last(v); // 'w' stands for 'worst'
 
-      if ((S[v].find(std::make_pair(el.first, u)) == S[v].end()) && ( // v is not matched yet with u
-            (dist > wDist) || ((dist == wDist) && (u > wNode))        // W(v, u) :>: W(v, wNode)
-            )) {                                                      // we found better substitute
+      if (isEligible(u, el, wRel)) {
         return std::make_pair(wRel, el);
       }
     }
@@ -72,47 +102,88 @@ std::pair<rel_t, rel_t>findX(int u) {
   return std::make_pair(std::make_pair(NUL, NUL), std::make_pair(NUL, NUL));
 }
 
-void compute(int u) {
-  int   x, xPath, y;
-  rel_t z, maxX;
+void worker() { // TODO buffer multiple nodes
+  int x, u, xPath, y;
+  size_t limit;
+  rel_t  z, maxX;
 
-  std::pair<rel_t, rel_t> res;
+  std::queue<int> localR;
+  std::pair<rel_t, rel_t> res, upd;
 
-  size_t limit = getLim(u);
+  Qtex.lock();
 
-  // std::cerr << "    computing " << u << " for limit " << limit << "\n";
+  while (!Q.empty()) {
+    u = Q.front();
+    Q.pop();
+    Qtex.unlock();
 
-  while (T[u] < limit) { // T[u] is declared as the size of the original T[u]
-                         // structure
-    res   = findX(u);
-    maxX  = res.second;
-    x     = maxX.second;
-    xPath = maxX.first;
+    limit = getLim(u);
 
-    if (x == NUL) break;
-    else {
-      z = res.first;
-      y = z.second;
+    // std::cerr << "    computing " << u << " for limit " << limit << "\n";
 
-      // std::cerr << "inserting" << x << " to " << u << "\n";
-      auto& rel = S[x];
-      rel.insert(std::make_pair(xPath, u));
-      ++T[u];
+    while (T[u] < limit) { // T[u] is declared as the size of the original T[u]
+                           // structure
+      res   = findX(u);
+      maxX  = res.second;
+      x     = maxX.second;
+      xPath = maxX.first;
 
-      if (y != NUL) {
-        // std::cerr << "erasing " << x << " from " << y << "\n";
-        rel.erase(z);
-        --T[y];
-        Q.push(y);
+      if (x == NUL) break;
+      else {
+        L[x].lock();
+
+        if (isEligible(u, maxX, last(x))) {
+          z = res.first;
+          y = z.second;
+
+          // std::cerr << "inserting" << x << " to " << u << "\n";
+          auto& rel = S[x];
+          rel.insert(std::make_pair(xPath, u));
+          ++T[u];
+
+          if (y != NUL) {
+            // std::cerr << "erasing " << x << " from " << y << "\n";
+            rel.erase(z);
+            --T[y];
+            localR.push(y);
+          }
+        }
+        L[x].unlock();
       }
+
+      ++explore[u];
+
+      // std::cerr << T[u].size() << "Tsize\n";
     }
-
-    ++explore[u];
-
-    // std::cerr << T[u].size() << "Tsize\n";
+    Qtex.lock();
   }
+  Qtex.unlock();
+  Rtex.lock();
+
+  while (!localR.empty()) {
+    R.push(localR.front());
+    localR.pop();
+  }
+  Rtex.unlock();
 
   // std::cerr << T[u].size() << " is sizeof "  << " \n";
+}
+
+void synchronizedMakeSuitors() {
+  std::vector<std::thread> threads;
+
+  while (!Q.empty()) { // non-concurrent access
+    for (int i = 1; i < threadCount; ++i) {
+      threads.emplace_back(worker);
+    }
+    worker();
+
+    while (!threads.empty()) {
+      threads.back().join();
+      threads.pop_back();
+    }
+    std::swap(Q, R);
+  }
 }
 
 int reduce() {
@@ -147,13 +218,16 @@ void analyzeInput(std::stringstream& filtered) {
 
   for (auto& el : multiN) {
     // std::cerr << el.first << ", ";
-    N.push_back(std::vector<std::pair<int, int> >());
-    S.push_back(ador_t());
-    T.push_back(0);
     convert[el.first] = count;
+    ++count;
+
+    N.emplace_back();
+    S.emplace_back();
+    L.emplace_back();
+
+    T.push_back(0);
     oldIndex.push_back(0);
     explore.push_back(0);
-    ++count;
   }
   std::cerr << "\n";
 
@@ -181,11 +255,11 @@ int main(int argc, char *argv[]) {
     return 1;
   }
 
-  int thread_count = std::stoi(argv[1]);
-  std::string input_filename{ argv[2] };
-  int b_limit = std::stoi(argv[3]);
+  threadCount = std::stoi(argv[1]);
+  std::string inputFilename{ argv[2] };
+  int bLimit = std::stoi(argv[3]);
 
-  std::ifstream infile(input_filename);
+  std::ifstream infile(inputFilename);
   std::stringstream filtered;
   std::string line;
 
@@ -195,17 +269,14 @@ int main(int argc, char *argv[]) {
 
   analyzeInput(filtered);
 
-  for (b_method = 0; b_method <= b_limit; b_method++) {
+  for (b_method = 0; b_method <= bLimit; b_method++) {
     for (size_t i = 0; i < count; i++) {
       Q.push(i);
     }
 
     std::cerr << "roll " << b_method << "\n";
 
-    while (!Q.empty()) {
-      compute(Q.front());
-      Q.pop();
-    }
+    synchronizedMakeSuitors();
 
     // std::cerr << S.size() << "pushed overall \n";
 
