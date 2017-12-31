@@ -20,7 +20,7 @@
 #include <vector>
 
 const int NULL_EXPR = -42,
-          PROC_BUFF_LIM = 128;  // a thread will process this many nodes before locking the main
+          PROC_BUFF_LIM = 512;  // a thread will process this many nodes before locking the main
                                 // queue of nodes left to be processed again - locks interfere less
 
 class SpinLock {
@@ -114,49 +114,58 @@ std::pair<relation_t, relation_t> findX(int u) {  // important notice: hands ove
   return std::make_pair(std::make_pair(NULL_EXPR, NULL_EXPR), std::make_pair(NULL_EXPR, NULL_EXPR));
 }
 
-void worker() {  // TODO buffer multiple nodes, split this
-  int x, u, xPath, y;
-  size_t limit;
+void processNode(std::queue<int>& localR, int u) {
+  int x, xPath, y;
   relation_t z, maxX;
 
-  std::queue<int> localR;
-  std::pair<relation_t, relation_t> res, upd;
+  size_t limit = getLim(u);
+  std::pair<relation_t, relation_t> res;
+
+  while (T[u] < limit) {  // T[u] is declared as the size of the original T[u] structure
+    res = findX(u);
+    maxX = res.second;
+    x = maxX.second;
+    xPath = maxX.first;
+
+    if (x == NULL_EXPR) break;
+
+    if (isEligible(u, maxX, last(x))) {
+      z = res.first;  // worst relation of x
+      y = z.second;
+
+      auto& rel = suitors[x];
+      rel.insert(std::make_pair(xPath, u));
+      ++T[u];
+
+      if (y != NULL_EXPR) {
+        rel.erase(z);
+        --T[y];
+        localR.push(y);
+      }
+    }
+
+    L[x].unlock();  // locked previously by findX()
+    ++explore[u];
+  }
+}
+
+void worker() {  // TODO buffer multiple nodes, split this
+  std::queue<int> localQ, localR;
 
   Qtex.lock();
   while (!mainProcQueue.empty()) {
-    u = mainProcQueue.front();
-    mainProcQueue.pop();
+    for (size_t i = 1; i <= PROC_BUFF_LIM && !mainProcQueue.empty(); i++) {
+      localQ.push(mainProcQueue.front());
+      mainProcQueue.pop();
+    }
     Qtex.unlock();
 
-    limit = getLim(u);
-
-    while (T[u] < limit) {  // T[u] is declared as the size of the original T[u] structure
-      res = findX(u);
-      maxX = res.second;
-      x = maxX.second;
-      xPath = maxX.first;
-
-      if (x == NULL_EXPR) break;
-
-      if (isEligible(u, maxX, last(x))) {
-        z = res.first;  // worst relation of x
-        y = z.second;
-
-        auto& rel = suitors[x];
-        rel.insert(std::make_pair(xPath, u));
-        ++T[u];
-
-        if (y != NULL_EXPR) {
-          rel.erase(z);
-          --T[y];
-          localR.push(y);
-        }
-      }
-
-      L[x].unlock();  // locked previously by findX()
-      ++explore[u];
+    while (!localQ.empty()) {
+      processNode(localR, localQ.front());
+      localQ.pop();
     }
-    Qtex.lock();
+
+    Qtex.lock();  // to check (!mainProcQueue.empty()) in the next 'while' iteration
   }
   Qtex.unlock();
 
