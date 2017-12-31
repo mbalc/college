@@ -1,7 +1,10 @@
 Optymalizacje ogólne:
   - normalizacja numerów wierzchołków
-  
+  - całkowite uniknięcie wywoływania funkcji W explicite - potrzebne dane trzymamy w odpowiednich strukturach wykorzystywanych w miejscach, w których wedlug pseudokodu wywołanie W byłoby konieczne
+  - nie korzystamy ze struktury T - trzymamy jedynie rozmiary
   (? - trzymamy posortowany zbiór N[v] - T[v] - {wszystkie mniejsze od S[v].last})
 
 Optymalizacje - współbieżność
   - uwspółbieżnienie rozpatrywania poszczególnych wierzchołków z kolejki Q
+  - stosowanie spin-locków zamiast std::mutex - wydajność kosztem czasu procesora (ekonomiczności)
+  - TODO buforowanie z góry pewnej liczby wierzchołków do przeanalizowania przez wątek - ograniczenie zużycia blokady na strukturze Q  
