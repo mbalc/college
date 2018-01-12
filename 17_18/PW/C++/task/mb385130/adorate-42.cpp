@@ -1,250 +1,293 @@
 #include "blimit.hpp"
 
 #include <algorithm>
+#include <atomic>  // TODO cleanup includes
+#include <cassert>
 #include <climits>
-#include <iostream>
+#include <deque>
 #include <fstream>
 #include <functional>
-#include <sstream>
-#include <string>
+#include <iostream>
 #include <map>
+#include <mutex>
 #include <queue>
 #include <set>
+#include <sstream>
+#include <string>
+#include <thread>
+#include <unordered_set>
+#include <utility>
 #include <vector>
 
-const int NUL = -42;
+const int NULL_EXPR = -42,
+          PROC_BUFF_LIM = 512;  // a thread will process this many nodes before locking the main
+                                // queue of nodes left to be processed again - locks interfere less
 
-static long long Wusage = 0, Xusage = 0, Susage = 0, Nusage = 0, Rusage = 0;
-using ador_t = std::set<std::pair<int, int> >;
+class SpinLock {
+private:
+  std::atomic_flag locked = ATOMIC_FLAG_INIT;
+  // int howManyProcHaveLock = 0;
 
-std::map<std::pair<int, int>, int> Wdata;
-std::vector<std::vector<int> > N;
+public:
+  void lock() {
+    while (locked.test_and_set(std::memory_order_acquire)) {}  // spin until we are the ones who set
+                                                               // 'locked' to 'true' from 'false'
 
-// std::map<std::pair<int, int>, int> Wdata;
-// std::map<int, std::vector<int>> N; // TODO :>: order on vector elements (max
-// begin())
+    // critical section entered, nobody else is here - assert(howManyProcHaveLock++ == 0);
+  }
 
-std::queue<int> Q;
-std::vector<ador_t> S;
-std::vector<std::set<int> > T;
+  void unlock() {
+    // leaving critical section, still nobody's here - assert(--howManyProcHaveLock == 0);
 
-int  b_method;
-uint count;
+    locked.clear(std::memory_order_release);
+  }
+};
 
-int W(int a, int b) {
-  if (a > b) std::swap(a, b);
+using relation_t = std::pair<int, int>;  // first - weight of an edge, second - destination node
+/* The order of relation_t members is important for default sorting algorithms to behave just
+   the way we want them to - to imply :<: order in sets and when sorted with std::sort during
+   'neighbours' structure preprocessing */
 
-  if (a == NUL) return 0;
+std::vector<int> explore;  // we process ordered neighbours once per bmethod - here we store last
+                           // index considered during such traversal
 
-  ++Wusage;
+std::vector<int> oldIndex;  // on the beginning of the runtime we reindex nodes to consecutive
+                            // numbers from 0 to (total count of nodes - 1); here we store old
+                            // indexes for blimit function to work properly
 
-  std::map<std::pair<int, int>,
-           int>::iterator out = Wdata.find(std::make_pair(a, b));
+std::vector<std::vector<relation_t>> neighbours;  // neighbours[i] -> a set of relations i node has
+std::queue<int> mainProcQueue;
+std::set<int> reprocQueue;  // nodes stored here will need another processing
 
-  if (out == Wdata.end()) return 0;  // TODO NUL?
+std::vector<std::set<relation_t>> suitors;
+std::deque<SpinLock> L;  // a spinlock mutex for each member of 'suitors' structure
 
-  return out->second;
+std::deque<std::atomic<size_t>> T;  // we only hold the size of the original T structure
+SpinLock Qtex, Rtex;                // mutexes for mainProcQueue and reprocQueue, respectively
+
+int threadCount;
+std::string inputFilename;
+
+int b_method;
+size_t count;  // total node count (inititated during input analysis)
+
+size_t getLim(int node) {
+  return bvalue(b_method, oldIndex[node]);
 }
 
-int last(int at) {
-  uint lim = bvalue(b_method, at);
+relation_t last(int at) {  // requires a lock to be held on L[at]
+  size_t lim = getLim(at);
 
-  if (lim == 0) return INT_MAX;
+  if (suitors[at].size() == lim) return *suitors[at].begin();
 
-  if (S[at].size() == lim) return (S[at].begin())->second;
-
-  return NUL;
+  return std::make_pair(NULL_EXPR, NULL_EXPR);
 }
 
-int findX(int u) {
-  int maxx = NUL, maxWeight = NUL;
-  const auto& vec = N[u];
+bool isEligible(int u, relation_t el, relation_t wRel) {  // requires a lock on L[el.second]
+  int v = el.second;
+  int dist = el.first, wNode = wRel.second, wDist = wRel.first;  // 'w' stands for 'worst'
 
-  for (int v : vec) {
-    if (bvalue(b_method, v) > 0) {
-      ++++ Xusage;
-      int dist = W(v, u), wNode = last(v), wDist = W(v, wNode);
+  return ((dist > wDist) || ((dist == wDist) && (u > wNode)))  // v is not matched yet with u
+         &&
+         (suitors[v].find(std::make_pair(dist, u)) == suitors[v].end());  // W(v, u) :>: W(v, wNode)
+}
 
-      if ((T[u].find(v) == T[u].end()) && ( // W(v, u) :>: W(v, wNode)
-            (dist > wDist) || ((dist == wDist) && (u > wNode))
-            )) {                            // found better substitute
-        return v;
+std::pair<relation_t, relation_t> findX(int u) {  // important notice: hands over a lock held on
+                                                  // suitors member that is relevant to the relation
+                                                  // returned, so it must be explicitly unlocked
+  const auto& uNeighbours = neighbours[u];
+  int siz = uNeighbours.size();
 
-        // maxx      = v;
-        // maxWeight = W(u, v);
-      }
+  for (; explore[u] < siz; ++explore[u]) {
+    const std::pair<int, int>& rel = uNeighbours[explore[u]];
+    int v = rel.second;
+
+    if (getLim(v) > 0) {
+      L[v].lock();
+      relation_t wRel = last(v);  // 'w' stands for 'worst'
+
+      if (isEligible(u, rel, wRel)) return std::make_pair(wRel, rel);
+      L[v].unlock();
     }
   }
 
-  // std::cerr << maxx << "ismax\n";
-
-  return maxx;
+  return std::make_pair(std::make_pair(NULL_EXPR, NULL_EXPR), std::make_pair(NULL_EXPR, NULL_EXPR));
 }
 
-void compute(int u) {
-  int  x, y;
-  uint limit = bvalue(b_method, u);
+void processNode(std::queue<int>& localR, int u) {
+  int x, xPath, y;
+  relation_t z, maxX;
 
-  // std::cerr << "    computing " << u << " for limit " << limit << "\n";
-  auto& ad = T[u];
+  size_t limit = getLim(u);
+  std::pair<relation_t, relation_t> res;
 
-  while (ad.size() < limit) {
-    x = findX(u);
+  while (T[u] < limit) {  // T[u] is declared as the size of the original T[u] structure
+    res = findX(u);
+    maxX = res.second;
+    x = maxX.second;
+    xPath = maxX.first;
 
-    if (x == NUL) break;
-    else {
-      y = last(x);
+    if (x == NULL_EXPR) break;
 
-      // std::cerr << "inserting" << x << " to " << u << "\n";
-      auto& rel = S[x];
-      rel.insert(std::make_pair(W(x, u), u)); // TODO update Slast
-      ad.insert(x);
+    if (isEligible(u, maxX, last(x))) {
+      z = res.first;  // worst relation of x
+      y = z.second;
 
-      if (y != NUL) {                         // see also the FAQ
-        // std::cerr << "erasing " << x << " from " << y << "\n";
-        rel.erase(std::make_pair(W(x, y), y));
-        T[y].erase(x);
-        Q.push(y);
+      auto& rel = suitors[x];
+      rel.insert(std::make_pair(xPath, u));
+      ++T[u];
+
+      if (y != NULL_EXPR) {
+        rel.erase(z);
+        --T[y];
+        localR.push(y);
       }
     }
 
-    // std::cerr << T[u].size() << "Tsize\n";
+    L[x].unlock();  // locked previously by findX()
+    ++explore[u];
   }
-
-  // std::cerr << T[u].size() << " is sizeof "  << " \n";
 }
 
-int reduce(std::set<int>& A, int n) {
+void worker() {  // TODO buffer multiple nodes, split this
+  std::queue<int> localQ, localR;
+
+  Qtex.lock();
+  while (!mainProcQueue.empty()) {
+    for (size_t i = 1; i <= PROC_BUFF_LIM && !mainProcQueue.empty(); i++) {
+      localQ.push(mainProcQueue.front());
+      mainProcQueue.pop();
+    }
+    Qtex.unlock();
+
+    while (!localQ.empty()) {
+      processNode(localR, localQ.front());
+      localQ.pop();
+    }
+
+    Qtex.lock();  // to check (!mainProcQueue.empty()) in the next 'while' iteration
+  }
+  Qtex.unlock();
+
+  Rtex.lock();
+  while (!localR.empty()) {
+    reprocQueue.insert(localR.front());
+    localR.pop();
+  }
+  Rtex.unlock();
+}
+
+void synchronizedMakeSuitors() {
+  std::vector<std::thread> threads;
+
+  Qtex.lock();
+  while (!mainProcQueue.empty()) {  // non-concurrent access
+    for (int i = 1; i < threadCount; ++i) threads.emplace_back(worker);
+    Qtex.unlock();
+    worker();
+
+    while (!threads.empty()) {
+      threads.back().join();
+      threads.pop_back();
+    }
+
+    Qtex.lock();
+    for (int node : reprocQueue) mainProcQueue.push(node);
+    reprocQueue.clear();
+  }
+  Qtex.unlock();
+}
+
+int reduce() {
   int out = 0;
 
-  for (auto d : A) {
-    ++Rusage;
-    out += W(d, n);
-
-    // std::cerr << "reducing " << d << "\n";
+  for (size_t i = 0; i < count; i++) {
+    for (auto d : suitors[i]) out += d.first;
   }
   return out;
 }
 
-void analyzeInput(std::stringstream& filtered) {
-  int from, to, weight;
-
-  std::map<std::pair<int, int>, int> multiW;
-  std::map<int, std::vector<int> >   multiN;
+void initStructures(std::map<int, std::vector<relation_t>>& neighbourMap) {
   std::map<int, int> convert;
-
-  while (filtered >> from >> to >> weight) {
-    if (from > to) std::swap(from, to);
-    multiW.insert(std::make_pair(std::make_pair(from, to), weight));
-    multiN[from].push_back(to);
-    multiN[to].push_back(from);
-  }
-
 
   count = 0;
 
   std::cerr << "nodes: ";
 
-  for (auto el : multiN) {
-    // std::cerr << el.first << ", ";
-    convert[el.first] = count;
+  for (auto& elem : neighbourMap) {  // consecutive elem.first values are in ascending order
+    convert[elem.first] = count;
     ++count;
+
+    neighbours.emplace_back();
+    suitors.emplace_back();
+    L.emplace_back();
+
+    T.emplace_back(0);
+    oldIndex.push_back(elem.first);
+    explore.push_back(0);
   }
   std::cerr << "\n";
 
-  for (size_t i = 0; i < count; i++) {
-    N.push_back(std::vector<int>());
-    T.push_back(std::set<int>());
-    S.push_back(ador_t());
+  // reindex neighbours
+  for (auto& elem : neighbourMap) {
+    for (auto& node : elem.second)
+      neighbours[convert[elem.first]].push_back(std::make_pair(node.first, convert[node.second]));
   }
 
-  // reindex N and Wdata
-  for (auto el : multiW) {
-    std::pair<int, int> oldK = el.first;
-    std::pair<int, int> newK =
-      std::make_pair(convert[oldK.first], convert[oldK.second]);
-    Wdata.insert(std::make_pair(newK, el.second));
-  }
-
-  for (auto el : multiN) {
-    int at = convert[el.first];
-
-    for (auto node : el.second) {
-      N[at].push_back(convert[node]);
-    }
-  }
-
-
-  for (size_t i = 0; i < count; i++) {
-    std::sort(N[i].begin(), N[i].end(), [i](int a, int b) {
-      ++++ Nusage;
-
-      int Wa = W(i, a), Wb = W(i, b);
-
-      if (Wa == Wb) return a > b;
-
-      return Wa > Wb;
-    });
-  }
+  for (size_t i = 0; i < count; ++i)
+    std::sort(neighbours[i].rbegin(), neighbours[i].rend());  // ascending order
 }
 
-int main(int argc, char *argv[]) {
-  int sum = 0;
+void parseInput() {
+  int from, to, weight;
 
+  std::stringstream filtered;
+
+  std::map<int, std::vector<relation_t>> neighbourMap;
+
+  std::ifstream infile(inputFilename);
+  std::string line;
+
+  while (std::getline(infile, line))
+    if (line[0] != '#') filtered << line << " ";
+
+  while (filtered >> from >> to >> weight) {
+    if (from > to) std::swap(from, to);
+    neighbourMap[from].push_back(std::make_pair(weight, to));
+    neighbourMap[to].push_back(std::make_pair(weight, from));
+  }
+
+  initStructures(neighbourMap);
+}
+
+int main(int argc, char* argv[]) {
   if (argc != 4) {
-    std::cerr << "usage: " << argv[0] << " thread-count inputfile b-limit" <<
-      std::endl;
+    std::cerr << "usage: " << argv[0] << " thread-count inputfile b-limit" << std::endl;
     return 1;
   }
 
-  int thread_count = std::stoi(argv[1]);
-  std::string input_filename{ argv[2] };
-  int b_limit = std::stoi(argv[3]);
+  threadCount = std::stoi(argv[1]);
+  inputFilename = argv[2];
+  int bLimit = std::stoi(argv[3]);
 
-  std::ifstream infile(input_filename);
-  std::stringstream filtered;
-  std::string line;
+  parseInput();
 
-  while (std::getline(infile, line)) {
-    if (line[0] != '#') filtered << line << " ";
-  }
-
-  analyzeInput(filtered);
-
-  for (b_method = 0; b_method <= b_limit; b_method++) {
-    for (size_t i = 0; i < count; i++) {
-      Q.push(i);
-    }
+  for (b_method = 0; b_method <= bLimit; b_method++) {
+    for (size_t i = 0; i < count; i++) mainProcQueue.push(i);
 
     std::cerr << "roll " << b_method << "\n";
 
-    while (!Q.empty()) {
-      compute(Q.front());
-      Q.pop();
-    }
-    std::cerr << S.size() << "pushed overall \n";
+    synchronizedMakeSuitors();
 
-    for (size_t i = 0; i < count; i++) {
-      // std::cerr << "among " << p.first << "\n";
-      sum += reduce(T[i], i);
-    }
     std::cerr << "\nAND THE OUTPUT IIIS!:\n";
-    std::cout << sum / 2 << "\n";
-    std::cerr << "\n";
-
-    sum = 0;
+    std::cout << reduce() / 2 << "\n";
 
     for (size_t i = 0; i < count; i++) {
-      S[i].clear();
-      T[i].clear();
+      suitors[i].clear();
+      T[i] = 0;
+      explore[i] = 0;
     }
   }
-
-  std::cerr << "Total W usage: " << Wusage << "\n";
-  std::cerr << "By findX: " << Xusage << "\n";
-  std::cerr << "By S comparator: " << Susage << "\n";
-  std::cerr << "During N sorting: " << Nusage << "\n";
-  std::cerr << "During reductions: " << Rusage << "\n";
 
   return 0;
 }
