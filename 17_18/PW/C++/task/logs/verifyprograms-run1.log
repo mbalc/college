@@ -1,0 +1,14 @@
+2017-12-28 13:53:30,991 : solution: mb385130
+2017-12-28 13:53:40,559 : file: ../../../ref-results/res-paper-1.txt
+2017-12-28 13:53:40,560 : dir: mb385130 params: 1_paper_1
+2017-12-28 13:53:40,567 : subprocess finished
+2017-12-28 13:53:40,567 : file: stdout_1_paper_1.txt
+2017-12-28 13:53:40,568 : invalid literal for int() with base 10: '    computing 0 for limit1\n'
+2017-12-28 13:53:40,568 : error while reading output
+2017-12-28 13:53:40,568 : file: ../../../ref-results/res-paper-1.txt
+2017-12-28 13:53:40,569 : dir: mb385130 params: 2_paper_1
+2017-12-28 13:53:40,576 : subprocess finished
+2017-12-28 13:53:40,576 : file: stdout_2_paper_1.txt
+2017-12-28 13:53:40,577 : invalid literal for int() with base 10: '    computing 0 for limit1\n'
+2017-12-28 13:53:40,577 : error while reading output
+2017-12-28 13:53:40,578 : solution mb385130 errors 4

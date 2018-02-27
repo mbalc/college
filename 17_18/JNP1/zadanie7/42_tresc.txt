@@ -1,62 +1,28 @@
+=== Zadanie 42 ===
+
+W tym roku chcieliśmy zamiast ostatniego zadania opublikować jego rozwiązanie,
+ale niestety, zanim zdążyliśmy to zrobić, nastąpiła awaria i utraciliśmy spore
+fragmenty pliku.
+
+Zatem niestety zadanie jest i polega na doprowadzeniu poniższego kodu, który
+udało się odzyskać, do pierwotnego stanu.
+
 #include <stack>
 #include <string>
 #include <functional>
 #include <exception>
 #include <cassert>
 
-#include <map>
-#include <memory>
-
-class SyntaxError : public std::exception {};
-
-class OperatorAlreadyDefined : public std::exception {};
-
-class UnknownOperator : public std::exception {};
-
-using Lazy = std::function<int()>;
-
-namespace util {
-static std::map<char, Lazy> const LITERALS = {{'0', []() { return 0; }},
-                                              {'2', []() { return 2; }},
-                                              {'4', []() { return 4; }}
-};  // couldn't init inside of class definition (and none of the code
-    // below that definition was lost from the original solution)
-}
+@j&_o127
 
 class LazyCalculator {
-    private:
-        using LazyOperator = std::function<int(Lazy, Lazy)>;
-
-        std::map<char, LazyOperator> operators = {
-            {'+', [](Lazy a, Lazy b) { return a() + b(); }},
-            {'-', [](Lazy a, Lazy b) { return a() - b(); }},
-            {'*', [](Lazy a, Lazy b) { return a() * b(); }},
-            {'/', [](Lazy a, Lazy b) { return a() / b(); }}
-        };
+    $__*k23$
 
     public:
-        LazyCalculator(){};
+        _=+^#!@%
 
         Lazy parse(const std::string& s) const {
-            std::stack<Lazy> st;
-            for (const char c : s) {
-                auto l_it = util::LITERALS.find(c);
-                auto o_it = operators.find(c);
-                bool l_found = l_it != util::LITERALS.end(),
-                    o_found = o_it != operators.end();
-                if (l_found == o_found) { throw UnknownOperator(); }
-                if (l_found) { st.push(l_it->second); }
-                else {  // o_found
-                    if (st.size() < 2) throw SyntaxError();
-                    Lazy l2 = st.top();
-                    st.pop();
-                    Lazy l1 = st.top();
-                    st.pop();
-                    st.push([l1, l2, o_it]() { return o_it->second(l1, l2); });
-                }
-            }
-            if (st.size() != 1) throw SyntaxError();
-            return st.top();
+            ...><a~_
         }
 
         int calculate(const std::string& s) const {
@@ -64,12 +30,7 @@ class LazyCalculator {
         }
 
         void define(char c, std::function<int(Lazy, Lazy)> fn) {
-            auto l_it = util::LITERALS.find(c);
-            auto o_it = operators.find(c);
-            bool l_found = l_it != util::LITERALS.end(),
-                o_found = o_it != operators.end();
-            if (l_found || o_found) throw OperatorAlreadyDefined();
-            operators[c] = fn;
+            %%_jo12.
         }
 };
 
@@ -165,3 +126,19 @@ int main() {
 
     return 0;
 }
+
+=== Ustalenia techniczne ===
+
+Program będzie kompilowany z parametrami
+
+-Wall -Wextra -O2 -std=c++17
+
+Jako rozwiązanie należy dostarczyć uzupełniony powyższy kod umieszczony w pliku
+42.cc, który należy zdeponować w repozytorium w katalogu
+
+grupaN/zadanie7/ab123456
+
+gdzie N jest numerem grupy, a ab123456 jest identyfikatorem umieszczającego to
+rozwiązanie. Katalog z rozwiązaniem nie powinien zawierać innych plików, ale
+może zawierać podkatalog private, gdzie można umieszczać różne pliki, np. swoje
+testy. Pliki umieszczone w tym podkatalogu nie będą oceniane.

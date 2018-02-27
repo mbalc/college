@@ -71,7 +71,7 @@ if __name__ == "__main__":
     fh.setFormatter(formatter)
     log.addHandler(fh)
     sink = open('/dev/null', 'w')
-    tests = ['paper']
+    tests = ['paper', 'road']
     threads = [1, 2, ]
     blimit = 1
     timelimit = 5

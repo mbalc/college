@@ -1,0 +1,22 @@
+2017-12-28 17:49:55,090 : solution: mb385130
+2017-12-28 17:50:02,244 : file: ../../../ref-results/res-paper-1.txt
+2017-12-28 17:50:02,245 : dir: mb385130 params: 1_paper_1
+2017-12-28 17:50:02,252 : subprocess finished
+2017-12-28 17:50:02,253 : file: stdout_1_paper_1.txt
+2017-12-28 17:50:02,253 : file: ../../../ref-results/res-road-1.txt
+2017-12-28 17:50:02,254 : dir: mb385130 params: 1_road_1
+2017-12-28 17:50:02,260 : subprocess finished
+2017-12-28 17:50:02,261 : file: stdout_1_road_1.txt
+2017-12-28 17:50:02,261 : error in the result: expected 1231 seen 0
+2017-12-28 17:50:02,262 : error in the result: expected 4124 seen 0
+2017-12-28 17:50:02,262 : file: ../../../ref-results/res-paper-1.txt
+2017-12-28 17:50:02,263 : dir: mb385130 params: 2_paper_1
+2017-12-28 17:50:02,270 : subprocess finished
+2017-12-28 17:50:02,270 : file: stdout_2_paper_1.txt
+2017-12-28 17:50:02,271 : file: ../../../ref-results/res-road-1.txt
+2017-12-28 17:50:02,272 : dir: mb385130 params: 2_road_1
+2017-12-28 17:50:02,280 : subprocess finished
+2017-12-28 17:50:02,280 : file: stdout_2_road_1.txt
+2017-12-28 17:50:02,281 : error in the result: expected 1231 seen 0
+2017-12-28 17:50:02,281 : error in the result: expected 4124 seen 0
+2017-12-28 17:50:02,282 : solution mb385130 errors 4

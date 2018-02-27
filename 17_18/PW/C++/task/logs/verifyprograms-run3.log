@@ -1,0 +1,10 @@
+2017-12-28 17:46:36,548 : solution: mb385130
+2017-12-28 17:46:52,870 : file: ../../../ref-results/res-paper-1.txt
+2017-12-28 17:46:52,891 : dir: mb385130 params: 1_paper_1
+2017-12-28 17:46:52,921 : subprocess finished
+2017-12-28 17:46:52,922 : file: stdout_1_paper_1.txt
+2017-12-28 17:46:52,923 : file: ../../../ref-results/res-paper-1.txt
+2017-12-28 17:46:52,923 : dir: mb385130 params: 2_paper_1
+2017-12-28 17:46:52,935 : subprocess finished
+2017-12-28 17:46:52,936 : file: stdout_2_paper_1.txt
+2017-12-28 17:46:52,937 : solution mb385130 errors 0

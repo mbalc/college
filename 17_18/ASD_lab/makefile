@@ -1,4 +1,4 @@
-CXXFLAGS = -std=c++11 -static -O2 -s -lm
+CXXFLAGS = -std=c++11 -static -O2 -s -lm -Wall -Wextra -pedantic
 CXXDEBUG = -std=c++11 -g
 
 all: $(patsubst %.cpp, %.o, $(wildcard *.cpp))
