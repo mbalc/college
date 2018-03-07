@@ -1,0 +1,2 @@
+scp -r students:/home/students/inf/PUBLIC/SO/* public/
+

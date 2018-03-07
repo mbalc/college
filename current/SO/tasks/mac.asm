@@ -1,0 +1,2 @@
+global mac
+section .text
