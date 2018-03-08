@@ -1,5 +1,5 @@
 [submodule "17_18/bazy_danych"]
-	path = 17_18/bazy_danych
+	path = 2.1/BD
 	url = git@github.com:mbalc/bazydanych2017.git
 	branch = master
 [submodule "17_18/JNP1/17_18/JNP1/zadanie3"]
@@ -9,17 +9,20 @@
 	path = 17_18/JNP1/17_18/JNP1/zadanie4
 	url = git@gitlab.com:mbalc/jnp-task-4.git
 [submodule "17_18/JNP1/zadanie3"]
-	path = 17_18/JNP1/zadanie3
+	path = 2.1/JNP1/zadanie3
 	url = git@github.com:michal-olt/jnp-zadanie3.git
 [submodule "17_18/JNP1/zadanie4"]
-	path = 17_18/JNP1/zadanie4
+	path = 2.1/JNP1/zadanie4
 	url = git@gitlab.com:mbalc/jnp-task-4.git
 [submodule "16_17/IPP/task2"]
-	path = 16_17/IPP/task2
+	path = 1.2/IPP/task2
 	url = https://github.com/mbalc/ipp-poly.git
 [submodule "17_18/JNP1/zadanie5"]
-	path = 17_18/JNP1/zadanie5
+	path = 2.1/JNP1/zadanie5
 	url = https://gitlab.com/mbalc/jnp-task-5
 [submodule "17_18/JNP1/zadanie6"]
 	path = 17_18/JNP1/zadanie6
+	url = https://mbalc909@bitbucket.org/mbalc909/jnp-task-6.git
+[submodule "2.1/JNP1/zadanie6/2.1/JNP1/zadanie6"]
+	path = 2.1/JNP1/zadanie6
 	url = https://mbalc909@bitbucket.org/mbalc909/jnp-task-6.git

@@ -1,7 +1,7 @@
 node_modules/
 **/.ipynb_checkpoints/*
-17_18/JNP1/common
-17_18/JNP1/repo
+2.1/JNP1/common
+2.1/JNP1/repo
 
-17_18/rpis/rpis/*
+2.1/RPiS/rpis/*
 *.o
