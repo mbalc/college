@@ -2,4 +2,4 @@
 
 ##### Courses:
 - **WPF** - Wstęp do Programowania Funkcyjnego (Introduction to Programming (functional approach))  
-Ocaml - six tasks successively introducing functional ideas; code reviews
+Ocaml - six tasks successively introducing functional ideas; first code reviews

@@ -1,4 +1,4 @@
-### Academic year 2017-2018
+### Academic year 2017-2018, first semester
 
 ##### Courses:
 - **ASD** - Algorytmy i Struktury Danych (Algorithms and Data Structures)  
