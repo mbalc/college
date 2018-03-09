@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html dir="ltr" xml:lang="pl" class="yui3-js-enabled" lang="pl">
+<head>
+    <title>Zadanie Drzewo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="moodle, Zadanie">
+    <link rel="stylesheet" type="text/css" href="spec_files/styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="page-mod-assign-view"
+      class="format-topics  path-mod path-mod-assign gecko dir-ltr lang-pl yui-skin-sam yui3-skin-sam moodle-mimuw-edu-pl pagelayout-incourse course-55 context-12766 cmid-3469 category-28 has-region-side-pre used-region-side-pre has-region-side-post empty-region-side-post side-pre-only jsenabled"
+      _vimium-has-onclick-listener="">
+
+<div id="page" class="container-fluid">
+    <div id="page-content" class="row-fluid">
+        <div id="region-main-box" class="span9 desktop-first-column">
+            <div class="row-fluid" id="yui_3_17_2_1_1520508957434_127">
+                <section id="region-main">
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main" id="yui_3_17_2_1_1520508957434_126"><span id="maincontent"></span>
+                        <h2>Zadanie Drzewo</h2>
+                        <div id="intro" class="box generalbox boxaligncenter">
+                            <div class="no-overflow" id="yui_3_17_2_1_1520508957434_125"><p><span
+                                    style="color: #3366ff;"></span></p>
+                                <div>
+                                    <div ng-controller="Documents as document">
+                                        <nav><p></p></nav>
+                                    </div>
+                                </div>
+                                <p><span class="" style="color: rgb(239, 69, 64);">Zmiany w treści zadania po 13.03.2017 zostały zaznaczone kolorem czerwonym.</span>
+                                </p>
+                                <p><span class="" style="color: rgb(239, 69, 64);"><br></span></p>
+                                <p>Celem
+                                    zadania jest implementacja drzewiastej struktury danych w oparciu o
+                                    listy dwukierunkowe. Początkowo struktura zawiera jeden wierzchołek
+                                    (korzeń) o numerze 0.</p>
+                                <h2><a id="Operacje_na_strukturze_4"></a>Operacje na strukturze</h2>
+                                <ul>
+                                    <li><p>ADD_NODE &lt;k&gt;<br>Dodaje
+                                        nowy wierzchołek o numerze o jeden większym od poprzednio utworzonego.
+                                        Jego rodzicem staje się wierzchołek o numerze &lt;k&gt;. Ustalamy, że
+                                        nowy wierzchołek umiejscowiony zostaje na prawo od pozostałych dzieci
+                                        &lt;k&gt;.</p></li>
+                                    <li><p>RIGHTMOST_CHILD &lt;k&gt;<br>Wypisuje numer wierzchołka, który jest skrajnie
+                                        prawym dzieckiem &lt;k&gt;. Jeśli &lt;k&gt; jest liściem, wypisuje -1.</p></li>
+                                    <li><p>DELETE_NODE &lt;k&gt;<br>Usuwa
+                                        wierzchołek o numerze &lt;k&gt; (k różne od 0). Krawędzie wychodzące z
+                                        usuniętego wierzchołka w stronę dzieci zostają zaczepione w jego
+                                        rodzicu, w tym samym miejscu, z którego wychodziła krawędź w stronę
+                                        &lt;k&gt;. Kolejność pomiędzy krawędziami zostaje zachowana.</p></li>
+                                    <li><p>DELETE_SUBTREE &lt;k&gt;<br>Usuwa wierzchołek o numerze &lt;k&gt; (k różne od
+                                        0) razem z całym jego poddrzewem.</p></li>
+                                    <li><p>SPLIT_NODE &lt;k&gt; &lt;w&gt;<br>Dodaje
+                                        nowy wierzchołek o numerze o jeden większym od poprzednio utworzonego.
+                                        Jego rodzicem staje się wierzchołek o numerze &lt;k&gt;. Nowy
+                                        wierzchołek umiejscowiony zostaje na prawo od wierzchołka &lt;w&gt;
+                                        (można założyć, że &lt;k&gt; jest rodzicem &lt;w&gt;). Dodatkowo
+                                        wszystkie krawędzie wychodzące z &lt;k&gt;, będące na prawo od
+                                        wierzchołka o numerze &lt;w&gt;, zostają zaczepione w nowym wierzchołku,
+                                        z zachowaniem kolejności.</p></li>
+                                </ul>
+                                <p>Można założyć, że
+                                    wierzchołki, których numery występują w poleceniach, znajdują się w
+                                    strukturze. Wymagamy użycia listy do reprezentacji krawędzi wychodzących
+                                    z wierzchołków. Każda pojedyncza operacja powinna działać w czasie
+                                    stałym, za wyjątkiem DELETE_SUBTREE, gdzie czas działania powinien być
+                                    proporcjonalny do rozmiaru usuwanego poddrzewa. Ponadto po wykonaniu
+                                    operacji różnej od RIGHTMOST_CHILD należy wypisać jedną linię ze słowem
+                                    OK.</p>
+                                <h2><a id="Wyjcie_diagnostyczne_23"></a>Wyjście diagnostyczne</h2>
+                                <p>Jeśli
+                                    dodatkowo program zostanie wywołany z parametrem -v, należy dla każdego
+                                    z poleceń wypisać na standardowe wyjście diagnostyczne (stderr)
+                                    następujący wiersz:</p>
+                                <p>NODES: &lt;n&gt;</p>
+                                <p>gdzie &lt;n&gt; to
+                                    liczba wierzchołków aktualnie znajdujących się w strukturze. Nie
+                                    dopuszczamy innych parametrów wywołania – w przypadku napotkania innego
+                                    parametru, program powinien wypisać na standardowe wyjście komunikat
+                                    ERROR i zakończyć działanie z kodem wyjścia 1. Przykład użycia
+                                    parametrów wywołania programu znajduje się w zasobach na moodle w pliku <a
+                                            class="autolink" title="params.c"
+                                            href="https://moodle.mimuw.edu.pl/mod/resource/view.php?id=3439">params.c</a>.
+                                </p>
+                                <h2><a id="Skrypt_testujcy_30"></a>Skrypt testujący</h2>
+                                <p>Osobną częścią zadania jest napisanie skryptu&nbsp;test.sh. Po wywołaniu</p>
+                                <p>./test.sh &lt;prog&gt; &lt;dir&gt;</p>
+                                <p>skrypt
+                                    powinien uruchomić program &lt;prog&gt; dla wszystkich plików
+                                    wejściowych postaci &lt;dir&gt;/*.in, porównać wyniki z odpowiadającymi
+                                    im plikami .out, a następnie wypisać, które testy zakończyły się
+                                    niepowodzeniem. Wywołanie ./test.sh -v &lt;prog&gt; &lt;dir&gt; powinno
+                                    sprawdzić także poprawność programu uruchomionego z opcją -v. Wyniki z
+                                    wyjścia diagnostycznego należy porównać z plikami .err.</p>
+                                <h2><a id="Dane_wejciowe_37"></a>Dane wejściowe</h2>
+                                <p>Program powinien czytać ze standardowego wejścia. Można przyjąć następujące założenia
+                                    o danych wejściowych:</p>
+                                <p></p>
+                                <ul>
+                                    <li>Parametry &lt;k&gt; i &lt;w&gt; są nieujemnymi liczbami całkowitymi mniejszymi
+                                        niż 2<sup>31</sup>.
+                                    </li>
+                                    <li>Rozmiar pliku wejściowego nie przekroczy 5 MB.</li>
+                                    <li>Polecenia
+                                        i liczby są pooddzielane pojedynczymi spacjami, a każdy wiersz pliku
+                                        wejściowego kończy się linuksowym znakiem końca linii (kod ASCII 10). Są
+                                        to jedyne białe znaki występujące w plikach wejściowych.
+                                    </li>
+                                </ul>
+                                <p></p>
+                                <p>Program będzie miał do dyspozycji 32 MB pamięci. Przed zakończeniem należy zwolnić
+                                    całą zaalokowaną pamięć.</p>
+                                <h2><a id="Podzia_na_pliki_45"></a>Podział na pliki</h2>
+                                <p><span class="" style="color: rgb(51, 51, 51);">Rozwiązanie powinno zawierać następujące pliki:</span>
+                                </p>
+                                <ul id="yui_3_17_2_1_1520508957434_124">
+                                    <li>tree.h<br>Plik nagłówkowy biblioteki wykonującej operacje na drzewiastej
+                                        strukturze danych. <span class="" style="color: rgb(239, 69, 64);">Nie
+ wymagamy tworzenia dodatkowych plików bibliotecznych, niemniej 
+zachęcamy, aby wydzielić implementację różnych części projektu do 
+osobnych plików np. list.h + list.c, parse.h + parse.c, w zależności od 
+podjętych decyzji projektowych.</span></li>
+                                    <li>tree.c<br>Implementacja biblioteki wykonującej operacje na drzewiastej
+                                        strukturze danych.
+                                    </li>
+                                    <li>solution.c<br>Główny
+                                        plik programu, w którym wczytujemy wejście i wywołujemy funkcje z pliku
+                                        tree.h. Plik ten nie powinien znać definicji typów, użytych do
+                                        implementacji struktury danych.
+                                    </li>
+                                    <li id="yui_3_17_2_1_1520508957434_123">test.sh<br>Patrz punkt „skrypt testujący”.
+                                    </li>
+                                    <li>Makefile<br>W
+                                        wyniku wywołania polecenia make powinien zostać wytworzony program
+                                        wykonywalny solution. Dodatkowo w wyniku wywołania polecenia make debug
+                                        powinien zostać wytworzony plik solution.dbg, który powinien zawierać
+                                        symbole do debugowania (opcja -g kompilacji), tak aby ułatwiało to
+                                        śledzenie wycieków pamięci za pomocą programu valgrind. Jeśli któryś z
+                                        plików źródłowych ulegnie zmianie, ponowne wpisanie make lub make debug
+                                        powinno na nowo stworzyć odpowiedni plik wykonywalny. Jeżeli wykonamy
+                                        polecanie make i make debug w dowolnej kolejności, to powinny pojawić
+                                        się oba pliki wykonywalne solution i solution.dbg.
+                                    </li>
+                                </ul>
+                                <p>Zachęcamy, by Makefile działał w następujący sposób:</p>
+                                <ul>
+                                    <li>osobno kompiluje każdy plik .c i osobno linkuje,</li>
+                                    <li>przy zmianie w pliku źródłowym wykonuje tylko potrzebne polecenia kompilacji,
+                                    </li>
+                                    <li>make clean usuwa wszystkie pliki wykonywalne i dodatkowe pliki powstałe podczas
+                                        kompilowania.
+                                    </li>
+                                </ul>
+                                <p>Jednak w tym zadaniu nie będziemy stosować kar punktowych za brak spełnienia tych
+                                    trzech warunków.</p>
+                                <h2><a id="Punktacja_74"></a>Punktacja</h2>
+                                <p>Za
+                                    w pełni poprawne rozwiązanie zadania implementujące wszystkie
+                                    funkcjonalności można zdobyć maksymalnie 20 punktów. Możliwe są punkty
+                                    karne za poniższe uchybienia:</p>
+                                <ul>
+                                    <li>Za wycieki pamięci można stracić co najwyżej 6 punktów.</li>
+                                    <li>Brak obsługi parametrów wywołania lub błędne wyniki na wyjściu diagnostycznym
+                                        grożą utratą 4 punktów.
+                                    </li>
+                                    <li>Za niezgodną ze specyfikacją strukturę plików w rozwiązaniu można stracić co
+                                        najwyżej 4 punkty.
+                                    </li>
+                                    <li>Za błędy stylu kodowania można stracić co najwyżej 3 punkty.</li>
+                                    <li>Za błędy w skrypcie testującym można stracić maksymalnie 2 punkty.</li>
+                                    <li>Programy o złożoności pamięciowej lub obliczeniowej gorszej od oczekiwanej są
+                                        narażone na utratę do 10 punktów.
+                                    </li>
+                                    <li>Rozwiązania oparte na innych strukturach danych niż dynamicznie alokowane listy
+                                        będą oceniane na 0 punktów.
+                                    </li>
+                                </ul>
+                                <p>Rozwiązania należy implementować samodzielnie pod rygorem niezaliczenia
+                                    przedmiotu.</p>
+                                <div>
+                                    <div>
+                                        <div id="preview1">
+                                            <div id="preview" preview="" debounce="150"><p></p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
