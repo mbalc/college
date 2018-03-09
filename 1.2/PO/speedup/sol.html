@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html dir="ltr" xml:lang="pl" class="yui3-js-enabled" lang="pl">
+<head>
+    <title>Zadanie Drzewo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="moodle, Zadanie">
+    <link rel="stylesheet" type="text/css" href="sol_files/styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="page-mod-assign-view"
+      class="format-topics  path-mod path-mod-assign gecko dir-ltr lang-pl yui-skin-sam yui3-skin-sam moodle-mimuw-edu-pl pagelayout-incourse course-55 context-12766 cmid-3469 category-28 has-region-side-pre used-region-side-pre has-region-side-post empty-region-side-post side-pre-only jsenabled"
+      _vimium-has-onclick-listener="">
+
+<div id="page" class="container-fluid">
+    <div id="page-content" class="row-fluid">
+        <div id="region-main-box" class="span9 desktop-first-column">
+            <div class="row-fluid" id="yui_3_17_2_1_1520508957434_127">
+                <section id="region-main">
+                    <div class="left"><div class="grouppictures">&nbsp;</div></div><div class="no-overflow" id="yui_3_17_2_1_1520512343888_127"><div class="content" id="yui_3_17_2_1_1520512343888_126"><div class="posting fullpost" id="yui_3_17_2_1_1520512343888_125"><p><span></span></p><p dir="ltr" style="font-weight:bold;"></p><span></span><p dir="ltr" style="font-weight:bold;"></p><span></span><p dir="ltr"><span style="font-weight:bold;"></span></p><span></span><p dir="ltr"><span>Algorytm Floyda to prosty algorytm grafowy o złożoności czasowej T(n) = O(n^3) pozwalający dla każdej pary wierzchołków w skierowanym grafie bez ujemnych cykli znaleźć długość najkrótszej ścieżki między nimi. Zainteresowanych odsyłam <a href="http://www.algorytm.org/algorytmy-grafowe/algorytm-floyda.html">tutaj</a></span></p><p dir="ltr"><b>Porównywany język: </b>C++</p><p dir="ltr"><span style="font-weight:bold;">Środowisko: </span>Windows 10 Home, version 1607, build 14393.222, 64-bit</p><p dir="ltr"><span style="font-weight:bold;">Platforma testowa: </span>specyfikacja dostępna <a href="https://www.x-kom.pl/p/160835-notebook-laptop-156-lenovo-z510-i5-4200m-8gb-1000-dvd-rw-gt740m-braz.html#specification">tutaj</a></p><p dir="ltr"><span style="font-weight:bold;">Wersja java: </span>javac 1.8.0_121</p><p dir="ltr"><b>Wersja c++:</b> g++.exe (tdm64-1) 5.1.0</p><p dir="ltr"><b>Procedura testowa: </b>do testów wykorzystałem środowisko PowerShell (Get-Host&nbsp;Version: 5.1.14393.206, 64bit). Podczas testowania starałem się zachować minimalne, jednorodne obciążenie komputera innymi procesami.&nbsp;<br></p><p dir="ltr">Załączony skrypt "test.ps1" wypisuje czasy wykonania poszczególnych testów w sekundach za każdym z dwudziestu wywołań. Pozostałe skrypty służą do ustawiania zmiennych środowiskowych odpowiednio dla każdego z rozważanych przypadków testowych (różniących się językiem i flagami kompilacji/wywoływania).&nbsp;</p><p dir="ltr">Do zgrania obydwu skryptów wykorzystałem procedury Begin i Process: przykładowo do przetestowania przypadku "c++A" wywołuję:&nbsp;<br></p><p dir="ltr"></p><pre>Begin
+    { . .\c++A.ps1 }
+Process
+    { .\test.ps1 }</pre>To, co skrypt dokładnie wypisał na moim komputerze zamieściłem w plikach *_out.txt, w tabelce zamieściłem natomiast mediany z 20 wyników czasowych dla każdego testu (obliczone za pomocą <a href="http://www.alcula.com/calculators/statistics/median/">narzędzia on-line</a>).&nbsp;<p></p><p dir="ltr"><b>Testy: </b>Rozwiązania testowałem za pomocą pięciu testów o różnych parametrach wygenerowanych za pomocą załączonego generatora testów. Dokładne wartości parametrów są zawarte w skrypcie generującym.&nbsp;</p><p dir="ltr">Ostatni, największy z testów nie został załączony w przesłanej paczce ze względu na limity rozmiarów plików narzucane przez Moodle. Zachęcam do wygenerowania go za pomocą załączonego generatora testów - powinien być deterministyczny i wygenerować identyczny plik (skrypt ten na wejściu oczekuje jednej liczby z zakresu 1..5). W razie potrzeby - test ten zamieszczam też <a href="https://drive.google.com/open?id=0B2rLmnUCrfaOakFaeUxOUUdCcWM">tutaj</a>.&nbsp;</p><p dir="ltr">Krótka charakterystyka testów:&nbsp;</p><p dir="ltr">-grafy zawarte w testasch o numerach 3 i 4 mają tę samą liczbę wierzchołków, różnią się natomiast gęstością - graf z test4.in jest znacznie gęstszy<br>-pozostałe testy różnią się przede wszystkim liczbą wierzchołków - tym większą, im większy numer testu.&nbsp;</p><p dir="ltr"><br></p><p dir="ltr" style="font-weight:bold;">Czasy (mediana z 20 wyników czasowych w sekundach):</p><div dir="ltr" style="font-weight:bold;"><table><colgroup><col width="68"><col width="83"><col width="83"><col width="81"><col width="96"></colgroup><tbody><tr><td><br></td><td><p dir="ltr">c++ A &nbsp;</p></td><td><p dir="ltr">c++ B &nbsp;</p></td><td><p dir="ltr">java A</p></td><td><p dir="ltr">java B</p></td></tr><tr><td><p dir="ltr">1 &nbsp;&nbsp;&nbsp;</p></td><td><p dir="ltr">0.01114285</p></td><td><p dir="ltr">0.01023535</p></td><td><p dir="ltr">0.10716065</p></td><td><p dir="ltr">0.10087105</p></td></tr><tr><td><p dir="ltr">2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></td><td><p dir="ltr">0.08772715</p></td><td><p dir="ltr">0.04129515</p></td><td><p dir="ltr">0.2845064</p></td><td><p dir="ltr">1.63531665</p></td></tr><tr><td><p dir="ltr">3 &nbsp;&nbsp;&nbsp;</p></td><td><p dir="ltr">1.61224755</p></td><td><p dir="ltr">0.3985631</p></td><td><p dir="ltr">1.02733735</p></td><td><p dir="ltr">23.476578</p></td></tr><tr><td><p dir="ltr">4 &nbsp;&nbsp;&nbsp;</p></td><td><p dir="ltr">1.61001195</p></td><td><p dir="ltr">0.40535765</p></td><td><p dir="ltr">0.977343</p></td><td><p dir="ltr">24.18081465</p></td></tr><tr><td><p dir="ltr">5 &nbsp;&nbsp;&nbsp;</p></td><td><p dir="ltr">7.1012841</p></td><td><p dir="ltr">1.5886691</p></td><td><p dir="ltr">3.6443019</p></td><td><p dir="ltr">92.45682425</p></td></tr></tbody></table><br></div><div dir="ltr" style="font-weight:bold;">Główne różnice między przypadkami testowymi:</div><div dir="ltr" style="font-weight:bold;"><br></div><div dir="ltr">c++ A: &nbsp; &nbsp;-O0</div><div dir="ltr">c++ B: &nbsp; &nbsp;-O2</div><div dir="ltr"><br></div><div dir="ltr">java A: &nbsp; &nbsp;bez flag wykonania</div><div dir="ltr">java B: &nbsp; &nbsp;-Xint -Xprof</div><div dir="ltr" style="font-weight:bold;"><br></div><p></p><div class="attachedimages"></div></div></div></div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
