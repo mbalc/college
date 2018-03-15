@@ -11,15 +11,17 @@ section .data
     NEW_LINE            equ 10
 
     BUFFER_SIZE         equ 1024
-    BUCKET_SIZE         equ 256
+    ALPHABET_LIMIT      equ 256
     EXPECTED_NO_OF_ARGS equ 2
 
-    curr_bckt times BUCKET_SIZE db 0
-    last_bckt times BUCKET_SIZE db 0
+    mytxt db "litera", 10
+
+    curr_bucket times ALPHABET_LIMIT db 0
+    last_bucket times ALPHABET_LIMIT db 0
     ; last_bckt resb BCKT_SIZ
 
 section .bss
-    file_buff resb BUFFER_SIZE
+    file_buffer resb BUFFER_SIZE
 
 
 
@@ -29,12 +31,6 @@ _start:
     cmp dword [rsp], EXPECTED_NO_OF_ARGS
     jne _fail
 
-    ; mov rdi, STDOUT
-    ; mov rsi, [rsp+16]  ; argv[1]
-    ; mov rdx, 99
-    ; mov rax, SYS_WRITE
-    ; syscall
-
     mov rdi, [rsp+16]  ; argv[1]
     mov rsi, O_RDONLY
     mov rax, SYS_OPEN
@@ -43,12 +39,12 @@ _start:
     cmp rax, 0
     jl _fail
     mov r14, rax  ; file descriptor
-    xor r15, r15  ; reads counter
+    xor r15, r15  ; zero only when no reads were done to the file yet
     jmp _read_file
 
 _read_file:
     mov rdi, r14
-    mov rsi, file_buff
+    mov rsi, file_buffer
     mov rdx, BUFFER_SIZE
     mov rax, SYS_READ
     syscall
@@ -57,7 +53,8 @@ _read_file:
     jz _end_of_file
 
     mov r13, rax  ; size of buffer read
-    inc r15
+    and r15, r15
+    xor r11, r11  ; 
     jmp _analyze_buffer
 
 _end_of_file:
@@ -66,11 +63,18 @@ _end_of_file:
     jmp _end
 
 _analyze_buffer: 
+    ; push r12
     mov rdi, STDOUT
-    mov rsi, file_buff
-    mov rdx, r13
+    mov rsi, mytxt
+    mov rdx, 7
     mov rax, SYS_WRITE
     syscall
+    ; pop r12
+
+    inc r11
+    cmp r11, r13
+    jle _analyze_buffer
+
 
     jmp _read_file
 
