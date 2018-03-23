@@ -100,20 +100,20 @@ _handle_zero:
     dec r11b
     jmp _other_permutations  ; side note - r11b has to be equal to 2
 
-_first_permutation:
+%macro analyser 2
     cmp byte [r8], 0
-    je _loop_1
+    je %1
+    %if %2 = 1
+        dec byte [r8]  ; avoid counter ever overflowing
+    %endif
     cmp r11b, byte [r8]
-    je _loop_1
+    je %1
     jne _fail
+%endmacro
 
-_other_permutations:
-    cmp byte [r8], 0
-    je _loop_2
-    dec byte [r8]  ; avoid counter ever overflowing
-    cmp r11b, byte [r8]
-    je _loop_2
-    jne _fail
+_first_permutation: analyser _loop_1, 0
+
+_other_permutations: analyser _loop_2, 1
 
 %macro looper 1
     inc r8

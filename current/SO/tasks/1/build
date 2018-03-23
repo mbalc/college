@@ -1,2 +1,2 @@
-nasm -f elf64 -o sequence.o sequence.asm
+nasm  -f elf64 -F dwarf  -o sequence.o sequence.asm
 ld --fatal-warnings -o sequence sequence.o
