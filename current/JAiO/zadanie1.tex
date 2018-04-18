@@ -1,0 +1,386 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+
+\title{Języki, Automaty i Obliczenia}
+\author{
+	Michał Balcerzak \\
+	Wydział Matematyki, Informatyki i Mechaniki\\
+	Uniwersytet Warszawski, \underline{Polska}\\
+}
+\date{\today}
+
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx, amsfonts}
+\usepackage{scalefnt}
+\usepackage{mathtools}
+\usepackage{fancyhdr}
+\usepackage{amsbsy}
+\usepackage{listings}
+\usepackage{amssymb}
+
+
+\lstdefinestyle{mystyle}{
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize\ttfamily,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+}
+ 
+\lstset{language=Python, style=mystyle}
+
+\newcommand{\pagesss}{\pageref{LastPage}}
+
+\pagestyle{fancy}
+\lhead{\scriptsize Języki, Automaty i Obliczenia}
+\chead{\textsf{ZADANIE 1}}
+\rhead{\scriptsize Strona \thepage\ z \pagesss}
+
+\cfoot{\footnotesize Strona \thepage\ z \pagesss}
+
+
+\fancypagestyle{plain}{%
+    \renewcommand{\headrulewidth}{0pt}%
+    \fancyhf{}%
+    \fancyfoot[C]{\footnotesize Strona \thepage\ z \pagesss}%
+}
+
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\setcounter{secnumdepth}{0}
+
+
+\newcommand*{\Autom}{\mathcal{A}}
+\newcommand{\bigexists}{%
+	\mathop{\lower0.75ex\hbox{%
+			   \scalebox{1.7}{\ensuremath{\exists}}}}\limits}
+
+\newcommand{\bigany}{%
+	\mathop{\lower0.75ex\hbox{%
+			   \scalebox{1.7}{\ensuremath{\forall}}}}\limits}
+
+\newcommand{\bigsum}{%
+	\mathop{\lower0.75ex\hbox{%
+			   \scalebox{1.7}{\ensuremath{\Sigma}}}}\limits}
+
+\newcommand*{\QEDB}{\hfill\ensuremath{\square}}%
+\newcommand{\code}[1][]{{\ttfamily{#1}}}
+
+
+\begin{document}
+\maketitle
+
+\section{Treść zadania}
+Powiemy, że automat niedeterministyczny $\Autom$ jest \textit{k-niedeterministyczny}, gdzie
+$k \in \mathbb{N}$, jeżeli dla każdego słowa wejściowego $w$, automat $\Autom$ ma co najwyżej
+$k$ biegów po słowie $w$ zaczynających się w stanie początkowym.
+
+Pokazać, że istnieje algorytm, który otrzymawszy $10$-niedeterministyczny automat $\Autom$,
+w czasie wielomianowym produkuje równoważny mu automat deterministyczny
+
+\paragraph{}
+Dokładniej, czas działania algorytmu dla danego $10$-niedeterministycznego automatu $\Autom$
+ma być ograniczony przez $poly(|Q|+|A|+|\delta|)$, gdzie ${poly:\mathbb{N}\rightarrow\mathbb{N}}$
+jest pewnym wielomianem, oraz $Q,A,\delta$ to, odpowiednio: zbiór stanów, alfabet i zbiór
+tranzycji automatu $\Autom$. Nie jest sprecyzowane jak algorytm ma działać, gdy wejściowy
+automat $\Autom$ nie jest $10$-niedeterministyczny (może wtedy np. działać w czasie
+wykładniczym, produkować nierównoważny automat, lub zwracać błąd).
+
+\paragraph{}
+Z rozwiązania powinno jasno wynikać istnienie takiego algorytmu. W szczególności, należy dokładnie
+uzasadnić poprawność algorytmu i jego czas działania. Algorytm można opisać pseudokodem lub
+słowami, lub jego istnienie może być wnioskiem z postaci przeprowadzonej konstrukcji matematycznej.
+
+\clearpage
+
+\section{Rozwiązanie}
+Bieg $b_w$ automatu $10$-niedeterministycznego $\Autom$ po pewnym słowie
+$w = a_1 a_2 a_3 \dots a_n$ to ciąg tranzycji zawartych w automacie $\Autom$:
+$$b_{w,0} \xrightarrow{a_1} b_{w,1} \xrightarrow{a_2} b_{w,2} \xrightarrow{a_3}
+\dots \xrightarrow{a_n} b_{w,n}$$
+gdzie $b_{w,0}, b_{w,1}, \dots, b_{w,n} \in Q$.
+
+\paragraph{}
+Powiemy, że dwa biegi automatu $\Autom$ po pewnym słowie $w$ – {$b_w$ oraz $c_w$} – są
+\textit{różne} wtedy i tylko wtedy gdy $\exists_{i \in \mathbb{N}_{|w + 1|}} b_{w,i} \neq c_{w,i}$
+(gdzie $\mathbb{N}_{i} = \{0, 1, \dots, i - 1\}$). 
+
+Z kolei przez to, że $\Autom$ ma $k$ biegów po słowie $w$ będziemy rozumieć to, że każde dwa biegi
+spośród biegów $\Autom$ po słowie $w$ są różne.
+
+\paragraph{}
+\textit{Stanem końcowym} biegu $b_w$ nazwiemy $b_{w,|w|}$.
+
+
+\paragraph{Wniosek 1:}
+Po wczytaniu pewnego słowa $w \in A^*$ do $\Autom$ możemy zakończyć bieg w co najwyżej
+$10$ różnych stanach.
+\subparagraph{Dowód:}
+W przeciwnym przypadku musiałoby istnieć przynajmniej $11$ biegów $\Autom$ po 
+słowie $w$, spośród których każdy musiałby mieć inny stan końcowy. To jednak nie jest możliwe, 
+gdyż wtedy każdy z tych biegów byłby różny od dowolnego z pozostałych, więc $\Autom$ musiałby mieć
+co najmniej $11$ biegów po słowie $w$, co byłoby sprzeczne z jego własnością
+$10$-niedeterministyczności. \QEDB
+
+\paragraph{}
+Przyjrzyjmy się procesowi determinizacji automatów niezdeterminizowanych przytoczonemu na
+wykładzie. Dla przypomnienia – automat deterministyczny $(A, Q', q_0, F', \delta')$ otrzymamy
+z automatu niedetermnistycznego $(A, Q, I_\Autom, F_\Autom, \delta)$ biorąc:
+\begin{itemize}
+  \item $Q' = P(Q)$ (zbiór potęgowy $Q$)
+  \item $q_0 = I_\Autom$
+  \item $F' = \{S \mid S \subseteq Q' \land S \cap F_\Autom \neq \emptyset\}$
+  \item $\delta' = f \in Q'^{(Q'\times A)}$ takie, że
+	$f(S, a) = \{q \in Q \mid \exists_{p \in S} (p, a, q) \in \delta\}$
+\end{itemize}
+
+\paragraph{Fakcik 1:}
+Skrypt wykładowy mówi, że dla dowolnego $w \in A^*$ stan $q_0 \cdot w$ jest równy zbiorowi tych
+stanów, które można osiągnąć w automacie $\Autom$ zaczynając w którymś ze stanów początkowych i
+wczytując słowo $w$.
+
+\paragraph{}
+Niech automat $\Autom' = (A, Q', q_0, F', \delta')$ stanowi bezpośrednią determinizację
+automatu $\Autom = (A, Q, I_\Autom, F_\Autom, \delta)$. 
+
+\paragraph{Lemat 1:} Dla każdego osiągalnego stanu $q_{\Autom'}$ automatu $\Autom'$ zachodzi
+${|q_{\Autom'}| \leq 10}$.
+\subparagraph{Dowód:} 
+Dowolny stan $q_{\Autom'} \in Q'$ jest osiągalny wtedy i tylko wtedy, gdy istnieje $w \in A^*$ że
+$q_0 \cdot w = q_{\Autom'}$. Na podstawie fakciku 1 każdy osiągalny stan $q_{\Autom'}$ jest więc
+tożsamy z pewnym zbiorem $T$ stanów osiągalnych poprzez wczytanie pewnego $w$ do $\Autom$.
+Z kolei na podstawie wniosku 1 możemy stwierdzić, że zbiór $T$ musi mieć moc niewiększą niż $10$
+- a więc moc tegoż dowolnie wybranego, osiągalnego stanu $q_{\Autom'}$ również ma takąż własność,
+co kończy dowód. \QEDB
+
+\paragraph{}
+Automaty są równoważne gdy akceptują ten sam język. Na mocy wykładu $\Autom'$ jest równoważny
+automatowi $\Autom$. Stwórzmy na podstawie $\Autom'$ automat $\mathcal{B}$ będący, opisując
+intuicyjnie, tożsamy z tą częścią $\Autom'$, której stany mają moce niewiększe niż $10$. Automat
+$\mathcal{B} = (A, \breve Q, q_0, \breve F, \breve\delta)$ zdefiniujemy następująco:
+\begin{itemize}
+  \item $\breve Q = \{S \mid S \in Q' \land |S| \leq 10\} \cup \{\bot\}$
+  \item $\breve F = F' \cap \breve Q$
+  \item $\breve\delta = f \in \breve Q ^{(\breve Q \times A)}$ takie, że
+	$$f(S, a) = \begin{cases}
+	    \delta'(S, a), & \text{gdy}\ S \neq \bot \land |\delta'(S, a)| \leq 10 \\
+	    \bot, & \text{w przeciwnym przypadku}
+        \end{cases}$$
+\end{itemize}
+
+\paragraph{}
+Niech napis $\mathcal{C}(w)$ oznacza dla automatu $\mathcal{C}$ i słowa $w \in A^*$ stan osiągany
+po wczytaniu $w$ przez automat $\mathcal{C}$.
+
+\clearpage 
+
+\paragraph{Lemat 2:}
+Automat $\mathcal{B}$ jest równoważny automatowi $\Autom$, czyli
+$${\bigany_{w \in A^*} \mathcal{B}(w) \in \breve F \Leftrightarrow \Autom(w) \in F_\Autom}$$
+\subparagraph{Dowód:}
+Weźmy dowolne $a_1 a_2 a_3 \dots a_n = w \in A^*$. Wiemy że
+${\Autom(w) \in F_\Autom \Leftrightarrow \Autom'(w) \in F'}$. Wówczas:
+
+\begin{itemize}
+  \item $\mathcal{B}(\varepsilon) = \Autom'(\varepsilon) = q_0$
+  \item Jeśli dla pewnego $v$ – $i$-literowego prefiksu $w$ gdzie $i \in \{0, 1, \dots, n-1\}$ –
+	  zachodzi $\Autom'(v) = \mathcal{B}(v) = q$, to
+	  $\breve\delta(q, a_{i+1}) = \delta'(q, a_{i+1})$, gdyż
+  \begin{itemize}
+    \item $q \neq \bot$, bo $q = \Autom'(v) \notin Q'$
+    \item $\delta'(q, a_{i+1})$ jest osiągalny w $\Autom'$, bo $q$ jest osiągalny, a więc na mocy 
+	    lematu 1 $|\delta'(q, a_{i+1})| \leq 10$
+  \end{itemize}
+  Stąd, na mocy indukcji wynika $\mathcal{B}(w) = \Autom'(w)$. Ponadto stan $\Autom'(w)$ jest
+  osiągalny, więc z własności $\mathcal{B}$ należy również do $\breve Q$, więc
+$$\Autom(w) \in F_\Autom \Leftrightarrow \Autom'(w) \in F' \Leftrightarrow \mathcal{B}(w) \in
+\breve Q \land \mathcal{B}(w) \in F' \Leftrightarrow \mathcal{B}(w) \in \breve F$$
+\QEDB
+\end{itemize}
+
+\paragraph{Fakcik 2:}
+Spróbujmy oszacować $|\breve Q|$. Dla $m = |Q|$ zachodzi:
+\begin{itemize}
+  \item $|Q'| = \bigsum_{i=0}^{m} \binom{m}{i}$
+  \item $
+    \begin{aligned}[t]
+	  |\breve Q| &= 1 + \bigsum_{i=0}^{10} \binom{m}{i} =
+	  1 + \bigsum_{i=0}^{10} \frac{m!}{i!(m-i)!} =
+	  1 + \bigsum_{i=0}^{10} \frac{\prod_{k=0}^{i-1}m-k}{i!} \leq \\ &\leq
+	  1 + \bigsum_{i=0}^{10} \prod_{k=0}^{i-1}m = 1 + \bigsum_{i=0}^{10} m^{i} \leq
+	  1 + \bigsum_{i=0}^{10} m^{10} = 11m^{10} + 1 = O(m^{10})
+    \end{aligned}
+  $
+  \item $|\breve Q| \leq O(m^{10}) = O(|Q|^{10})$
+\end{itemize}
+
+\clearpage
+
+\paragraph{Algorytm 1:}
+Automat $\mathcal{B}$ można wygenerować w czasie wielomianowym. 
+\subparagraph{}
+Przyjmijmy że mamy bezpośredni dostęp do zbiorów $Q, A, \delta$ przytoczonych w treści zadania.
+Przyjmijmy również, że struktura zbioru udostępnia
+\begin{itemize}
+	\item konstruktor pustego zbioru o stałej złożoności czasowej
+	\item procedury przeszukiwania zawartości oraz wstawiania elementów, obydwie o czasie
+              liniowym względem rozmiaru przetrzymywanych danych
+\end{itemize}
+
+Takie złożoności czasowe są możliwe do osiągnięcia np. przy implementacji zbioru za pomocą
+pojedynczo linkowanej listy (liczymy na to, że nie dotyczy nas ekstremalny, o ile w ogóle możliwy
+przypadek, w którym ewentualna konwersja udostępnionej nam struktury do takiej struktury zbioru
+nie byłaby możliwa do wykonania w wielomianowym czasie).
+
+
+\paragraph{1.}
+Pierwszym krokiem algorytmu bedzie wygenerowanie zbioru $\breve Q$.
+Jego reprezentantem w naszym kodzie będzie $\texttt{QB}$. Z definicji ma on być zbiorem 
+wszystkich podzbiorów $Q$ o mocy niewiększej niż 10 (plus śmietnik). 
+\subparagraph{}
+\begin{lstlisting}[escapeinside={(*}{*)}]
+QB := {(*$\bot$*), {}}
+elems := {{}}  # wszystkie (i-1)-elementowe podzbiory Q
+temp := {}  # tu na podst. elems generujemy i-elem. podzb. Q
+
+for (i := 1; i <= 10; i++):
+    for e in elems:
+	for q in (*$Q$*):
+	    e.insert(q)
+	    temp.insert(e)
+    for t in temp:
+	QB.insert(t)
+    swap(temp, elems)
+    temp := {}
+\end{lstlisting}
+\subparagraph{}
+Za pomocą trywialnej indukcji można pokazać, że komentarze z linii 2-3 są niezmiennikami pętli z
+linii 5 w momencie gdy program dochodzi do linii 10. Wobec tego
+\texttt{temp}, \texttt{elems} $\subseteq \breve Q$, więc
+$|\texttt{temp}|+|\texttt{elems}| \leq O(|Q|^{10})$.
+Ponadto, gdy przez $\texttt{temp}_j$
+oznaczymy zawartość struktury $\texttt{temp}$ w momencie gdy program jest w linii 10 
+a wartość $\texttt{i}$ wynosi $j$, wówczas dzięki liniom 10-11 zachodzi
+$$\begin{aligned}
+	\texttt{QB} &= (\sum_{j=1}^{10} \texttt{temp}_j) \cup \{\bot, \varnothing\} 
+	=\sum_{j=0}^{10} \{S \mid S \in P(Q) \land |S| = j\} \cup \{\bot\} = \\
+	&= \{S \mid S \in Q' \land |S| \leq 10\} \cup \{\bot\} = \breve Q
+\end{aligned}$$
+ (a więc zgodnie z definicją).
+\subparagraph{}
+Powyższy kod składa się z trzech czasowo liniowych, zagnieżdżonych przejść po zbiorach, kolejno
+$\mathbb{N}_{10}$, \texttt{elems} i $Q$, gdzie $|\texttt{elems}| \leq |\breve Q|
+\cdot |Q| \leq O(|Q|^{11})$ \mbox{i $|\mathbb{N}_{10}| = O(1)$}. Z kolei czas każdej z podprocedur
+\texttt{insert} jest ograniczony przez rozmiar struktur, na których jest wykonywana, a więc 
+co najwyżej $O(|Q|^{10})$. Sumaryczny czas wykonania tego programu $T_1$ będzie więc rzędu
+co najwyżej $O(|Q|^{11} \cdot 1 \cdot |Q| \cdot |Q|^{10}) \leq O(|Q|^{30})$
+
+\paragraph{2.}
+Wyliczenie $\texttt{FB} = \breve F$ jest trywialne.
+\begin{lstlisting}[escapeinside={(*}{*)}]
+FB := QB.filter(q => {
+    for e in q:
+	for f in (*$F_\Autom$*):
+	    if f == e: return true
+    return false
+})
+\end{lstlisting}
+\subparagraph{}
+Procedura \texttt{filter} jest możliwa do wyrażenia za pomocą fora i jednego bufora, kod zapisałem
+w ten sposób tak, by zachować czytelność. Złożoność czasowa tej procedury jest identyczna ze
+złożonością przejścia \texttt{for}em po strukturze \texttt{QB}.
+\subparagraph{}
+\texttt{FB} po przejściu algorytmu będzie zawierał te elementy $\breve Q$, które mają część wspólną
+z $F_\Autom$ (bo istnieje element zawarty w obydwu zbiorach), więc $\texttt{FB} =
+\{S \mid S \subseteq \texttt{QB} \land S \cap F_\Autom \neq \emptyset\} =
+\{S \mid S \subseteq \breve Q \land S \cap F_\Autom \neq \emptyset\} =
+\{S \mid S \subseteq Q' \land S \cap F_\Autom \neq \emptyset\} \cap \breve Q = F' \cap \breve Q =
+\breve F$.
+\subparagraph{}
+Czas wykonania się powyższego kodu oczywiście jest wielomianowy z racji rozmiarów przeglądanych
+struktur oraz metod na nich wykonywanych - możemy zastosować rozumowanie podobne do
+przeprowadzonego wyżej.
+Powinno nam wyjść $T_2 \leq O(|\texttt{QB}| \cdot 10 \cdot |F_\Autom|) \leq
+O(|Q|^{10} \cdot |Q|) \leq O(|Q|^{11})$ (zauważamy że $\texttt{QB} = \breve Q$ oraz
+$F_\Autom \subseteq Q$).
+
+\paragraph{3.}
+W końcu postaramy się wyliczyć funkcję przejścia $\breve \delta$. Jest to ostatnia rzecz potrzebna
+nam do tego, żeby automat zadziałał - pozostałe rzeczy, czyli alfabet $A$ oraz stan początkowy 
+$q_0 = I_\Autom$ można łatwo wywnioskować z danego nam na początku automatu $\Autom$.
+\subparagraph{}
+Do spamiętania wartości funkcji $\breve \delta$ możemy zastosować np. listową implementację
+słownika \texttt{dict(p $\in$ QB -> dict($\alpha \in A$ -> q $\in$ QB))}. Sprawdzanie wartości tak
+zapisanej funkcji, a także ustawienie nowej wartości dla pewnej pary argumentów da się zrealizować
+w czasie liniowym względem rozmiaru danych, czyli w czasie $O(|\texttt{QB}| \cdot |A|) =
+O(|A|\cdot|Q|^{10})$.
+
+\begin{lstlisting}[escapeinside={(*}{*)}]
+DB := dict()
+
+for s in QB:
+    DB[s] := dict()
+    for a in (*$A$*):
+	temp := {}  # wszystkie stany osiagalne
+                    # z podstanow s po wczytaniu a
+        for q in s:
+	    for el in (*$\delta$*):
+		if el[0] == q && el[1] == a:
+		    temp.insert(el[2])
+        if s == (*$\bot$*) || temp.size > 10:
+	    temp := (*$\bot$*)
+	DB[s][a] := temp
+
+	    
+\end{lstlisting}
+
+Zachowane są niezmienniki pętli:
+\begin{itemize}
+  \item 9 - po zakończeniu pętli \texttt{temp} zawiera wszystkie stany osiągalne przez wczytanie \texttt{a}
+do $\Autom$ w stanie \texttt{q}
+  \item 8 - po wykonaniu spełniony jest komentarz z linii 6-7
+  \item 5 - \texttt{DB[s][a]} zawiera $\breve \delta(\texttt{s}, \texttt{a})$
+  \item 3 - $\forall_{s \in \breve Q}\forall_{a \in A} \texttt{DB[}s\texttt{][}a\texttt{]} =
+	    \breve\delta(s, a)$
+\end{itemize}
+
+Trzy zagnieżdżone pętle przeglądają struktury poszczególnych zbiorów w łącznym czasie
+$O(|\texttt{QB}| \cdot |A| \cdot 10 \cdot |\delta|) = O(|Q|^{10} \cdot |A| \cdot |\delta|)$.
+Z kolei rozmiar \texttt{temp}, a więc i czas wykonywania się najbardziej kosztownej procedury
+(linia 11) jest na pewno ograniczony przez $O(3 + |\breve Q|)$, więc $T_3 \leq
+O(|Q|^{30} \cdot |A| \cdot |\delta|)$.
+
+\paragraph{}
+Koniec końców czas działania naszego algorytmu $T = \sum_{i \in \{1, 2, 3\}}T_i \leq
+O(|Q|^{30})+O(|Q|^{11})+O(|Q|^{30} \cdot |A| \cdot |\delta|) =
+O(|Q|^{20}(|Q|^{10} + |A| \cdot |\delta|) \leq O(h^{20}(h^{10} + h \cdot h) = O(h^{30})$ gdzie
+$h = |Q| + |A| + |\delta|$. Istnieje więc algorytm generujący automat deterministyczny z automatu
+$10$-niedeterministycznego, którego czas jest ograniczony przez wielomian zależny od czynników
+$h$, co było do pokazania w tym zadaniu.
+\subparagraph{}
+Oczywiście wygenerowanie tego automatu jest możliwe przy dużo mniejszej złożoności czasowej,
+powyższy algorytm można dużo lepiej zoptymalizować, jednak nie było to celem zadania. Starałem się
+dobierać jak najprostsze struktury, a moje oszacowania złożoności czasowej są bardzo zgrubne.
+\subparagraph{}
+W niniejszym opisie algorytmu mogłem czasem przywiązywać mniejszą uwagę do problemu złożoności
+czasowej głębokiego kopiowania struktur (m.in. nie skupiałem się na tym, kiedy płytka kopia mogłaby
+przyspieszyć program - patrz akapit wyżej). Poszczególne z tych procedur są jednak wykonywane na
+strukturach o rozmiarze, który da się ograniczyć przez wielomianową kombinację którychś z
+parametrów $|Q|, |A|, |\delta|$, a głebokie kopiowanie tych struktur da sie wykonać w czasie
+wielomianowym ze względu na rozmiar przetrzymywanych w nich danych. Suma oraz iloczyn dwóch 
+wielomianów daje wielomian, dzięki czemu to zagadnienie również nie powinno mieć znaczenia dla
+faktu realizowalności tego zadania w czasie wielomianowym. 
+
+\label{LastPage}
+
+\end{document}
