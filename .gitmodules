@@ -26,3 +26,6 @@
 [submodule "2.1/JNP1/zadanie6/2.1/JNP1/zadanie6"]
 	path = 2.1/JNP1/zadanie6
 	url = https://mbalc909@bitbucket.org/mbalc909/jnp-task-6.git
+[submodule "current/IO"]
+	path = current/IO
+	url = git@github.com:iop2018/the-floor-is-lava.git
