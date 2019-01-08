@@ -29,3 +29,6 @@
 [submodule "current/IO"]
 	path = current/IO
 	url = git@github.com:iop2018/the-floor-is-lava.git
+[submodule "current/MN"]
+	path = current/MN
+	url = git@github.com:mbalc/numerical-methods-lab.git
