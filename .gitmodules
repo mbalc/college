@@ -32,3 +32,15 @@
 [submodule "current/MN"]
 	path = current/MN
 	url = git@github.com:mbalc/numerical-methods-lab.git
+[submodule "3/gsn/tasks/task1-git"]
+	path = 3/gsn/tasks/task1-git
+	url = git@github.com:mbalc/dnn1.git
+[submodule "3/gsn/tasks/task1"]
+	path = 3/gsn/tasks/task1
+	url = git@github.com:mbalc/dnn1.git
+[submodule "3/gsn/tasks/task2"]
+	path = 3/gsn/tasks/task2
+	url = git@github.com:mbalc/dnn2.git
+[submodule "3/gsn/tasks/task3"]
+	path = 3/gsn/tasks/task3
+	url = git@github.com:mbalc/dnn-task3.git
