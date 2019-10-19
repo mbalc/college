@@ -44,3 +44,12 @@
 [submodule "3/gsn/tasks/task3"]
 	path = 3/gsn/tasks/task3
 	url = git@github.com:mbalc/dnn-task3.git
+[submodule "3/jpp"]
+	path = 3/jpp
+	url = git@github.com:mbalc/languages-and-paradigms.git
+[submodule "3/petri"]
+	path = 3/petri
+	url = git@github.com:mbalc/petri-net-notes.git
+[submodule "3/MN"]
+	path = 3/MN
+	url = git@github.com:mbalc/numerical-methods-lab.git
