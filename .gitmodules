@@ -47,6 +47,7 @@
 [submodule "3/jpp"]
 	path = 3/jpp
 	url = git@github.com:mbalc/languages-and-paradigms.git
+	branch = master
 [submodule "3/petri"]
 	path = 3/petri
 	url = git@github.com:mbalc/petri-net-notes.git
